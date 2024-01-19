@@ -26,6 +26,7 @@ class LLM_Evaluator(Evaluator):
         model_class, tokenizer_class = MODEL_CLASSES[model_type]
         self.tokenizer = tokenizer_class.from_pretrained(
             self.model_path, 
+            use_fast=False,
             trust_remote_code=True
         )
         self.model = model_class.from_pretrained(
@@ -36,9 +37,12 @@ class LLM_Evaluator(Evaluator):
         ).eval()
 
         self.generation_config = dict(
+            temperature=temperature,
+            top_k=40,
+            top_p=0.9,
             do_sample=True,
             num_beams=1,
-            repetition_penalty=1.5,
+            repetition_penalty=1.3,
             max_new_tokens=100
         )
         
@@ -69,10 +73,6 @@ class LLM_Evaluator(Evaluator):
             self.generation_config['do_sample'] = False
             self.generation_config['top_k'] = 1
             self.generation_config['max_new_tokens'] = 1
-        else:
-            self.generation_config['top_p'] = 0.9
-            self.generation_config['top_k'] = 40
-            self.generation_config['temperature'] = self.temperature
         correct_num = 0
         if save_result_dir:
             result = []
@@ -87,10 +87,13 @@ class LLM_Evaluator(Evaluator):
 
             inputs = self.tokenizer(instruction, return_tensors="pt")
             generation_output = self.model.generate(
-                inputs.input_ids.to("cuda"),
+                input_ids = inputs["input_ids"].to("cuda"),
+                attention_mask = inputs['attention_mask'].to("cuda"),
+                eos_token_id=self.tokenizer.eos_token_id,
+                pad_token_id=self.tokenizer.pad_token_id,
                 **self.generation_config
             )
-            batch_size, length = inputs.input_ids.shape
+            _, length = inputs.input_ids.shape
             if multiple == False:
                 if self.constrained_decoding is True:
                     logits = generation_output.scores[0][0]

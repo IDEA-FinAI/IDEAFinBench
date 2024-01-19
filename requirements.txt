@@ -5,3 +5,4 @@ numpy
 tqdm
 openai
 accelerate
+sentencepiece
