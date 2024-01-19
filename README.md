@@ -19,7 +19,8 @@ FinKnowledgeEval包括两个主要测试集，分别针对CFA（特许金融分�
 通过FinKnowledgeEval，我们希望能够更深入地了解通用大模型在处理复杂和专业化金融知识方面的能力。这不仅有助于推动金融领域的人工智能应用发展，也为未来更广泛的行业应用提供了重要的基础。
 
 # ❤️ 数据集介绍
-![CPA-Eval](assets/CPA-Eval.png)
+![CPA-Eval](assets/CPA-Eval.jpg)
+![CFA-Eval](assets/CFA-Eval.jpg)
 
 
 
