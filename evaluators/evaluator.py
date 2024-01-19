@@ -111,10 +111,10 @@ class Evaluator:
 
     def generate_few_shot_prompt(self, subject, dev_df, cot=False, multiple=False, language="zh"):
         if multiple == False:
-            prompt = self.one_ans_instruct_zh.format(subject) if language == "zh" else self.one_ans_instruct_en.format(subject)
+            prompt = self.one_ans_instruct_zh.format(subject=subject) if language == "zh" else self.one_ans_instruct_en.format(subject=subject)
             prompt += "\n\n"
         else:
-            prompt = self.multi_ans_instruct_zh.format(subject) if language == "zh" else self.multi_ans_instruct_en.format(subject)
+            prompt = self.multi_ans_instruct_zh.format(subject=subject) if language == "zh" else self.multi_ans_instruct_en.format(subject=subject)
             prompt += "\n\n"
         k = self.k
         if self.k == -1:
@@ -130,10 +130,10 @@ class Evaluator:
 
     def generate_rag_few_shot_prompt(self, subject, row, multiple=False, language="zh"):
         if multiple == False:
-            prompt = self.one_ans_instruct_zh.format(subject) if language == "zh" else self.one_ans_instruct_en.format(subject)
+            prompt = self.one_ans_instruct_zh.format(subject=subject) if language == "zh" else self.one_ans_instruct_en.format(subject=subject)
             prompt += "\n\n"
         else:
-            prompt = self.multi_ans_instruct_zh.format(subject) if language == "zh" else self.multi_ans_instruct_en.format(subject)
+            prompt = self.multi_ans_instruct_zh.format(subject=subject) if language == "zh" else self.multi_ans_instruct_en.format(subject=subject)
             prompt += "\n\n"
         k = self.k
         for i in range(k):
