@@ -1,0 +1,19 @@
+id,question,A,B,C,D
+0,"Howie Rutledge is a senior portfolio strategist for an endowment fund. Rutledge meets with recently hired junior analyst Larry Stosur to review the fund’s holdings.Rutledge asks Stosur about the mechanics of exchange-traded funds (ETFs). Stosur responds by making the following statements:Statement 1: Unlike mutual fund shares that can be shorted, ETF shares cannot be shorted.Statement 2: In the ETF creation/redemption process, the authorized participants (APs) absorb the costs of transacting securities for the ETF’s portfolio.Statement 3: If ETF shares are trading at a discount to NAV and arbitrage costs are sufficiently low, APs will buy the securities in the creation basket and exchange them for ETF shares from the ETF sponsor.Rutledge notes that one holding, ETF 1, is trading at a premium to its intraday NAV. He reviews the ETF’s pricing and notes that the premium to the intraday NAV is greater than the expected arbitrage costs.Stosur is evaluating three ETFs for potential investment. He notes that the ETFs have different portfolio characteristics that are likely to affect each ETF’s tracking error. A summary of the characteristics for the ETFs is presented in Exhibit 1.
+| Exhibit 1ETF Characteristics Affecting Tracking Error |
+| ETF 2 | ETF 3 | ETF 4 |
+| Portfolio Construction Approach | Full | Representative | Full |
+| Replication | Sampling | Replication |
+| Type of Foreign Holdings | Local shares | ADRs* | ADRs* |
+| Engagement inSecurities Lending | Yes | Yes | No |
+
+
+Rutledge and Stosur discuss the factors that influence ETF bid–ask spreads. Stosur tells Rutledge that quoted bid–ask spreads for a particular transaction size are (1) negatively related to the amount of the ongoing order flow in the ETF, (2) positively related to the costs and risks for the ETF liquidity provider, and (3) positively related to the amount of competition among market makers for the ETF.As ETF shares may trade at prices that are different from the NAV, Rutledge examines selected data in Exhibit 2 for three ETFs that might have this problem.
+| Exhibit 2 | Selected Data on ETFs |
+| ETF 5 | ETF 6 | ETF 7 |
+| Percentage of Foreign Holdings | 10% | 50% | 90% |
+| Trading Frequency | High | Low | Low |
+
+
+Rutledge considers a new ETF investment for the fund. He plans to own the ETF for nine months. The ETF has the following trading costs and management fees:Annual management fee of 0.32%Round-trip trading commissions of 0.20%Bid–offer spread of 0.10% on purchase and saleRutledge asks Stosur to compute the expected total holding period cost for investing in the ETF.
+Given the current pricing of ETF 1, the most likely transaction to occur is that:",new ETF shares will be created by the APs.,redemption baskets will be received by APs from the ETF sponsor.,retail investors will exchange baskets of securities that the ETF tracks for creation units.,

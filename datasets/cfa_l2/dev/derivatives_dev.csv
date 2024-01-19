@@ -1,0 +1,207 @@
+id,question,A,B,C,D,answer,explanation
+0,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+From the bank's perspective, based on Exhibits 6 and 7, the value of the 6 × 9 FRA 90 days after inception is closest to:","$14,817.","$19,647.","$29,635.",,A,"The current value of the 6 × 9 FRA is calculated as「huixue_img/importSubject/1564573958567759872.png」The 6 × 9 FRA expires six months after initiation. The bank entered into the FRA 90 days ago; thus, the FRA will expire in 90 days. To value the FRA, the first step is to compute the new FRA rate, which is the rate on Day 90 of an FRA that expires in 90 days in which the underlying is the 90-day Libor, or FRA (90,90,90):「huixue_img/importSubject/1564573958601314304.png」Exhibit 7 indicates that L90 (180) = 0.95% and L90 (90) = 0.90%, soFRA (90, 90,90) = {[1 0.0095(180/360)]/[1 0.0090(90/360)] - 1}/(90/360)FRA (90, 90,90) = [(1.00475/1.00225) - 1](4) = 0.009978, or 0.9978%Therefore, given the FRA rate at initiation of 0.70% and notional principal of $20 million from Exhibit 1, the current value of the forward contract is calculated asVg (0,h,m) = V90(0,180,90)V90 (0,180,90) = $20,000,000[(0.009978 - 0.0070)(90/360)]/[1 0.0095(180/360)].V90 (0,180,90) = $14,887.75/1.00475 = $14,817.37.<br /><br />"
+1,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+Based on Solomon's observation about the model price and market price for the put option in Exhibit 2, the implied volatility for the GPX is most likely:",Less than the historical volatility.,Equal to the historical volatility.,Greater than the historical volatility.,,A,The put is priced at $7.4890 by the BSM model when using the historical volatility input of 24%. The market price is $7.20. The BSM model overpricing suggests the implied volatility of the put must be lower than 24%.<br />
+2,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+Which of Doyle’s statements regarding the Eurodollar futures contract price is correct?",Only Statement 1.,Only Statement 2,Both Statement 1 and Statement 2.,,C,"Doyle’s first statement is correct. Unless the Eurodollar futures contract’s quoted price is equal to the no-arbitrage futures price, there is an arbitrage opportunity. Moreover, if the quoted futures price is less than the no-arbitrage futures price, then to take advantage of the arbitrage opportunity, the Eurodollar futures contract should be purchased and the underlying Eurodollar bond should be sold short. Doyle would then lend the short sale proceeds at the risk-free rate. The strategy that comprises those transactions is known as reverse carry arbitrage.<br />Doyle’s second statement is also correct. Based on the cost of carry model, the futures price is calculated as the future value of the sum of the underlying plus the underlying carry costs minus the future value of any ownership benefits. If the Eurodollar bond’s interest payment was expected in five months instead of two, the benefit of the cash flow would occur three months later, so the future value of the benefits term would be slightly lower. Therefore, the Eurodollar futures contract price would be slightly higher if the Eurodollar bond’s interest payment was expected in five months instead of two months.<br />A is incorrect because Doyle’s Statement 2 is correct (not incorrect). Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s interest payment took place in five months instead of two months.<br />B is incorrect because Doyle’s Statement 1 is correct (not incorrect). If the Eurodollar’s futures contract price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.<br />"
+3,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+From the bank's perspective, using data from Exhibits 4 and 5, the fair value of the equity swap is closest to:","–$1,139,425.","–$781,323.","–$181,323.",,B,"The value of an equity swap is calculated as「huixue_img/importSubject/1564573958366433280.jpeg」The swap was initiated six months ago, so the first reset has not yet passed; thus, there are five remaining cash flows for this equity swap. The fair value of the swap is determined by comparing the present value of the implied fixed-rate bond with the return on the equity index. The fixed swap rate of 2.00%, the swap notional amount of $20,000,000, and the present value factors in Exhibit 5 result in a present value of the implied fixed-rate bond’s cash flows of $19,818,677:「huixue_img/importSubject/1564573958416764928.png」The value of the equity leg of the swap is calculated as (103/100) ($20,000,000) = $20,600,000.Note the swap’s notional amount and the implied fixed-rate bond’s par value are both $20,000,000; therefore, the term – PV(Par – NA<sub>E</sub>) reduces to zero.<br />The swap was designed to profit if rates fell or equities declined. Neither happened, so the swap value will be negative for the bank. The fair value of the equity swap, from the perspective of the bank (receive-fixed, pay-equity party) is calculated asV<sub>EQ</sub> = $19,818,677 - $20,600,000 = –781,323<br /><br />"
+4,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+The strategy suggested by Lee for hedging small moves in Solomon's ETF position would most likely involve:",Selling put options.,Selling call options.,Buying call options.,,B,"Because selling call options creates a short position in the ETF that would hedge his current long position in the ETF.Exhibit 2 could also be used to answer the question. Solomon owns 10,000 shares of the GPX, each with a delta of +1; by definition, his portfolio delta is +10,000. A delta hedge could be implemented by selling enough calls to make the portfolio delta neutral:「huixue_img/importSubject/1564574083016953856.png」<br /><br />"

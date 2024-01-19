@@ -1,0 +1,185 @@
+id,question,A,B,C,D,answer,explanation
+0,"Doris Honore is a securities analyst with a large wealth management firm. She and her colleague Bill Smith are addressing three research topics: how investment fund characteristics affect fund total returns, whether a fund rating system helps predict fund returns, and whether stock and bond market returns explain the returns of a portfolio of utility shares run by the firm.To explore the first topic, Honore decides to study US mutual funds using a sample of 555 large-cap US equity funds. The sample includes funds in style classes of value, growth, and blend (i.e., combining value and growth characteristics). The dependent variable is the average annualized rate of return (in percent) over the past five years. The independent variables are fund expense ratio, portfolio turnover, the natural logarithm of fund size, fund age, and three dummy variables. The multiple manager dummy variable has a value of 1 if the fund has multiple managers (and a value of 0 if it has a single manager). The fund style is indicated by a growth dummy (value of 1 for growth funds and 0 otherwise) and a blend dummy (value of 1 for blend funds and 0 otherwise). If the growth and blend dummies are both zero, the fund is a value fund. The regression output is given in Exhibit 1.
+| Exhibit l.Multiple Regression Output for Large-Cap Mutual Fund Sample |
+| Coefficient | Standard Error | t-Statistic |
+| Intercept | 10.9375 | 1.3578 | 8.0551 |
+| Expense ratio(%) | -1.4839 | 0.2282 | -6.5039 |
+| Portfolio tu mox ex(%) | 0.0017 | 0.0016 | 1.0777 |
+| ln(fund size in$) | 0.1467 | 0.0612 | 2.3976 |
+| Manager tenure(years) | -0.0098 | 0.0102 | -0.9580 |
+| Multiple manager dummy | 0.0628 | 0.1533 | 0.4100 |
+| Fund age(years) | -0.0123 | 0.0047 | -2.6279 |
+| Growth dummy | 2.4368 | 0.1886 | 12.9185 |
+| Blend dummy | 0.5757 | 0.1881 | 3.0611 |
+| ANOVA | df | SS | MSS |
+| Regression | 8 | 714.169 | 89.2712 |
+| Residual | 546 | 1583.113 | 2.8995 |
+| Total | 554 | 2297.282 |
+| Multiple R | 0.5576 |
+| R | 0.3109 |
+| Adjusted R | 0.3008 |
+| Standard euro x(%) | 1.7028 |
+| Observations | 555 |
+
+
+Based on the results shown in Exhibit 1, Honore wants to test the hypothesis that all of the regression coefficients are equal to zero. For the 555 fund sample, she also wants to compare the performance of growth funds with the value funds.Honore is concerned about the possible presence of multicollinearity in the regression. She states that adding a new independent variable that is highly correlated with one or more independent variables already in the regression model, has three potential consequences:1. The R2 is expected to decline.2. The regression coefficient estimates can become imprecise and unreliable.3. The standard errors for some or all of the regression coefficients will become inflated.Another concern for the regression model (in Exhibit 1) is conditional heteroskedasticity. Honore is concerned that the presence of heteroskedasticity can cause both the F-test for the overall significance of the regression and the t-tests for significance of individual regression coefficients to be unreliable. She runs a regression of the squared residuals from the model in Exhibit 1 on the eight independent variables, and finds the R2 is 0.0669.As a second research project, Honore wants to test whether including Morningstar's rating system, which assigns a one- through five-star rating to a fund, as an independent variable will improve the predictive power of the regression model. To do this, she needs to examine whether values of the independent variables in a given period predict fund return in the next period. Smith suggests three different methods of adding the Morningstar ratings to the model:■ Method 1: Add an independent variable that has a value equal to the number of stars in the rating of each fund.■Method 2: Add five dummy variables, one for each rating.■Method 3: Add dummy variables for four of the five ratings.As a third research project, Honore wants to establish whether bond market returns (proxied by returns of long-term US Treasuries) and stock market returns (proxied by returns of the S&P 500 Index) explain the returns of a portfolio of utility stocks being recommended to clients. Exhibit 2 presents the results of a regression of 10 years of monthly percentage total returns for the utility portfolio on monthly total returns for US Treasuries and the S&P 500.
+| Exhibit 2.Regression Analysis of Utility Portfolio Returns |
+| Coefficient | Standard | t-Statistic | p-Value |
+| Error |
+| Intercept | -0.0851 | 0.2829 | -0.3008 | 0.7641 |
+| US Treasury | 0.4194 | 0.0848 | 49474 | <0.0001 |
+| S&P500 | 0.6198 | 0.0666 | 9.3126 | <0.0001 |
+| ANOVA | df | SS | MSS | Significance |
+| F |
+| Regression | 2 | 827.48 | 413.74 | 46.28 | <0.0001 |
+| Residual | 117 | 1045.93 | 8.94 |
+| Total | 119 | 1873.41 |
+| Multiple R | 0.6646 |
+| R | 0.4417 |
+| Adjusted R | 0.4322 |
+| Standard error(%) | 2.99 |
+| Observations | 120 |
+
+
+For the time-series model in Exhibit 2, Honore says that positive serial correlation would not require that the estimated coefficients be adjusted, but that the standard errors of the regression coefficients would be underestimated. This issue would cause the t-statistics of the regression coefficients to be inflated. Honore tests the null hypothesis that the there is no serial correlation in the regression residuals and finds that the Durbin-Watson statistic is equal to 1.81. The critical values at the 0.05 significance level for the Durbin-Watson statistic are dl = 1.63 and du = 1.72.Smith asks whether Honore should have estimated the models in Exhibit 1 and Exhibit 2 using a probit or logit model instead of using a traditional regression analysis.
+Is Honore's description of the effects of positive serial correlation (in Exhibit 2) correct regarding the estimated coefficients and the standard errors?",Yes,"No, she is incorrect about only the estimated coefficients","No, she is incorrect about only the standard errors of the regression coefficients",,A,"The model in Exhibit 2 does not have a lagged dependent variable. Positive serial correlation will, for such a model, not affect the consistency of the estimated coefficients. Thus, the coefficients will not need to be corrected for serial correlation. Positive serial correlation will, however, cause the standard errors of the regression coefficients to be understated; thus, the corresponding t-statistics will be inflated.<br />"
+1,"Howard Golub, CFA, is preparing to write a research report on Stellar Energy Corp. common stock. One of the world's largest companies, Stellar is in the business of refining and marketing oil. As part of his analysis, Golub wants to evaluate the sensitivity of the stock's returns to various economic factors. For example, a client recently asked Golub whether the price of Stellar Energy Corporation stock has tended to rise following increases in retail energy prices. Golub believes the association between the two variables to be negative, but he does not know the strength of the association.Golub directs his assistant, Jill Batten, to study the relationships between Stellar monthly common stock returns versus the previous month's percent change in the US Consumer Price Index for Energy (CPIENG), and Stellar monthly common stock returns versus the previous month's percent change in the US Producer Price Index for Crude Energy Materials (PPICEM). Golub wants Batten to run both a correlation and a linear regression analysis. In response, Batten compiles the summary statistics shown in Exhibit 1 for the 248 months between January 1980 and August 2000. All of the data are in decimal form, where 0.01 indicates a 1 percent return. Batten also runs a regression analysis using Stellar monthly returns as the dependent variable and the monthly change in CPIENG as the independent variable. Exhibit 2 displays the results of this regression model.
+| Exhibit l.Descriptive Statistics | Monthly Return Stellar | Lagged Monthly Change |
+| Common Stock | CPI ENG | PP ICEM |
+| Mean | 0.0123 | 0.0023 | 0.0042 |
+| Standard Deviation | 0.0717 | 0.0160 | 0.0534 |
+| Covariance， Stellar vs.CPI ENG | -0.00017 |
+| Covariance， Stellar vs.PP ICEM | -0.00048 |
+| Covariance， | CPI ENG | VS. | 0.00044 |
+| PP ICEM |
+| Correlation， Stellar vs.CPI ENG | -0.1452 |
+
+
+
+| Exhibit 2.Regression Analysis with CPI ENG |
+| Regression Statistics |
+| Multiple R | 0.1452 |
+| R-squared | 0.0211 |
+| Standard error of the estimate | 0.0710 |
+| Observations | 248 |
+| Coefficients | Standard Error | t-Statistic |
+| Intercept | 0.0138 | 0.0046 | 3.0275 |
+| Slope coefficient | -0.6486 | 0.2818 | -2.3014 |
+
+
+ 
+Did Batten's regression analyze cross-sectional or time-series data, and what was the expected value of the error term from that regression?",Data Type：Time-series Expected Value of Error Term：0,Data Type：Time-series Expected Value of Error Term：εi,Data Type：Cross-sectional Expected Value of Error Term：0,,A,"Because the data are time series, and the expected value of the error term, E(ε), is 0.<br />"
+2,"Doris Honore is a securities analyst with a large wealth management firm. She and her colleague Bill Smith are addressing three research topics: how investment fund characteristics affect fund total returns, whether a fund rating system helps predict fund returns, and whether stock and bond market returns explain the returns of a portfolio of utility shares run by the firm.To explore the first topic, Honore decides to study US mutual funds using a sample of 555 large-cap US equity funds. The sample includes funds in style classes of value, growth, and blend (i.e., combining value and growth characteristics). The dependent variable is the average annualized rate of return (in percent) over the past five years. The independent variables are fund expense ratio, portfolio turnover, the natural logarithm of fund size, fund age, and three dummy variables. The multiple manager dummy variable has a value of 1 if the fund has multiple managers (and a value of 0 if it has a single manager). The fund style is indicated by a growth dummy (value of 1 for growth funds and 0 otherwise) and a blend dummy (value of 1 for blend funds and 0 otherwise). If the growth and blend dummies are both zero, the fund is a value fund. The regression output is given in Exhibit 1.
+| Exhibit l.Multiple Regression Output for Large-Cap Mutual Fund Sample |
+| Coefficient | Standard Error | t-Statistic |
+| Intercept | 10.9375 | 1.3578 | 8.0551 |
+| Expense ratio(%) | -1.4839 | 0.2282 | -6.5039 |
+| Portfolio tu mox ex(%) | 0.0017 | 0.0016 | 1.0777 |
+| ln(fund size in$) | 0.1467 | 0.0612 | 2.3976 |
+| Manager tenure(years) | -0.0098 | 0.0102 | -0.9580 |
+| Multiple manager dummy | 0.0628 | 0.1533 | 0.4100 |
+| Fund age(years) | -0.0123 | 0.0047 | -2.6279 |
+| Growth dummy | 2.4368 | 0.1886 | 12.9185 |
+| Blend dummy | 0.5757 | 0.1881 | 3.0611 |
+| ANOVA | df | SS | MSS |
+| Regression | 8 | 714.169 | 89.2712 |
+| Residual | 546 | 1583.113 | 2.8995 |
+| Total | 554 | 2297.282 |
+| Multiple R | 0.5576 |
+| R | 0.3109 |
+| Adjusted R | 0.3008 |
+| Standard euro x(%) | 1.7028 |
+| Observations | 555 |
+
+
+Based on the results shown in Exhibit 1, Honore wants to test the hypothesis that all of the regression coefficients are equal to zero. For the 555 fund sample, she also wants to compare the performance of growth funds with the value funds.Honore is concerned about the possible presence of multicollinearity in the regression. She states that adding a new independent variable that is highly correlated with one or more independent variables already in the regression model, has three potential consequences:1. The R2 is expected to decline.2. The regression coefficient estimates can become imprecise and unreliable.3. The standard errors for some or all of the regression coefficients will become inflated.Another concern for the regression model (in Exhibit 1) is conditional heteroskedasticity. Honore is concerned that the presence of heteroskedasticity can cause both the F-test for the overall significance of the regression and the t-tests for significance of individual regression coefficients to be unreliable. She runs a regression of the squared residuals from the model in Exhibit 1 on the eight independent variables, and finds the R2 is 0.0669.As a second research project, Honore wants to test whether including Morningstar's rating system, which assigns a one- through five-star rating to a fund, as an independent variable will improve the predictive power of the regression model. To do this, she needs to examine whether values of the independent variables in a given period predict fund return in the next period. Smith suggests three different methods of adding the Morningstar ratings to the model:■ Method 1: Add an independent variable that has a value equal to the number of stars in the rating of each fund.■Method 2: Add five dummy variables, one for each rating.■Method 3: Add dummy variables for four of the five ratings.As a third research project, Honore wants to establish whether bond market returns (proxied by returns of long-term US Treasuries) and stock market returns (proxied by returns of the S&P 500 Index) explain the returns of a portfolio of utility stocks being recommended to clients. Exhibit 2 presents the results of a regression of 10 years of monthly percentage total returns for the utility portfolio on monthly total returns for US Treasuries and the S&P 500.
+| Exhibit 2.Regression Analysis of Utility Portfolio Returns |
+| Coefficient | Standard | t-Statistic | p-Value |
+| Error |
+| Intercept | -0.0851 | 0.2829 | -0.3008 | 0.7641 |
+| US Treasury | 0.4194 | 0.0848 | 49474 | <0.0001 |
+| S&P500 | 0.6198 | 0.0666 | 9.3126 | <0.0001 |
+| ANOVA | df | SS | MSS | Significance |
+| F |
+| Regression | 2 | 827.48 | 413.74 | 46.28 | <0.0001 |
+| Residual | 117 | 1045.93 | 8.94 |
+| Total | 119 | 1873.41 |
+| Multiple R | 0.6646 |
+| R | 0.4417 |
+| Adjusted R | 0.4322 |
+| Standard error(%) | 2.99 |
+| Observations | 120 |
+
+
+For the time-series model in Exhibit 2, Honore says that positive serial correlation would not require that the estimated coefficients be adjusted, but that the standard errors of the regression coefficients would be underestimated. This issue would cause the t-statistics of the regression coefficients to be inflated. Honore tests the null hypothesis that the there is no serial correlation in the regression residuals and finds that the Durbin-Watson statistic is equal to 1.81. The critical values at the 0.05 significance level for the Durbin-Watson statistic are dl = 1.63 and du = 1.72.Smith asks whether Honore should have estimated the models in Exhibit 1 and Exhibit 2 using a probit or logit model instead of using a traditional regression analysis.
+Should Honore have estimated the models in Exhibit 1 and Exhibit 2 using probit or logit models instead of traditional regression analysis?",Both should be estimated with probit or logit models.,Neither should be estimated with probit or logit models.,Only the analysis in Exhibit 1 should be done with probit or logit models.,,B,"Probit and logit models are used for models with qualitative dependent variables, such as models in which the dependent variable can have one of two discrete outcomes (i.e., 0 or 1). The analysis in the two exhibits are explaining security returns, which are continuous (not 0 or 1) variables."
+3,"Iesha Azarov is a senior analyst at Ganymede Moon Partners (Ganymede), where he works with junior analyst Pàola Bector. Azarov would like to incorporate machine learning (ML) models into the company’s analytical process. Azarov asks Bector to develop ML models for two unstructured stock sentiment datasets, Dataset ABC and Dataset XYZ. Both datasets have been cleaned and preprocessed in preparation for text exploration and model training.Following an exploratory data analysis that revealed Dataset ABC’s most frequent tokens, Bector conducts a collection frequency analysis. Bector then computes TF–IDF (term frequency–inverse document frequency) for several words in the collection and tells Azarov the following:Statement 1: IDF is equal to the inverse of the document frequency measure.Statement 2: TF at the collection level is multiplied by IDF to calculate TF–IDF.Statement 3: TF–IDF values vary by the number of documents in the dataset, and therefore, model performance can vary when applied to a dataset with just a few documents.Bector notes that Dataset ABC is characterized by the absence of ground truth.Bector turns his attention to Dataset XYZ, containing 84,000 tokens and 10,000 sentences. Bector chooses an appropriate feature selection method to identify and remove unnecessary tokens from the dataset and then focuses on model training. For performance evaluation purposes, Dataset XYZ is split into a training set, cross-validation (CV) set, and test set. Each of the sentences has already been labeled as either a positive sentiment (Class “1”) or a negative sentiment (Class “0”) sentence. There is an unequal class distribution between the positive sentiment and negative sentiment sentences in Dataset XYZ. Simple random sampling is applied within levels of the sentiment class labels to balance the class distributions within the splits. Bector’s view is that the false positive and false negative evaluation metrics should be given equal weight. Select performance data from the cross-validation set confusion matrices is presented in Exhibit 1:
+| Exhibit 1Performance Metrics for Dataset XYZ |
+| ConfusionMatrix | CV Data(thresholdp-value) | Performance Metrics |
+| Precision | Recall | F 1 Score | Accuracy |
+| A | 0.50 | 0.95 | 0.87 | 0.91 | 0.91 |
+| B | 0.35 | 0.93 | 0.90 | 0.91 | 0.92 |
+| C | 0.65 | 0.86 | 0.97 | 0.92 | 0.91 |
+
+
+Azarov and Bector evaluate the Dataset XYZ performance metrics for Confusion Matrices A, B, and C in Exhibit 1. Azarov says, “For Ganymede’s purposes, we should be most concerned with the cost of Type I errors.”Azarov requests that Bector apply the ML model to the test dataset for Dataset XYZ, assuming a threshold p-value of 0.65. Exhibit 2 contains a sample of results from the test dataset corpus.
+| Exhibit 210 Sample Results of Test Data for Dataset XYZ |
+| Sentence# | Actual Sentiment | Targetp-Value |
+| 1 | 1 | 0.75 |
+| 2 | 0 | 0.45 |
+| 3 | 1 | 0.64 |
+| 4 | 1 | 0.81 |
+| 5 | 0 | 0.43 |
+| 6 | 1 | 0.78 |
+| 7 | 0 | 0.59 |
+| 8 | 1 | 0.60 |
+| 9 | 0 | 0.67 |
+| 10 | 0 | 0.54 |
+
+
+Bector makes the following remarks regarding model training:Remark 1: Method selection is governed by such factors as the type of data and the size of data.Remark 2: In the performance evaluation stage, model fitting errors, such as bias error and variance error, are used to measure goodness of fit.
+Which of Bector’s remarks related to model training is correct?",Only Remark 1.,Only Remark 2.,Both Remark 1 and Remark 2.,,A,"Only Remark 1 is correct. Method selection is the first task of ML model training and is governed by the following factors: (1) supervised or unsupervised learning, (2) the type of data, and (3) the size of data. The second and third tasks of model training, respectively, are performance evaluation and tuning.<br />Remark 2 is incorrect because model fitting errors (bias error and variance error) are used in tuning, not performance evaluation. The techniques used in performance evaluation, which measure the goodness of fit for validation of the model, include (1) error analysis, (2) receiver operating characteristic (ROC) plots, and (3) root mean squared error (RMSE) calculations.<br />B and C are incorrect because Remark 2 is incorrect. Model fitting errors (bias error and variance error) are used in tuning, not performance evaluation. The techniques used in performance evaluation, which measure the goodness of fit for validation of the model, include (1) error analysis, (2) receiver operating characteristic plots, and (3) root mean squared error calculations."
+4,"Doris Honore is a securities analyst with a large wealth management firm. She and her colleague Bill Smith are addressing three research topics: how investment fund characteristics affect fund total returns, whether a fund rating system helps predict fund returns, and whether stock and bond market returns explain the returns of a portfolio of utility shares run by the firm.To explore the first topic, Honore decides to study US mutual funds using a sample of 555 large-cap US equity funds. The sample includes funds in style classes of value, growth, and blend (i.e., combining value and growth characteristics). The dependent variable is the average annualized rate of return (in percent) over the past five years. The independent variables are fund expense ratio, portfolio turnover, the natural logarithm of fund size, fund age, and three dummy variables. The multiple manager dummy variable has a value of 1 if the fund has multiple managers (and a value of 0 if it has a single manager). The fund style is indicated by a growth dummy (value of 1 for growth funds and 0 otherwise) and a blend dummy (value of 1 for blend funds and 0 otherwise). If the growth and blend dummies are both zero, the fund is a value fund. The regression output is given in Exhibit 1.
+| Exhibit l.Multiple Regression Output for Large-Cap Mutual Fund Sample |
+| Coefficient | Standard Error | t-Statistic |
+| Intercept | 10.9375 | 1.3578 | 8.0551 |
+| Expense ratio(%) | -1.4839 | 0.2282 | -6.5039 |
+| Portfolio tu mox ex(%) | 0.0017 | 0.0016 | 1.0777 |
+| ln(fund size in$) | 0.1467 | 0.0612 | 2.3976 |
+| Manager tenure(years) | -0.0098 | 0.0102 | -0.9580 |
+| Multiple manager dummy | 0.0628 | 0.1533 | 0.4100 |
+| Fund age(years) | -0.0123 | 0.0047 | -2.6279 |
+| Growth dummy | 2.4368 | 0.1886 | 12.9185 |
+| Blend dummy | 0.5757 | 0.1881 | 3.0611 |
+| ANOVA | df | SS | MSS |
+| Regression | 8 | 714.169 | 89.2712 |
+| Residual | 546 | 1583.113 | 2.8995 |
+| Total | 554 | 2297.282 |
+| Multiple R | 0.5576 |
+| R | 0.3109 |
+| Adjusted R | 0.3008 |
+| Standard euro x(%) | 1.7028 |
+| Observations | 555 |
+
+
+Based on the results shown in Exhibit 1, Honore wants to test the hypothesis that all of the regression coefficients are equal to zero. For the 555 fund sample, she also wants to compare the performance of growth funds with the value funds.Honore is concerned about the possible presence of multicollinearity in the regression. She states that adding a new independent variable that is highly correlated with one or more independent variables already in the regression model, has three potential consequences:1. The R2 is expected to decline.2. The regression coefficient estimates can become imprecise and unreliable.3. The standard errors for some or all of the regression coefficients will become inflated.Another concern for the regression model (in Exhibit 1) is conditional heteroskedasticity. Honore is concerned that the presence of heteroskedasticity can cause both the F-test for the overall significance of the regression and the t-tests for significance of individual regression coefficients to be unreliable. She runs a regression of the squared residuals from the model in Exhibit 1 on the eight independent variables, and finds the R2 is 0.0669.As a second research project, Honore wants to test whether including Morningstar's rating system, which assigns a one- through five-star rating to a fund, as an independent variable will improve the predictive power of the regression model. To do this, she needs to examine whether values of the independent variables in a given period predict fund return in the next period. Smith suggests three different methods of adding the Morningstar ratings to the model:■ Method 1: Add an independent variable that has a value equal to the number of stars in the rating of each fund.■Method 2: Add five dummy variables, one for each rating.■Method 3: Add dummy variables for four of the five ratings.As a third research project, Honore wants to establish whether bond market returns (proxied by returns of long-term US Treasuries) and stock market returns (proxied by returns of the S&P 500 Index) explain the returns of a portfolio of utility stocks being recommended to clients. Exhibit 2 presents the results of a regression of 10 years of monthly percentage total returns for the utility portfolio on monthly total returns for US Treasuries and the S&P 500.
+| Exhibit 2.Regression Analysis of Utility Portfolio Returns |
+| Coefficient | Standard | t-Statistic | p-Value |
+| Error |
+| Intercept | -0.0851 | 0.2829 | -0.3008 | 0.7641 |
+| US Treasury | 0.4194 | 0.0848 | 49474 | <0.0001 |
+| S&P500 | 0.6198 | 0.0666 | 9.3126 | <0.0001 |
+| ANOVA | df | SS | MSS | Significance |
+| F |
+| Regression | 2 | 827.48 | 413.74 | 46.28 | <0.0001 |
+| Residual | 117 | 1045.93 | 8.94 |
+| Total | 119 | 1873.41 |
+| Multiple R | 0.6646 |
+| R | 0.4417 |
+| Adjusted R | 0.4322 |
+| Standard error(%) | 2.99 |
+| Observations | 120 |
+
+
+For the time-series model in Exhibit 2, Honore says that positive serial correlation would not require that the estimated coefficients be adjusted, but that the standard errors of the regression coefficients would be underestimated. This issue would cause the t-statistics of the regression coefficients to be inflated. Honore tests the null hypothesis that the there is no serial correlation in the regression residuals and finds that the Durbin-Watson statistic is equal to 1.81. The critical values at the 0.05 significance level for the Durbin-Watson statistic are dl = 1.63 and du = 1.72.Smith asks whether Honore should have estimated the models in Exhibit 1 and Exhibit 2 using a probit or logit model instead of using a traditional regression analysis.
+Honore is concerned about the consequences of heteroskedasticity. Is she correct regarding the effect of heteroskedasticity on the reliability of the F-test and t-tests?",Yes,"No, she is incorrect with regard to the F-test","No, she is incorrect with regard to the t-tests",,A,Heteroskedasticity causes the F-test for the overall significance of the regression to be unreliable. It also causes the t-tests for the significance of individual regression coefficients to be unreliable because heteroskedasticity introduces bias into estimators of the standard error of regression coefficients.<br />

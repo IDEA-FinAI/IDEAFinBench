@@ -1,0 +1,1451 @@
+id,question,A,B,C,D,answer
+0,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Kreming's suggested model for Bond IV is a:",structural model.,reduced-form model.,term structure model.,,B
+1,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+Based on basis trade for Tollunt Corporation, if convergence occurs in the bond and CDS markets, the trade will capture a profit closest to:",0.25%.,1.75%.,2.75%.,,A
+2,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+To satisfy the compliance requirements referenced by Chan, the fund is most likely required to:",set a notional amount.,post an upfront payment.,sign an ISDA master agreement.,,C
+3,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+A profitable equity-versus-credit trade involving Delta and Zega is to:",short Zega shares and buy protection on Delta using the 10-year CDS.,go long Zega shares and buy protection on Delta using 5-year CDS.,go long Delta shares and buy protection on Delta using 5-year CDS.,,B
+4,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 4, the arbitrage-free value of the RI bond is closest to:",€814.,"€1,056.","€1,108.",,C
+5,"Rowan Madison is a junior analyst at Cardinal Capital. Sage Winter, a senior portfolio manager and Madison’s supervisor, meets with Madison to discuss interest rates and review two bond positions in the firm’s fixed-income portfolio.Winter begins the meeting by asking Madison to state her views on the term structure of interest rates. Madison responds:“Yields are a reflection of expected spot rates and risk premiums. Investors demand risk premiums for holding long-term bonds, and these risk premiums increase with maturity.”Winter tells Madison that, based on recent changes in spreads, she is concerned about a perceived increase in counterparty risk in the economy and its effect on the portfolio. Madison asks Winter:“Which spread measure should we use to assess changes in counterparty risk in the economy?”Winter is also worried about the effect of yield volatility on the portfolio. She asks Madison to identify the economic factors that affect short-term and long-term rate volatility. Madison responds:“Short-term rate volatility is mostly linked to uncertainty regarding monetary policy, whereas long-term rate volatility is mostly linked to uncertainty regarding the real economy and inflation.”Finally, Winter asks Madison to analyze the interest rate risk portfolio positions in a 5-year and a 20-year bond. Winter requests that the analysis be based on level, slope, and curvature as term structure factors. Madison presents her analysis in Exhibit 1.
+| Exhibit 1.Three-Factor Model of Term Structure |
+| Time to Maturity(years) |
+| Factor | 5 | 20 |
+| Level | -0.4352% | -0.5128% |
+| Steepness | -0.0515% | -0.3015% |
+| Curvature | 0.3963% | 0.5227% |
+| Note：Entries indicate how yields would change for a one standard deviation increase in a |
+| factor. |
+
+
+Winter asks Madison to perform two analyses:Analysis 1: Calculate the expected change in yield on the 20-year bond resulting from a two standard deviation increase in the steepness factor.Analysis 2: Calculate the expected change in yield on the five-year bond resulting from a one standard deviation decrease in the level factor and a one standard deviation decrease in the curvature factor.
+Is Madison’s response regarding the factors that affect short-term and long-term rate volatility correct?",Yes,"No, she is incorrect regarding factors linked to long-term rate volatility","No, she is incorrect regarding factors linked to short-term rate volatility",,A
+6,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+By choosing to buy Bond Z, Nguyen is most likely making which of the following assumptions?",Bond Z will be held to maturity.,The three-year forward curve is above the spot curve.,Future spot rates do not accurately reflect future inflation.,,B
+7,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 4 and Gillette's forecast regarding Raffarin's share price, the return on the RI bond over the next year is most likely to be:",lower than the return on Raffarin's common shares.,the same as the return on Raffarin's common shares.,higher than the return on Raffarin's common shares.,,A
+8,"Rowan Madison is a junior analyst at Cardinal Capital. Sage Winter, a senior portfolio manager and Madison’s supervisor, meets with Madison to discuss interest rates and review two bond positions in the firm’s fixed-income portfolio.Winter begins the meeting by asking Madison to state her views on the term structure of interest rates. Madison responds:“Yields are a reflection of expected spot rates and risk premiums. Investors demand risk premiums for holding long-term bonds, and these risk premiums increase with maturity.”Winter tells Madison that, based on recent changes in spreads, she is concerned about a perceived increase in counterparty risk in the economy and its effect on the portfolio. Madison asks Winter:“Which spread measure should we use to assess changes in counterparty risk in the economy?”Winter is also worried about the effect of yield volatility on the portfolio. She asks Madison to identify the economic factors that affect short-term and long-term rate volatility. Madison responds:“Short-term rate volatility is mostly linked to uncertainty regarding monetary policy, whereas long-term rate volatility is mostly linked to uncertainty regarding the real economy and inflation.”Finally, Winter asks Madison to analyze the interest rate risk portfolio positions in a 5-year and a 20-year bond. Winter requests that the analysis be based on level, slope, and curvature as term structure factors. Madison presents her analysis in Exhibit 1.
+| Exhibit 1.Three-Factor Model of Term Structure |
+| Time to Maturity(years) |
+| Factor | 5 | 20 |
+| Level | -0.4352% | -0.5128% |
+| Steepness | -0.0515% | -0.3015% |
+| Curvature | 0.3963% | 0.5227% |
+| Note：Entries indicate how yields would change for a one standard deviation increase in a |
+| factor. |
+
+
+Winter asks Madison to perform two analyses:Analysis 1: Calculate the expected change in yield on the 20-year bond resulting from a two standard deviation increase in the steepness factor.Analysis 2: Calculate the expected change in yield on the five-year bond resulting from a one standard deviation decrease in the level factor and a one standard deviation decrease in the curvature factor.
+Based on Exhibit 1, the results of Analysis 2 should show the yield on the five-year bond:",decreasing by 0.8315%.,decreasing by 0.0389%.,increasing by 0.0389%.,,C
+9,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+Which type of CDS should Chan recommend to Smith?",CDS index,Tranche CDS,Single-name CDS,,A
+10,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Did Tyo's assistant accurately describe the process of bootstrapping?",Yes,"No, with respect to par yields","No, with respect to backward substitution",,C
+11,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+The hypothetical Orion trade generated an approximate:","loss of ￡117,000.","gain of ￡117,000.","gain of ￡234,000.",,B
+12,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+If UNAB experienced a credit event on 1 July, Watt should recommend that Deem Advisors:",prefer a cash settlement.,prefer a physical settlement.,be indifferent between a cash or a physical settlement.,,A
+13,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Based on Exhibit 1, the risk-neutral default probability for Bond I is closest to:",2.000%.,3.175%.,4.762%.,,B
+14,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+If Deem Advisors enters into a new offsetting contract two months after purchasing the CDS protection on Kand Corporation, this action will most likely result in:",a loss on the CDS position.,a gain on the CDS position.,neither a loss or a gain on the CDS position.,,B
+15,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Based on Exhibit 2, the credit valuation adjustment for Bond III is closest to:",3.3367.,3.5395.,5.8808.,,A
+16,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+Based on Exhibit 1, the forward rate of a one-year loan beginning in three years is closest to:",4.17%.,4.50%.,5.51%.,,C
+17,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 1, for the BI bond, one-sided:",up-duration will be greater that one-sided down-duration.,down-duration will be greater than one-sided up-duration.,up-duration and one-sided down-duration will be about equal.,,C
+18,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+The expected exposure to default loss for Bond I is:",less than the expected exposure for Bond II.,the same as the expected exposure for Bond II.,greater than the expected exposure for Bond II.,,B
+19,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+Which of the following statements about the missing data in Exhibit 3 is correct?",Node 3–2 can be derived from Node 2–2.,Node 4–1 should be equal to Node 4–5 multiplied by e<sup>0.4</sup>.,Node 2–2 approximates the implied one-year forward rate two years from now.,,C
+20,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The one-year spot rate Z1 = 4%, the forward rate for a one-year loan beginning in one year is 6%, and the forward rate for a one-year loan beginning in two years is 8%. Which of the following rates is closest to the three-year spot rate?",4.0%,6.0%,8.0%,,B
+21,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Based on Exhibit 1 and assuming Tyo's market views on yield curve changes are realized, the forward curve of which country will lie below its spot curve?",Country A,Country B,Country C,,B
+22,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+According to Watt's statement, the shape of UNAB's credit curve is most likely:",flat.,upward-sloping.,downward-sloping.,,C
+23,"Rowan Madison is a junior analyst at Cardinal Capital. Sage Winter, a senior portfolio manager and Madison’s supervisor, meets with Madison to discuss interest rates and review two bond positions in the firm’s fixed-income portfolio.Winter begins the meeting by asking Madison to state her views on the term structure of interest rates. Madison responds:“Yields are a reflection of expected spot rates and risk premiums. Investors demand risk premiums for holding long-term bonds, and these risk premiums increase with maturity.”Winter tells Madison that, based on recent changes in spreads, she is concerned about a perceived increase in counterparty risk in the economy and its effect on the portfolio. Madison asks Winter:“Which spread measure should we use to assess changes in counterparty risk in the economy?”Winter is also worried about the effect of yield volatility on the portfolio. She asks Madison to identify the economic factors that affect short-term and long-term rate volatility. Madison responds:“Short-term rate volatility is mostly linked to uncertainty regarding monetary policy, whereas long-term rate volatility is mostly linked to uncertainty regarding the real economy and inflation.”Finally, Winter asks Madison to analyze the interest rate risk portfolio positions in a 5-year and a 20-year bond. Winter requests that the analysis be based on level, slope, and curvature as term structure factors. Madison presents her analysis in Exhibit 1.
+| Exhibit 1.Three-Factor Model of Term Structure |
+| Time to Maturity(years) |
+| Factor | 5 | 20 |
+| Level | -0.4352% | -0.5128% |
+| Steepness | -0.0515% | -0.3015% |
+| Curvature | 0.3963% | 0.5227% |
+| Note：Entries indicate how yields would change for a one standard deviation increase in a |
+| factor. |
+
+
+Winter asks Madison to perform two analyses:Analysis 1: Calculate the expected change in yield on the 20-year bond resulting from a two standard deviation increase in the steepness factor.Analysis 2: Calculate the expected change in yield on the five-year bond resulting from a one standard deviation decrease in the level factor and a one standard deviation decrease in the curvature factor.
+Madison’s views on the term structure of interest rates are most consistent with the:",local expectations theory.,segmented markets theory.,liquidity preference theory.,,C
+24,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The forward rate for a one-year loan beginning in two years is closest to:",6.0%,7.0%,8.0%,,C
+25,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Based on Exhibit 1, the loss given default for Bond II is:",less than that for Bond I.,the same as that for Bond I.,greater than that for Bond I.,,C
+26,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+A benefit of performing Task 1 is that it:",enables the model to price bonds with embedded options.,identifies benchmark bonds that have been mispriced by the market.,allows investors to realize arbitrage profits through stripping and reconstitution.,,A
+27,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+Based on Exhibit 1, the market is most likely expecting:",deflation.,inflation.,no risk premiums.,,B
+28,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Which of Kreming's observations regarding actual and risk-neutral default probabilities is correct?",Only Observation 1,Only Observation 2,Both Observation 1 and Observation 2,,B
+29,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Based on Exhibit 2, the implied credit and liquidity risks as indicated by the historical three-year swap spreads for Country B were the lowest:",1month ago.,6 months ago.,12 months ago.,,B
+30,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+If benchmark yields were to fall, which bond in Exhibit 1would most likely experience a decline in effective duration?",AI bond,BI bond,CE bond,,A
+31,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+For Assignment 1, the yield to maturity for Bond Z is closest to the:",one-year spot rate.,two-year spot rate.,three-year spot rate.,,C
+32,"Betty Tatton is a fixed income analyst with the hedge fund Sailboat Asset Management (SAM). SAM invests in a variety of global fixed-income strategies, including fixed-income arbitrage. Tatton is responsible for pricing individual investments and analyzing market data to assess the opportunity for arbitrage. She uses two methods to value bonds:Method 1: Discount each year’s cash flow separately using the appropriate interest rate curve.Method 2: Build and use a binomial interest rate tree.Tatton compiles pricing data for a list of annual pay bonds (Exhibit 1). Each of the bonds will mature in two years, and Tatton considers the bonds as being risk-free; both the one-year and two-year benchmark spot rates are 2%. Tatton calculates the arbitrage-free prices and identifies an arbitrage opportunity to recommend to her team.
+| Exhibit 1.Market Data for Selected Bonds |
+| Asset | Coupon | Market Price |
+| Bond A | 1% | 98.0584 |
+| Bond B | 3% | 100.9641 |
+| Bond C | 5% | 105.8247 |
+
+
+Next, Tatton uses the benchmark yield curve provided in Exhibit 2 to consider arbitrage opportunities of both option-free corporate bonds and corporate bonds with embedded options. The benchmark bonds in Exhibit 2 pay coupons annually, and the bonds are priced at par.
+| Exhibit 2.Benchmark Par Curve |
+| Maturity(years)Yield to Maturity(YTM) |
+| 13.0%24.0%35.0% |
+
+
+Tatton then identifies three mispriced three-year annual-pay bonds and compiles data on the bonds (see Exhibit 3).
+| Exhibit 3.Market Data of Annual-Pay Corporate Bonds |
+| Company | Coupon | Market Price | Yield | Embedded Option? |
+| Hutto-Barkley Inc. | 3% | 94.9984 | 5.6% | No |
+| Luna y Estrellas Intl. | 0% | 88.8996 | 4.0% | Yes |
+| Peat on Scorpio Motors | 0% | 83.9619 | 6.0% | No |
+
+
+Lastly, Tatton identifies two mispriced Swiss bonds, Bond X, a three-year bond, and Bond Y, a five-year bond. Both are annual-pay bonds with a coupon rate of 6%. To calculate the bonds’ values, Tatton devises the first three years of the interest rate lognormal tree presented in Exhibit 4 using historical interest rate volatility data. Tatton considers how this data would change if implied volatility, which is higher than historical volatility, were used instead.
+| Exhibit 4.Interest Rate Tree； Forward Rates Based on Swiss Market |
+| Year 1 | Year 2 | Year 3 |
+| 4% | 6% |
+| 1% | 5% |
+| 2% | 3% |
+
+
+ 
+Based on Exhibits 2 and 3 and using Method 1, the amount (in absolute terms) by which the Hutto-Barkley corporate bond is mispriced is closest to:",0.3368 per 100 of par value.,0.4682 per 100 of par value.,0.5156 per 100 of par value.,,C
+33,"Betty Tatton is a fixed income analyst with the hedge fund Sailboat Asset Management (SAM). SAM invests in a variety of global fixed-income strategies, including fixed-income arbitrage. Tatton is responsible for pricing individual investments and analyzing market data to assess the opportunity for arbitrage. She uses two methods to value bonds:Method 1: Discount each year’s cash flow separately using the appropriate interest rate curve.Method 2: Build and use a binomial interest rate tree.Tatton compiles pricing data for a list of annual pay bonds (Exhibit 1). Each of the bonds will mature in two years, and Tatton considers the bonds as being risk-free; both the one-year and two-year benchmark spot rates are 2%. Tatton calculates the arbitrage-free prices and identifies an arbitrage opportunity to recommend to her team.
+| Exhibit 1.Market Data for Selected Bonds |
+| Asset | Coupon | Market Price |
+| Bond A | 1% | 98.0584 |
+| Bond B | 3% | 100.9641 |
+| Bond C | 5% | 105.8247 |
+
+
+Next, Tatton uses the benchmark yield curve provided in Exhibit 2 to consider arbitrage opportunities of both option-free corporate bonds and corporate bonds with embedded options. The benchmark bonds in Exhibit 2 pay coupons annually, and the bonds are priced at par.
+| Exhibit 2.Benchmark Par Curve |
+| Maturity(years)Yield to Maturity(YTM) |
+| 13.0%24.0%35.0% |
+
+
+Tatton then identifies three mispriced three-year annual-pay bonds and compiles data on the bonds (see Exhibit 3).
+| Exhibit 3.Market Data of Annual-Pay Corporate Bonds |
+| Company | Coupon | Market Price | Yield | Embedded Option? |
+| Hutto-Barkley Inc. | 3% | 94.9984 | 5.6% | No |
+| Luna y Estrellas Intl. | 0% | 88.8996 | 4.0% | Yes |
+| Peat on Scorpio Motors | 0% | 83.9619 | 6.0% | No |
+
+
+Lastly, Tatton identifies two mispriced Swiss bonds, Bond X, a three-year bond, and Bond Y, a five-year bond. Both are annual-pay bonds with a coupon rate of 6%. To calculate the bonds’ values, Tatton devises the first three years of the interest rate lognormal tree presented in Exhibit 4 using historical interest rate volatility data. Tatton considers how this data would change if implied volatility, which is higher than historical volatility, were used instead.
+| Exhibit 4.Interest Rate Tree； Forward Rates Based on Swiss Market |
+| Year 1 | Year 2 | Year 3 |
+| 4% | 6% |
+| 1% | 5% |
+| 2% | 3% |
+
+
+ 
+Method 1 would most likely not be an appropriate valuation technique for the bond issued by:",Hutto-Barkley Inc.,Luna y Estrellas Intl.,Peaton Scorpio Motors.,,B
+34,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+Should Watt conclude that UNAB experienced a credit event?",Yes.,"No, because UNAB did not file for bankruptcy.","No, because the failure to pay occurred on a subordinated unsecured bond.",,A
+35,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The five-year spot rate is not given above; however, the forward price for a two-year zero-coupon bond beginning in three years is known to be 0.8479. The price today of a five-year zero-coupon bond is closest to:",0.7119.,0.7835.,0.9524.,,A
+36,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Tyo's assistant should calculate a forward rate closest to:",9.07%.,9.58%.,9.97%.,,A
+37,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+With respect to their discussion of yield curves, Tyo and her assistant are most likely discussing which term structure theory?",Pure expectations theory,Local expectations theory,Liquidity preference theory,,C
+38,"Rowan Madison is a junior analyst at Cardinal Capital. Sage Winter, a senior portfolio manager and Madison’s supervisor, meets with Madison to discuss interest rates and review two bond positions in the firm’s fixed-income portfolio.Winter begins the meeting by asking Madison to state her views on the term structure of interest rates. Madison responds:“Yields are a reflection of expected spot rates and risk premiums. Investors demand risk premiums for holding long-term bonds, and these risk premiums increase with maturity.”Winter tells Madison that, based on recent changes in spreads, she is concerned about a perceived increase in counterparty risk in the economy and its effect on the portfolio. Madison asks Winter:“Which spread measure should we use to assess changes in counterparty risk in the economy?”Winter is also worried about the effect of yield volatility on the portfolio. She asks Madison to identify the economic factors that affect short-term and long-term rate volatility. Madison responds:“Short-term rate volatility is mostly linked to uncertainty regarding monetary policy, whereas long-term rate volatility is mostly linked to uncertainty regarding the real economy and inflation.”Finally, Winter asks Madison to analyze the interest rate risk portfolio positions in a 5-year and a 20-year bond. Winter requests that the analysis be based on level, slope, and curvature as term structure factors. Madison presents her analysis in Exhibit 1.
+| Exhibit 1.Three-Factor Model of Term Structure |
+| Time to Maturity(years) |
+| Factor | 5 | 20 |
+| Level | -0.4352% | -0.5128% |
+| Steepness | -0.0515% | -0.3015% |
+| Curvature | 0.3963% | 0.5227% |
+| Note：Entries indicate how yields would change for a one standard deviation increase in a |
+| factor. |
+
+
+Winter asks Madison to perform two analyses:Analysis 1: Calculate the expected change in yield on the 20-year bond resulting from a two standard deviation increase in the steepness factor.Analysis 2: Calculate the expected change in yield on the five-year bond resulting from a one standard deviation decrease in the level factor and a one standard deviation decrease in the curvature factor.
+Based on Exhibit 1, the results of Analysis 1 should show the yield on the 20-year bond decreasing by:",0.3015%.,0.6030%.,0.8946%.,,B
+39,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+Based on Exhibits 1 and 2, the exchange that reflects the arbitrage-free price of the bond is:",Eurex.,Frankfurt.,NYSE Euronext.,,C
+40,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 3, if DeLille Enterprises pays the dividend expected by Gillette, the conversion price of the DE bond will:",be adjusted downward,not be adjusted.,be adjusted upward.,,A
+41,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The one-year spot rate Z1 is 5% and the forward price for a one-year zero-coupon bond beginning in one year is 0.9346. The spot price of a two-year zero-coupon bond is closest to:",0.87.,0.89.,0.93.,,B
+42,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+Based on Exhibit 1, the probability of Orion defaulting on the bond during the first three years is closest to:",1.07%.,2.50%.,3.85%.,,A
+43,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+The swap curve is a better benchmark than the government spot curve for:",Country A,Country B,Country C,,C
+44,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Based on Exhibit 1, and Tyo's expectations, which country's term structure is currently best for traders seeking to ride the yield curve?",Country A,Country B,Country C,,A
+45,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Which bond in Exhibit 1 most likely has the lowest effective convexity?",AI bond,BI bond,CE bond,,A
+46,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The swap spread is quoted as 50 bps. If the five-year US Treasury bond is yielding 2%, the rate paid by the fixed payer in a five-year interest rate swap is closest to:",0.50%.,1.50%.,2.50%.,,C
+47,"Betty Tatton is a fixed income analyst with the hedge fund Sailboat Asset Management (SAM). SAM invests in a variety of global fixed-income strategies, including fixed-income arbitrage. Tatton is responsible for pricing individual investments and analyzing market data to assess the opportunity for arbitrage. She uses two methods to value bonds:Method 1: Discount each year’s cash flow separately using the appropriate interest rate curve.Method 2: Build and use a binomial interest rate tree.Tatton compiles pricing data for a list of annual pay bonds (Exhibit 1). Each of the bonds will mature in two years, and Tatton considers the bonds as being risk-free; both the one-year and two-year benchmark spot rates are 2%. Tatton calculates the arbitrage-free prices and identifies an arbitrage opportunity to recommend to her team.
+| Exhibit 1.Market Data for Selected Bonds |
+| Asset | Coupon | Market Price |
+| Bond A | 1% | 98.0584 |
+| Bond B | 3% | 100.9641 |
+| Bond C | 5% | 105.8247 |
+
+
+Next, Tatton uses the benchmark yield curve provided in Exhibit 2 to consider arbitrage opportunities of both option-free corporate bonds and corporate bonds with embedded options. The benchmark bonds in Exhibit 2 pay coupons annually, and the bonds are priced at par.
+| Exhibit 2.Benchmark Par Curve |
+| Maturity(years)Yield to Maturity(YTM) |
+| 13.0%24.0%35.0% |
+
+
+Tatton then identifies three mispriced three-year annual-pay bonds and compiles data on the bonds (see Exhibit 3).
+| Exhibit 3.Market Data of Annual-Pay Corporate Bonds |
+| Company | Coupon | Market Price | Yield | Embedded Option? |
+| Hutto-Barkley Inc. | 3% | 94.9984 | 5.6% | No |
+| Luna y Estrellas Intl. | 0% | 88.8996 | 4.0% | Yes |
+| Peat on Scorpio Motors | 0% | 83.9619 | 6.0% | No |
+
+
+Lastly, Tatton identifies two mispriced Swiss bonds, Bond X, a three-year bond, and Bond Y, a five-year bond. Both are annual-pay bonds with a coupon rate of 6%. To calculate the bonds’ values, Tatton devises the first three years of the interest rate lognormal tree presented in Exhibit 4 using historical interest rate volatility data. Tatton considers how this data would change if implied volatility, which is higher than historical volatility, were used instead.
+| Exhibit 4.Interest Rate Tree； Forward Rates Based on Swiss Market |
+| Year 1 | Year 2 | Year 3 |
+| 4% | 6% |
+| 1% | 5% |
+| 2% | 3% |
+
+
+ 
+Based on Exhibit 4 and using Method 2, the correct price for Bond X is closest to:",97.2998.,109.0085.,115.0085.,,B
+48,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Based on Exhibit 3, if Bond IV's credit rating changes during the next year to an A rating, its expected price change would be closest to:",–8.00%.,–7.35%.,–3.15%.,,C
+49,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+Based on Exhibit 1, the five-year spot rate is closest to:",4.40%,4.45%,4.50%,,B
+50,"Betty Tatton is a fixed income analyst with the hedge fund Sailboat Asset Management (SAM). SAM invests in a variety of global fixed-income strategies, including fixed-income arbitrage. Tatton is responsible for pricing individual investments and analyzing market data to assess the opportunity for arbitrage. She uses two methods to value bonds:Method 1: Discount each year’s cash flow separately using the appropriate interest rate curve.Method 2: Build and use a binomial interest rate tree.Tatton compiles pricing data for a list of annual pay bonds (Exhibit 1). Each of the bonds will mature in two years, and Tatton considers the bonds as being risk-free; both the one-year and two-year benchmark spot rates are 2%. Tatton calculates the arbitrage-free prices and identifies an arbitrage opportunity to recommend to her team.
+| Exhibit 1.Market Data for Selected Bonds |
+| Asset | Coupon | Market Price |
+| Bond A | 1% | 98.0584 |
+| Bond B | 3% | 100.9641 |
+| Bond C | 5% | 105.8247 |
+
+
+Next, Tatton uses the benchmark yield curve provided in Exhibit 2 to consider arbitrage opportunities of both option-free corporate bonds and corporate bonds with embedded options. The benchmark bonds in Exhibit 2 pay coupons annually, and the bonds are priced at par.
+| Exhibit 2.Benchmark Par Curve |
+| Maturity(years)Yield to Maturity(YTM) |
+| 13.0%24.0%35.0% |
+
+
+Tatton then identifies three mispriced three-year annual-pay bonds and compiles data on the bonds (see Exhibit 3).
+| Exhibit 3.Market Data of Annual-Pay Corporate Bonds |
+| Company | Coupon | Market Price | Yield | Embedded Option? |
+| Hutto-Barkley Inc. | 3% | 94.9984 | 5.6% | No |
+| Luna y Estrellas Intl. | 0% | 88.8996 | 4.0% | Yes |
+| Peat on Scorpio Motors | 0% | 83.9619 | 6.0% | No |
+
+
+Lastly, Tatton identifies two mispriced Swiss bonds, Bond X, a three-year bond, and Bond Y, a five-year bond. Both are annual-pay bonds with a coupon rate of 6%. To calculate the bonds’ values, Tatton devises the first three years of the interest rate lognormal tree presented in Exhibit 4 using historical interest rate volatility data. Tatton considers how this data would change if implied volatility, which is higher than historical volatility, were used instead.
+| Exhibit 4.Interest Rate Tree； Forward Rates Based on Swiss Market |
+| Year 1 | Year 2 | Year 3 |
+| 4% | 6% |
+| 1% | 5% |
+| 2% | 3% |
+
+
+ 
+Based on Exhibit 1, which of the following bonds most likely includes an arbitrage opportunity?",Bond A,Bond B,Bond C,,B
+51,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 1, which key rate duration is the largest for the BI bond?",One-year key rate duration,Two-year key rate duration,Three-year key rate duration,,C
+52,"Lena Liecken is a senior bond analyst at Taurus Investment Management. Kristel Kreming, a junior analyst, works for Liecken in helping conduct fixed-income research for the firm's portfolio managers. Liecken and Kreming meet to discuss several bond positions held in the firm's portfolios.Bonds I and II both have a maturity of one year, an annual coupon rate of 5%, and a market price equal to par value. The risk-free rate is 3%. Historical default experiences of bonds comparable to Bonds I and II are presented in Exhibit 1.
+| Exhibit 1 | Credt Rsk Information for Comparable Bonds |
+| Percentage of Bonds That |
+| Survive and Make Full |
+| Bond | Recovery Rate | Payment |
+| I | 40% | 98% |
+| Ⅱ | 35% | 99% |
+
+
+Bond III is a zero-coupon bond with three years to maturity. Liecken evaluates sim- ilar bonds and estimates a recovery rate of 38% and a risk-neutral default probability of 2%, assuming conditional probabilities of default. Kreming creates Exhibit 2 to compute Bond III's credit valuation adjustment. She assumes a flat yield curve at 3%, with exposure, recovery, and loss given default values expressed per 100 of par value.
+| Exhibit 2Analysis of Bond III |
+| LossGivenDefault | Probab ty of | Prob ablity ofSurvival | ExpectedLoss | Present Value ofExpected Loss |
+| Date | Exposure | Recovery | Default |
+| 0 |
+| 1 | 94.2596 | 35.8186 | 58.4410 | 2.0000% | 98.0000% | 11688 | 1.1348 |
+| 2 | 97.0874 | 36.8932 | 60.1942 | 1.9600% | 960400% | 1.1798 | 1.1121 |
+| 3 | 100.0000 | 38.0000 | 62.0000 | 19208% | 94.1192% | 11909 | 10898 |
+| Sum | 5.8808% | 3.5395 | 3.3367 |
+
+
+Bond IV is an AA rated bond that matures in five years, has a coupon rate of 6%, and a modified duration of 4.2. Liecken is concerned about whether this bond will be downgraded to an A rating, but she does not expect the bond to default during the next year. Kreming constructs a partial transition matrix, which is presented in Exhibit 3, and suggests using a model to predict the rating change of Bond IV using leverage ratios, return on assets, and macroeconomic variables.
+|  |
+| Exhibit 3Pari alOne-Year Corporate Transition Matrix(entries in%) |
+
+| From/To | AAA | AA | A |
+| AAA | 92.00 | 6.00 | 1.00 |
+| AA | 2.00 | 89.00 | 8.00 |
+| A | 0.05 | 1.00 | 85.00 |
+| Credit Spread(%) | 0.50 | 1.00 | 1.75 |
+
+
+Kreming calculates the risk-neutral probabilities, compares them with the actual default probabilities of bonds evaluated over the past 10 years, and observes that the actual and risk-neutral probabilities differ. She makes two observations regarding the comparison of these probabilities:Observation 1: Actual default probabilities include the default risk premium associated with the uncertainty in the timing of the possible default loss.Observation 2: The observed spread over the yield on a risk-free bond in practice includes liquidity and tax considerations, in addition to credit risk.
+Based on Exhibit 1, the expected future value of Bond I at maturity is closest to:",98.80.,103.74.,105.00.,,B
+53,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+In a typical interest rate swap contract, the swap rate is best described as the interest rate for the:",fixed-rate leg of the swap.,floating-rate leg of the swap.,difference between the fixed and floating legs of the swap.,,A
+54,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The forward rate for a two-year loan beginning in one year is closest to:",5.0%,6.0%,7.0%,,C
+55,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+Based on the information in Exhibits 3 and 4, the bond price in euros at Node 1–2 in Exhibit 4 is closest to:",102.7917.,104.8640.,105.2917.,,A
+56,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+To close the position on the hypothetical Orion trade, the Fund:",sells protection at a higher premium than it paid at the start of the trade.,buys protection at a lower premium than it received at the start of the trade.,buys protection at a higher premium than it received at the start of the trade.,,B
+57,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+For Assignment 2, Alexander should conclude that Bond Z is currently:",undervalued.,fairly valued.,overvalued.,,A
+58,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+Given the yield curve for US Treasury zero-coupon bonds, which spread is most helpful pricing a corporate bond? The:",Z-Spread.,TED spread.,Libor–OIS spread.,,A
+59,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+Based on the three economic outlook statements, a profitable long/short trade would be to:",sell protection using a Canadian CDX IG and buy protection using a US CDX IG.,buy protection using an iTraxx Crossover and sell protection using an iTraxx Main.,buy protection using an electric car CDS and sell protection using a traditional car CDS.,,B
+60,"UNAB CorporationOn 1 January 20X2, Deem Advisors purchased a $10 million six-year senior unsecured bond issued by UNAB Corporation. Six months later (1 July 20X2), concerned about the portfolio's credit exposure to UNAB, Doris Morrison, the chief investment officer at Deem Advisors, purchases a $10 million CDS with a standardized coupon rate of 5%. The reference obligation of the CDS is the UNAB bond owned by Deem Advisors.On 1 January 20X3, Morrison asks Bill Watt, a derivatives analyst, to assess the current credit quality of UNAB bonds and the value of Deem Advisor's CDS on UNAB debt. Watt gathers the following information on the UNAB's debt issues currently trading in the market:? Bond 1: A two-year senior unsecured bond trading at 40% of par? Bond 2: A six-year senior unsecured bond trading at 50% of par? Bond 3: A six-year subordinated unsecured bond trading at 20% of parWith respect to the credit quality of UNAB, Watt makes the following statement:“There is severe near-term stress in the financial markets and UNAB's credit curve clearly reflects the difficult environment.”On 1 July 20X3, UNAB fails to make a scheduled interest payment on the outstanding subordinated unsecured obligation after a grace period; however, the company does not file for bankruptcy. Morrison asks Watt to determine if UNAB experienced a credit event and, if so, to recommend a settlement preference.Kand CorporationMorrison is considering purchasing a 10-year CDS on Kand Corporation debt to hedge its current portfolio position. She instructs Watt to determine if an upfront payment would be required and, if so, the amount of the premium. Watt presents the information for the CDS in Exhibit 1.
+| Exhibit 1.Summary Data for 10-year CDS on K and Corporation |
+| Credit spread | 700 basis points |
+| Duration | 7 years |
+| Coupon rate | 5% |
+
+
+Morrison purchases the 10-year CDS on Kand Corporation debt. Two months later the credit spread for Kand Corp. has increased by 200 basis points. Morrison asks Watt to close out the firm's CDS position on Kand Corporation by entering into new offsetting contracts.Tollunt CorporationDeem Advisors' chief credit analyst recently reported that Tollunt Corporation's five-year bond is currently yielding 7% and a comparable CDS contract has a credit spread of 4.25%. Since Libor is 2.5%, Watt has recommended executing a basis trade to take advantage of the pricing of the Tollunt's bonds and CDS. The basis trade would consist of purchasing both the bond and the CDS contract.
+Based on Exhibit 1, the upfront premium as a percent of the notional for the CDS protection on Kand Corp. would be closest to:",2.0%.,9.8%.,14.0%.,,C
+61,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+The rate for a one-year loan beginning in one year is closest to:",4.5%.,5.0%.,6.0%.,,C
+62,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+If the assumed volatility is changed as Black requested in Task 4, the forward rates shown in Exhibit 3 will most likely:",spread out.,remain unchanged.,converge to the spot rates.,,A
+63,"John Smith, a fixed-income portfolio manager at a €10 billion sovereign wealth fund (the Fund), meets with Sofia Chan, a derivatives strategist with Shire Gate Securities (SGS), to discuss investment opportunities for the Fund. Chan notes that SGS adheres to ISDA (International Swaps and Derivatives Association) protocols for credit default swap (CDS) transactions and that any contract must conform to ISDA specifications. Before the Fund can engage in trading CDS products with SGS, the Fund must satisfy compliance requirements.Smith explains to Chan that fixed-income derivatives strategies are being contemplated for both hedging and trading purposes. Given the size and diversified nature of the Fund, Smith asks Chan to recommend a type of CDS that would allow the Fund to simultaneously fully hedge multiple fixed-income exposures.Smith and Chan discuss opportunities to add trading profits to the Fund. Smith asks Chan to determine the probability of default associated with a five-year investment-grade bond issued by Orion Industrial. Selected data on the Orion Industrial bond are presented in Exhibit 1.
+| Exhibit 1.Selected Data on Orion Industrial Five-Year Bond |
+| Year | Hazard Rate |
+| 1 | 0.22% |
+| 2 | 0.35% |
+| 3 | 0.50% |
+| 4 | 0.65% |
+| 5 | 0.80% |
+
+
+Chan explains that a single-name CDS can also be used to add profit to the Fund over time. Chan describes a hypothetical trade in which the Fund sells ￡6 million of five-year CDS protection on Orion, where the CDS contract has a duration of 3.9 years. Chan assumes that the Fund closes the position six months later, after Orion’s credit spread narrowed from 150 bps to 100 bps.Chan discusses the mechanics of a long/short trade. In order to structure a number of potential trades, Chan and Smith exchange their respective views on individual companies and global economies. Chan and Smith agree on the following outlooks.Outlook 1: The European economy will weaken.Outlook 2: The US economy will strengthen relative to that of Canada.Outlook 3: The credit quality of electric car manufacturers will improve relative to that of traditional car manufacturers.Chan believes US macroeconomic data are improving and that the general economy will strengthen in the short term. Chan suggests that a curve trade could be used by the Fund to capitalize on her short-term view of a steepening of the US credit curve.Another short-term trading opportunity that Smith and Chan discuss involves the merger and acquisition market. SGS believes that Delta Corporation may make an unsolicited bid at a premium to the market price for all of the publicly traded shares of Zega, Inc. Zega’s market capitalization and capital structure are comparable to Delta’s; both firms are highly levered. It is anticipated that Delta will issue new equity along with 5- and 10-year senior unsecured debt to fund the acquisition, which will significantly increase its debt ratio.
+The curve trade that would best capitalize on Chan’s view of the US credit curve is to:",buy protection using a 20-year CDX and buy protection using a 2-year CDX.,buy protection using a 20-year CDX and sell protection using a 2-year CDX.,sell protection using a 20-year CDX and buy protection using a 2-year CDX.,,B
+64,"Katrina Black, portfolio manager at Coral Bond Management, Ltd., is conducting a training session with Alex Sun, a junior analyst in the fixed income department. Black wants to explain to Sun the arbitrage-free valuation framework used by the firm. Black presents Sun with Exhibit 1, showing a fictitious bond being traded on three exchanges, and asks Sun to identify the arbitrage opportunity of the bond. Sun agrees to ignore transaction costs in his analysis.
+| Exhibit 1.Three-Year， e100par， 3.00%Coupon， Annual Pay Option-Free Bond |
+| EurexNYSE EuronextFrankfurt |
+| Price6103.79566103.78156103.7565 |
+
+
+Black shows Sun some exhibits that were part of a recent presentation. Exhibit 3 presents most of the data of a binomial lognormal interest rate tree fit to the yield curve shown in Exhibit 2. Exhibit 4 presents most of the data of the implied values for a four-year, option-free, annual pay bond with a 2.5% coupon based on the information in Exhibit 3.
+| Exhibit 2.Yield to Maturity Par Rates for One-， Two-， and |
+| Three-Year Annual Pay Option-Free Bonds |
+| One-year | Two-year | Three-year |
+| 1.25% | 1.50% | 1.70% |
+
+
+
+| Exhibit 3.Binomial Interest Rate Tree Fit to the Yield Curve(Volatility=10%) |
+| Current | Year 1 | Year 2 | Year 3 | Year 4 |
+| 1.2500% | 1.8229% | 1.8280% | 2.6241% | Node 4-1 |
+| 1.4925% | Node 2-2 | Node 3-2 | 4.2009% |
+| 1.2254% | 1.7590% | 3.4394% |
+| Node 3-4 | 2.8159% |
+| Node 4-5 |
+
+
+
+| Year Or | Year 1 | Year 2+ | Year 3 | Year 4 |
+| 103.4960 | 101.7877 | 100.7696 | 99.8791 | 102.5000++ |
+| Node 1-2 | 101.5168+ | 100.3442102.5000+ |
+| 102.1350 | 100.7282102.5000++ |
+| 101.0449+ | 102.5000+ |
+
+
+Black asks about the missing data in Exhibits 3 and 4 and directs Sun to complete the following tasks related to those exhibits:Task 1 Test that the binomial interest tree has been properly calibrated to be arbitrage-free.Task 2 Develop a spreadsheet model to calculate pathwise valuations. To test the accuracy of the spreadsheet, use the data in Exhibit 3 and calculate the value of the bond if it takes a path of lowest rates in Year 1 and Year 2 and the second lowest rate in Year 3.Task 3 Identify a type of bond where the Monte Carlo calibration method should be used in place of the binomial interest rate method.Task 4 Update Exhibit 3 to reflect the current volatility, which is now 15%.
+Based on Exhibit 1, the best action that an investor should take to profit from the arbitrage opportunity is to:","buy on Frankfurt, sell on Eurex.","buy on NYSE Euronext, sell on Eurex.","buy on Frankfurt, sell on NYSE Euronext.",,A
+65,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+If the three-month T-bill rate drops and the Libor rate remains the same, the relevant TED spread:",increases.,decreases.,does not change.,,A

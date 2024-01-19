@@ -1,0 +1,12 @@
+{
+    "quantitative_method": ["quantitative_method", "quantitative_method", "quantitative_method"],
+    "economics": ["economics", "economics", "economics"],
+    "financial_reporting_and_analysis": ["financial_reporting_and_analysis", "financial_reporting_and_analysis", "financial_reporting_and_analysis"],
+    "corporate_finance": ["corporate_finance", "corporate_finance", "corporate_finance"],
+    "equity": ["equity", "equity", "equity"],
+    "fixed_income": ["fixed_income", "fixed_income", "fixed_income"],
+    "derivatives": ["derivatives", "derivatives", "derivatives"],
+    "alternative_investments": ["alternative_investments", "alternative_investments", "alternative_investments"],
+    "portfolio_management": ["portfolio_management", "portfolio_management", "portfolio_management"],
+    "ethical_and_professional_standards": ["ethical_and_professional_standards", "ethical_and_professional_standards", "ethical_and_professional_standards"]
+}

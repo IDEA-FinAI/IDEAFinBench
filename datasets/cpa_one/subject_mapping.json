@@ -1,0 +1,32 @@
+{
+	"accounting": [
+		"accounting",
+		"\u4f1a\u8ba1",
+		"accounting"
+	],
+	"auditing": [
+		"auditing",
+		"\u5ba1\u8ba1\u5b66",
+		"auditing"
+	],
+	"economic_law": [
+		"economic_law",
+		"\u7ecf\u6d4e\u6cd5",
+		"economic_law"
+	],
+	"financial_management": [
+		"financial_management",
+		"\u8d22\u52a1\u7ba1\u7406\u5b66",
+		"financial_management"
+	],
+	"strategy": [
+		"strategy",
+		"\u6218\u7565",
+		"strategy"
+	],
+	"tax_law": [
+		"tax_law",
+		"\u7a0e\u6cd5",
+		"tax_law"
+	]
+}

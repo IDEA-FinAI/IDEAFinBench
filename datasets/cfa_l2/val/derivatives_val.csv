@@ -1,0 +1,1163 @@
+id,question,A,B,C,D,answer
+0,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+Which of Sousa's statements about binomial models is correct?",Statement 1 only,Statement 2 only,Both Statement 1 and Statement 2,,C
+1,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 6 and the three-month US dollar Libor at expiration, the payment amount that the bank will receive to settle the 6 × 9 FRA is closest to:","$19,945.","$24,925.","$39,781.",,A
+2,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 7, the fixed rate on a new 2 × 5 FRA is closest to:",0.61%.,1.02%.,1.71%.,,B
+3,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+To determine the long put option value on TCB stock in Exhibit 1, the correct BSM valuation approach is to compute:",0.4404 times the present value of the exercise price minus 0.6217 times the price of TCB stock.,0.4404 times the present value of the exercise price minus 0.3783 times the price of TCB stock.,0.5596 times the present value of the exercise price minus 0.6217 times the price of TCB stock.,,B
+4,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+Which of Sousa's reasons for the decrease in the value of the interest rate option is correct?",Reason 1 only,Reason 2 only,Both Reason 1 and Reason 2,,A
+5,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+The value of the JGB long forward position is closest to:","JPY15,980,823.","JPY15,990,409.","JPY16,000,000.",,B
+6,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+The risk-neuvtral probability of the up move for the Alpha Company stock is closest to:",0.06.,0.40.,0.65.,,C
+7,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+Based on Exhibit 2, the value of the pay-fixed interest rate swap is closest to:","–JPY6,491,550.","–JPY2,980,500.","–JPY994,793.",,B
+8,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+The value of the American-style put option on Beta Company shares is closest to:",4.53.,5.15.,9.32.,,B
+9,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 3, Johnson should determine that the annualized equilibrium fixed swap rate for Japanese yen is closest to:",0.0624%.,0.1375%.,0.2496%.,,C
+10,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 1, Johnson should price the three-year Libor-based interest rate swap at a fixed rate closest to:",0.34%.,1.16%.,1.19%.,,C
+11,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+Lee's put-based hedge strategy for Solomon's ETF position would most likely result in a portfolio gamma that is:",Negative.,Neutral.,Positive.,,C
+12,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+Based on Exhibit 2 and the parameters used by Sousa, the value of the interest rate option is closest to:","5,251.","6,236.","6,429.",,C
+13,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+From the bank's perspective, using data from Exhibit 1, the current value of the swap described in Exhibit 2 is closest to:","–$2,951,963.","–$1,849,897.","–$1,943,000.",,B
+14,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+The full spot price of the three-year Treasury note is:",101.00.,101.25.,101.50.,,B
+15,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+For the Alpha Company option, the positions to take advantage of the arbitrage opportunity are to write the call and:",Short shares of Alpha stock and lend.,Buy shares of Alpha stock and borrow.,Short shares of Alpha stock and borrow.,,B
+16,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+Which of the following is the correct answer to Solomon's question regarding the option Greek letter?",Vega,Theta,Gamma,,B
+17,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+What are the correct spot value (S) and the risk-free rate (r) that Lee should use as inputs for the Black model?","186.73 and 0.39%, respectively","186.73 and 2.20%, respectively","187.95 and 2.20%, respectively",,A
+18,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+The value of the Alpha Company call option is closest to:",3.71.,5.71.,6.19.,,A
+19,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+The valuation inputs used by Lee to price a call reflecting Solomon's interest rate views should include an underlying FRA rate of:",0.60% with six months to expiration.,0.75% with nine months to expiration.,0.75% with six months to expiration.,,C
+20,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+The optimal hedge ratio for the Alpha Company call option using the one- period binomial model is closest to:",0.60.,0.67.,1.67.,,A
+21,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+The equilibrium 10-year Treasury note quoted futures contract price is closest to:",147.94.,148.89.,149.78.,,A
+22,"Bruno Sousa has been hired recently to work with senior analyst Camila Rocha. Rocha gives him three option valuation tasks.Alpha CompanySousa's first task is to illustrate how to value a call option on Alpha Company with a one-period binomial option pricing model. It is a non-dividend-paying stock, and the inputs are as follows.● The current stock price is 50, and the call option exercise price is 50.● In one period, the stock price will either rise to 56 or decline to 46.● The risk-free rate of return is 5% per period.Based on the model, Rocha asks Sousa to estimate the hedge ratio, the risk-neutral probability of an up move, and the price of the call option. In the illustration, Sousa is also asked to describe related arbitrage positions to use if the call option is overpriced relative to the model.Beta CompanyNext, Sousa uses the two-period binomial model to estimate the value of a European- style call option on Beta Company's common shares. The inputs are as follows.● The current stock price is 38, and the call option exercise price is 40.● The up factor (u) is 1.300, and the down factor (d) is 0.800.● The risk-free rate of return is 3% per period.Sousa then analyzes a put option on the same stock. All of the inputs, including the exercise price, are the same as for the call option. He estimates that the value of a European-style put option is 4.53. Exhibit 1 summarizes his analysis. Sousa next must determine whether an American-style put option would have the same value.Exhibit 1. Two-period Binomial European-Style Put Option on Beta Company
+| Item | Valu c |
+| Underlying | 64.22 |
+| Put |  |
+
+| I tom | Valu c |
+| Underlying | 49.4 |
+| Put | 0.2517 |
+| Hedge Ratio | -0.01943 |
+
+| Item | Valu c |
+| Underlying | 38 |
+| Put | 4.5346 |
+| Hedge Ratio | -0.4307 |
+
+| Item | Value |
+| Underlying | 30.4 |
+| Put | 8.4350 |
+| Hedge Ratio | -1 |
+
+| Item | Value |
+| Und cr lying | 39.52 |
+| Put | 0.48 |
+|  |
+| Item | Value |
+| Underlying | 24.32 |
+| Put | 15.68 |
+
+
+Sousa makes two statements with regard to the valuation of a European-style option under the expectations approach.Statement 1: The calculation involves discounting at the risk-free rate.Statement 2: The calculation uses risk-neutral probabilities instead of true probabilities.Rocha asks Sousa whether it is ever profitable to exercise American options prior to maturity. Sousa answers, “I can think of two possible cases. The first case is the early exercise of an American call option on a dividend-paying stock. The second case is the early exercise of an American put option.”Interest Rate OptionThe final option valuation task involves an interest rate option. Sousa must value a two-year, European-style call option on a one-year spot rate. The notional value of the option is 1 million, and the exercise rate is 2.75%. The risk-neutral probability of an up move is 0.50. The current and expected one-year interest rates are shown in Exhibit 2, along with the values of a one-year zero-coupon bond of 1 notional value for each interest rate.Exhibit 2. Two-Year Interest Rate Lattice for an Interest Rate Option
+| Maturity | Value | Rate |
+| 1 | 0.952381 | 5% |
+
+| Maturity | Value | Rate |
+|  | 0.961538 | 4% |
+
+| Maturity | Value | Rale |
+| 1 | 0.970874 | 3% |
+
+| Maturi y | Value | Rate |
+| 1 | 0.970874 | 3% |
+
+| Maturity | Valu c | Rate |
+|  | 0.980392 | 2% |
+
+| Maturity | Val us | Rate |
+| 1 | 0.990099 | 1% |
+
+
+Rocha asks Sousa why the value of a similar in-the-money interest rate call option decreases if the exercise price is higher. Sousa provides two reasons.Reason 1: The exercise value of the call option is lower.Reason 2: The risk-neutral probabilities are changed.
+The value of the European-style call option on Beta Company shares is closest to:",4.83.,5.12.,7.61.,,A
+23,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 5, the current value of the equity swap described in Exhibit 4 would be zero if the equity index was currently trading the closest to:",97.30.,99.09.,100.00.,,B
+24,"Trident Advisory Group manages assets for high-net-worth individuals and family trusts.Alice Lee, chief investment officer, is meeting with a client, Noah Solomon, to discuss risk management strategies for his portfolio. Solomon is concerned about recent volatility and has asked Lee to explain options valuation and the use of options in risk management.Options on StockLee begins: “We use the Black-Scholes-Merton (BSM) model for option valuation. To fully understand the BSM model valuation, one needs to understand the assumptions of the model. These assumptions include normally distributed stock returns, constant volatility of return on the underlying, constant interest rates, and continuous prices” Lee uses the BSM model to price TCB, which is one of Solomon's holdings. Exhibit 1 provides the current stock price (S), exercise price (X), risk-free interest rate (r), volatility (σ), and time to expiration (T) in years as well as selected outputs from the BSM model. TCB does not pay a dividend.
+| Exhibit lBS M Model for European Options on TCB |
+| BSM Inputs |
+| SXrT |
+| $57.03550.22%32%0.25 |
+|  |
+| BSMOutputs |
+| BSMBSMdN(d)dN(da)Call PricePut Price |
+| 0.31000.62170.15000.5596$4.695$2.634 |
+
+
+Options on FuturesThe Black model valuation and selected outputs for options on another of Solomon's holdings, the GPX 500 Index (GPX), are shown in Exhibit 2. The spot index level for the GPX is 187.95, and the index is assumed to pay a continuous dividend at a rate of 2.2% (5) over the life of the options being valued, which expire in 0.36 years. A futures contract on the GPX also expiring in 0.36 years is currently priced at 186.73.
+| Exhibit 2.Black Model for European Options on the GPX Index |
+| Black Model Inputs |
+| GPX Index | X | r | 8 Yield |
+| 187.95 | 180 | 0.39% | 24% | 0.36 | 2.2% |
+| Black | Black | Market | Market |
+| Model | Model | Call Price | Put Price |
+| Call Value | Put Value |
+| $14.2089 | $7.4890 | $14.26 | $7.20 |
+| Option Greeks |
+| Vega |
+| Delta(cal) Delta(put) | Gamma(call or | Theta(cal) | Rho(cal) | per% |
+| put) | daily | per% | (call or |
+| put) |
+
+
+After reviewing Exhibit 2, Solomon asks Lee which option Greek letter best describes the changes in an option's value as time to expiration declines.Solomon observes that the market price of the put option in Exhibit 2 is $7.20. Lee responds that she used the historical volatility of the GPX of 24% as an input to the BSM model, and she explains the implications for the implied volatility for the GPX.Options on Interest RatesSolomon forecasts the three-month Libor will exceed 0.85% in six months and is considering using options to reduce the risk of rising rates. He asks Lee to value an interest rate call with a strike price of 0.85%. The current three-month Libor is 0.60%, and an FRA for a three-month Libor loan beginning in six months is currently 0.75%.Hedging Strategy for the Equity IndexSolomon's portfolio currently holds 10,000 shares of an exchange-traded fund (ETF) that tracks the GPX. He is worried the index will decline. He remarks to Lee, “You have told me how the BSM model can provide useful information for reducing the risk of my GPX position” Lee suggests a delta hedge as a strategy to protect against small moves in the GPX Index.Lee also indicates that a long position in puts could be used to hedge larger moves in the GPX. She notes that although hedging with either puts or calls can result in a delta-neutral position, they would need to consider the resulting gamma.
+Based on Exhibit 1 and the BSM valuation approach, the initial portfolio required to replicate the long call option payoff is:",Long 0.3100 shares of TCB stock and short 0.5596 shares of a zero-coupon bond.,Long 0.6217 shares of TCB stock and short 0.1500 shares of a zero-coupon bond.,Long 0.6217 shares of TCB stock and short 0.5596 shares of a zero-coupon bond.,,C
+25,"Sonal Johnson is a risk manager for a bank. She manages the bank's risks using a combination of swaps and forward rate agreements (FRAs).Johnson prices a three-year Libor-based interest rate swap with annual resets using the present value factors presented in Exhibit 1.
+| Exhibit l.Present Value Factors |
+| Maturity(years) | Present Value Factors |
+| 1 | 0.990099 |
+| 2 | 0.977876 |
+| 3 | 0.965136 |
+
+
+Johnson also uses the present value factors in Exhibit 1 to value an interest rate swap that the bank entered into one year ago as the pay-fixed (receive-floating) party. Selected data for the swap are presented in Exhibit 2. Johnson notes that the current equilibrium two-year fixed swap rate is 1.12%.
+| Exhibit 2.Selected Data on Fixed for Floating Interest Rate Swap |
+| Swap notional amount | $50，000，000 |
+| Original swap term | Three years， wih annual resets |
+| Fixed swap rate(since initiation) | 3.00% |
+
+
+One of the bank's investments is exposed to movements in the Japanese yen, and Johnson desires to hedge the currency exposure. She prices a one-year fixed-for-fixed currency swap involving yen and US dollars, with a quarterly reset. Johnson uses the interest rate data presented in Exhibit 3 to price the currency swap.
+| Exhibit 3.Selected Japanese and US Interest Rate Data |
+| Days to Maturity | Yen Spot Interest Rates | US Dollar Spot Interest Rates |
+| 90 | 0.05% | 0.20% |
+| 180 | 0.10% | 0.40% |
+| 270 | 0.15% | 0.55% |
+| 360 | 0.25% | 0.70% |
+
+
+Johnson next reviews an equity swap with an annual reset that the bank entered into six months ago as the receive-fixed, pay-equity party. Selected data regarding the equity swap, which is linked to an equity index, are presented in Exhibit 4. At the time of initiation, the underlying equity index was trading at 100.00.
+| Exhibit 4.Selected Data on Equity Swap |
+| Swap notional amount | $20，000，000 |
+| Original swap te mm | Five years， with annual resets |
+| Fixed swap rate | 2.00% |
+
+
+The equity index is currently trading at 103.00, and relevant US spot rates, along with their associated present value factors, are presented in Exhibit 5.
+| Exhibit 5.Selected US Spot Rates and Present Value Factors |
+| Maturity(years) | Spot Rate | Present Value Factors |
+| 0.5 | 0.40% | 0.998004 |
+| 1.5 | 1.00% | 0.985222 |
+| 2.5 | 1.20% | 0.970874 |
+| 3.5 | 2.00% | 0.934579 |
+| 4.5 | 2.60% | 0.895255 |
+
+
+Johnson reviews a 6×9 FRA that the bank entered into 90 days ago as the pay-fixed/receive-floating party. Selected data for the FRA are presented in Exhibit 6, and current Libor data are presented in Exhibit 7. Based on her interest rate forecast, Johnson also considers whether the bank should enter into new positions in 1 × 4 and 2 × 5 FRAs.
+| Exhibit 6.6×9FRA Data |
+| FRA term | 6×9 |
+| FRA rate | 0.70% |
+| FRA notional amount | USS 20， 000， 000 |
+| FRA settlement terms | Advanced set， advanced settle |
+
+
+
+| Exhibit 7.Current Libor |
+| 30-day Libor | 0.75% |
+| 60-day Libor | 0.82% |
+| 90-day Libor | 0.90% |
+| 120-day Libor | 0.92% |
+| 150-day Libor | 0.94% |
+| 180-day Libor | 0.95% |
+| 210-day Libor | 0.97% |
+| 270-day Libor | 1.00% |
+
+
+Three months later, the 6 × 9 FRA in Exhibit 6 reaches expiration, at which time the three-month US dollar Libor is 1.10% and the six-month US dollar Libor is 1.20%. Johnson determines that the appropriate discount rate for the FRA settlement cash flows is 1.10%.
+Based on Exhibit 7, the no-arbitrage fixed rate on a new 1 × 4 FRA is closest to:",0.65%.,0.73%.,0.98%.,,C

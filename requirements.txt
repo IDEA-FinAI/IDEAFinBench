@@ -1,0 +1,7 @@
+transformers
+torch
+pandas
+numpy
+tqdm
+openai
+accelerate

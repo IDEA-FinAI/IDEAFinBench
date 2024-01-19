@@ -1,0 +1,23 @@
+id,question,A,B,C,D
+0,"Tim Doyle is a portfolio manager at BestFutures Group, a hedge fund that frequently enters into derivative contracts either to hedge the risk of investments it holds or to speculate outside of those investments. Doyle works alongside Diane Kemper, a junior analyst at the hedge fund. They meet to evaluate new investment ideas and to review several of the firm’s existing investments.Carry Arbitrage ModelDoyle and Kemper discuss the carry arbitrage model and how they can take advantage of mispricing in bond markets. Specifically, they would like to execute an arbitrage transaction on a Eurodollar futures contract in which the underlying Eurodollar bond is expected to make an interest payment in two months. Doyle makes the following statements:Statement 1: If the Eurodollar futures price is less than the price suggested by the carry arbitrage model, the futures contract should be purchased.Statement 2: Based on the cost of carry model, the futures price would be higher if the underlying Eurodollar bond’s upcoming interest payment was expected in five months instead of two.Three-Year Treasury Note Futures ContractKemper then presents two investment ideas to Doyle. Kemper’s first investment idea is to purchase a three-year Treasury note futures contract. The underlying 1.5%, semi-annual three-year Treasury note is quoted at a clean price of 101. It has been 60 days since the three-year Treasury note’s last coupon payment, and the next coupon payment is payable in 120 days. Doyle asks Kemper to calculate the full spot price of the underlying three-year Treasury note.10-Year Treasury Note Futures ContractKemper’s second investment idea is to purchase a 10-year Treasury note futures contract. The underlying 2%, semi-annual 10-year Treasury note has a dirty price of 104.17. It has been 30 days since the 10-year Treasury note’s last coupon payment. The futures contract expires in 90 days. The quoted futures contract price is 129. The current annualized three-month risk-free rate is 1.65%. The conversion factor is 0.7025. Doyle asks Kemper to calculate the equilibrium quoted futures contract price based on the carry arbitrage model.Japanese Government BondsAfter discussing Kemper’s new investment ideas, Doyle and Kemper evaluate one of their existing forward contract positions. Three months ago, BestFutures took a long position in eight 10-year Japanese government bond (JGB) forward contracts, with each contract having a contract notional value of 100 million yen. The contracts had a price of JPY153 (quoted as a percentage of par) when the contracts were purchased.Now, the contracts have six months left to expiration and have a price of JPY155. The annualized six-month interest rate is 0.12%. Doyle asks Kemper to value the JGB forward position.Interest Rate SwapsAdditionally, Doyle asks Kemper to price a one-year plain vanilla swap. The spot rates and days to maturity at each payment date are presented in Exhibit 1.
+| Exhibit 1 | Selected US Spot Rate Data |
+| Days to Maturity | Spot Interest Rates |
+| (%) |
+| 90 | 1.90 |
+| 180 | 2.00 |
+| 270 | 2.10 |
+| 360 | 2.20 |
+
+
+Finally, Doyle and Kemper review one of BestFutures’s pay-fixed interest rate swap positions. Two years ago, the firm entered into a JPY5 billion five-year interest rate swap, paying the fixed rate. The fixed rate when BestFutures entered into the swap two years ago was 0.10%. The current term structure of interest rates for JPY cash flows, which are relevant to the interest rate swap position, is presented in Exhibit 2.
+| Exhibit 2 | Selected Japanese Interest Rate Data |
+| Yen Spot Interest | Present Value |
+| Maturity(Years) | Rates(%) | Factors |
+| 1 | 0.03 | 0.9997 |
+| 2 | 0.06 | 0.9988 |
+| 3 | 0.08 | 0.9976 |
+| Sum | 2.9961 |
+
+
+Doyle asks Kemper to calculate the value of the pay-fixed interest rate swap.
+Based on Exhibit 1, the fixed rate of the one-year plain vanilla swap is closest",0.12%.,0.55%.,0.72%.,

@@ -1,0 +1,21 @@
+id,question,A,B,C,D
+0,"Jane Nguyen is a senior bond trader and Christine Alexander is a junior bond trader for an investment bank. Nguyen is responsible for her own trading activities and also for providing assignments to Alexander that will develop her skills and create profitable trade ideas. Exhibit 1 presents the current par and spot rates.
+| Exhibit l.Current Par and Spot Rates |
+| Maturity | Par Rate | Spot Rate |
+| One year | 2.50% | 2.50% |
+| Two years | 2.99% | 3.00% |
+| Three years | 3.48% | 3.50% |
+| Four years | 3.95% | 4.00% |
+| Five years | 4.37% |
+| Note：Parandspotratesarebasedonannual-couponsovereignbonds. |
+
+
+Nguyen gives Alexander two assignments that involve researching various questions:Assignment 1: What is the yield to maturity of the option-free, default risk–free bond presented in Exhibit 2? Assume that the bond is held to maturity, and use the rates shown in Exhibit 1.
+| Exhibit 2.Selected Data for Sl， 000ParBond |
+| Bond Name | Maturity(T) | Coupon |
+| Bond Z | Three years | 6.00% |
+| Note：TermsaretodayforaT-yearloan. |
+
+
+Assignment 2: Assuming that the projected spot curve two years from today will be below the current forward curve, is Bond Z fairly valued, undervalued, or overvalued?After completing her assignments, Alexander asks about Nguyen's current trading activities. Nguyen states that she has a two-year investment horizon and will purchase Bond Z as part of a strategy to ride the yield curve. Exhibit 1 shows Nguyen's yield curve assumptions implied by the spot rates.
+Based on Exhibit 1, which of the following forward rates can be computed?",A one-year loan beginning in five years,A three-year loan beginning in three years,A four-year loan beginning in one year,

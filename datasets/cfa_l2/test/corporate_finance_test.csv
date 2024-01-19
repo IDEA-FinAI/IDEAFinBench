@@ -1,0 +1,34 @@
+id,question,A,B,C,D
+0,"Mun Hoe Yip is valuing Pure Corporation. Pure is a simple corporation that is going out of business in five years, distributing its income to creditors and bondholders as planned in the financial statements below. Pure has a 19 percent cost of equity, 8 1/3 percent before-tax cost of debt, 12 percent weighted average cost of capital, and 40 percent tax rate, and it maintains a 50 percent debt/value ratio.Yip is valuing the company using the basic capital budgeting method as well as other methods, such as EP, residual income, and claims valuation. Yip's research assistant, Linda Robinson, makes three observations about the analysis.Observation 1“The present value of the company's economic income should be equal to the present value of the cash flows in the basic capital budgeting approach.”Observation 2“The economic income each year is equal to the cash flow minus the economic depreciation.”Observation 3“The market value added is the present value of the company's economic profit (EP), which equals the net worth of 77,973.”
+| Year 0 1 2 3 4 5 |
+| Balance Sheets： |
+| Assets | 200，000 | 160，000 | 120，000 | 80，000 | 40，000 | 0 |
+| Liabilities | 122，027 | 107，671 | 88，591 | 64，222 | 33，929 | 0 |
+| Networth | 77，973 | 52，329 | 31，409 | 15，778 | 6，071 | 0 |
+| Income Statements： |
+| Sales | 180，000 | 200，000 | 220，000 | 240，000 | 200，000 |
+| Variable cash expenses | 90，000 | 100，000 | 110，000 | 120，000 | 100，000 |
+| Fixed cash expenses | 20，000 | 20，000 | 20，000 | 20，000 | 20，000 |
+| Depreciation | 40，000 | 40，000 | 40，000 | 40，000 | 40，000 |
+| EBIT | 30，000 | 40，000 | 50，000 | 60，000 | 40，000 |
+| Interest expense | 10，169 | 8，973 | 7，383 | 5，352 | 2，827 |
+| EBT | 19，831 | 31，027 | 42，617 | 54，648 | 37，173 |
+| Taxes at 40 percent | 7，932 | 12，411 | 17，047 | 21，859 | 14，869 |
+| Net income before salvage | 11，899 | 18，616 | 25，570 | 32，789 | 22，304 |
+| After-tax salvage value | 12，000 |
+| Net income | 11，899 | 18，616 | 25，570 | 32，789 | 34，304 |
+| Statements of CashFlows： |
+| Opera tng cashflows： |
+| Net income | 11，899 | 18，616 | 25，570 | 32，789 | 34，304 |
+| Depreciation | 40，000 | 40，000 | 40，000 | 40，000 | 40，000 |
+| Total | 51，899 | 58，616 | 65，570 | 72，789 | 74，304 |
+| Financing cashflows： |
+| Debt repayment | 14，357 | 19，080 | 24，369 | 30，293 | 33，929 |
+| Dividends/repurchases | 37，542 | 39，536 | 41，201 | 42，496 | 40，375 |
+| Total | -51，899 | -58，616 | -65，570 | -72，789 | -74，304 |
+| Inves ing cashflows： | 0 | 0 | 0 | 0 | 0 |
+| Total cashflows： | 0 | 0 | 0 | 0 | 0 |
+
+
+ 
+Economic income during year one is closest to:","23,186.","29,287.","46,101.",

@@ -1,0 +1,167 @@
+id,question,A,B,C,D,answer,explanation
+0,"Consolidated Motors is a US-based corporation that sells mechanical engines and components used by electric utilities. Its Canadian subsidiary, Consol-Can, operates solely in Canada. It was created on 31 December 20X1, and Consolidated Motors determined at that time that it should use the US dollar as its functional currency. Chief Financial Officer Monica Templeton was asked to explain to the board of directors how exchange rates affect the financial statements of both Consol-Can and the consolidated financial statements of Consolidated Motors. For the presentation, Templeton collects Consol-Can's balance sheets for the years ended 20X1 and 20X2 (Exhibit 1), as well as relevant exchange rate information (Exhibit 2).
+| Exhibit 1.Consol-Can Condensed Balance Sheet for Fiscal Years Ending 31 December |
+| (CS millions) |
+| Account | 20X2 | 20X1 |
+| Cash | 135 | 167 |
+| Accounts receivable | 98 |  |
+| Inventory | 77 | 30 |
+| Fixed assets | 100 | 100 |
+| Accumulated depreciation | (10) |  |
+| Total assets | 400 | 297 |
+| Accounts payable | 77 | 22 |
+| Long-term debt | 175 | 175 |
+| Common stock | 100 | 100 |
+| Retained earnings | 48 |  |
+| Total liabilities and shareholders'equity | 400 | 297 |
+
+
+
+| Exhibit 2.Exchange Rate Information |
+| USS/C$ |
+| Rate on31December20X 10.86Average rate in20X 20.92Weighted-average rate for inventory purchases0.92Rate on31December20X 20.95 |
+
+
+Templeton explains that Consol-Can uses the FIFO inventory accounting method and that purchases of C$300 million and the sell-through of that inventory occurred evenly throughout 20X2. Her presentation includes reporting the translated amounts in US dollars for each item, as well as associated translation-related gains and losses. The board responds with several questions. ● Would there be a reason to change the functional currency to the Canadian dollar? ● Would there be any translation effects for Consolidated Motors if the functional currency for Consol-Can were changed to the Canadian dollar? ● Would a change in the functional currency have any impact on financial statement ratios for the parent company? ● What would be the balance sheet exposure to translation effects if the functional currency were changed?
+After translating Consol-Can's inventory and long-term debt into the parent company's currency (US$), the amounts reported on Consolidated Motor's financial statements on 31 December 20X2 would be closest to (in millions):",$71 for inventory and $161 for long-term debt.,$71 for inventory and $166 for long-term debt.,$73 for inventory and $166 for long-term debt.,,B,"When the parent company's currency is used as the functional currency, the temporal method must be used to translate the subsidiary's accounts. Under the temporal method, monetary assets and liabilities (e.g., debt) are translated at the current (year-end) rate, non-monetary assets and liabilities measured at historical cost (e.g., inventory) are translated at historical exchange rates, and non-monetary assets and liabilities measured at current value are translated at the exchange rate at the date when the current value was determined. Because beginning inventory was sold first and sales and purchases were evenly acquired, the average rate is most appropriate for translating inventory and C$77 million × 0.92 = $71 million. Long-term debt is translated at the year-end rate of 0.95. C$175 million × 0.95 = $166 million.<br />"
+1,"Kensington plc, a hypothetical company based in the United Kingdom, offers its employees a defined benefit pension plan. Kensington complies with IFRS. The assumed discount rate that the company used in estimating the present value of its pension obligations was 5.48 percent. Information on Kensington's retirement plans is presented in Exhibit 1.
+| Exhibit 1.Kensington plc Defined Benefit Pension Plan |
+| (in millions) | 2010 |
+| Components of periodic benefit cost |
+| Service cost | E228 |
+| Net interest(income) expense | 273 |
+| Re measurements | -18 |
+| Periodic pension cost | f483 |
+| Change in benefit obligation |
+| Bene ft obligations at beginning of year | f28，416 |
+| Service cost | 228 |
+| Interest cost | 1，557 |
+| Benefits paid | -1，322 |
+| Actuarial gain or loss | 0 |
+| Benefit obligations at end of year | f28，879 |
+
+
+
+| Change in plan assets |
+| Fair value of plan assets at beginning of year | f23，432 |
+| Actual return on plan assets | 1，302 |
+| Employer contributions | 693 |
+| Benefits paid | -1，322 |
+| Fair value of plan assets at end of year | f24，105 |
+| Funded status at beginning of year | -E4，984 |
+| Funded status at end of year | -E4，774 |
+
+
+ 
+For the year 2010, the net interest expense of ￡273 represents the interest cost on the:",ending benefit obligation.,beginning benefit obligation.,beginning net pension obligation,,C,"The net interest expense of ￡273 million represents the interest cost on the beginning net pension obligation (beginning funded status) using the discount rate that the company uses in estimating the present value of its pension obligations. This is calculated as –￡4,984 million times 5.48 percent = –￡273 million; this represents an interest expense on the amount that the company essentially owes the pension plan.<br />"
+2,"Quentin Abay, CFA, is an analyst for a private equity firm interested in purchasing Bickchip Enterprises, a conglomerate. His first task is to determine the trends in ROE and the main drivers of the trends using DuPont analysis. To do so he gathers the data in Exhibit 1.
+| Exhibit 1.Selected Financial Data for Bick chip Enterprises(e Thousands) |
+| 2009 | 2008 | 2007 |
+| Revenue | 72，448 | 66，487 | 55，781 |
+| Earnings before interest and tax | 6，270 | 4，710 | 3，609 |
+| Earnings before tax | 5，101 | 4，114 | 3，168 |
+| Net income | 4，038 | 3，345 | 2，576 |
+| Asset turnover | 0.79 | 0.76 | 0.68 |
+| Assets/Equity | 3.09 | 3.38 | 3.43 |
+
+
+After conducting the DuPont analysis, Abay believes that his firm could increase the ROE without operational changes. Further, Abay thinks that ROE could improve if the company divested segments that were generating the lowest returns on capital employed (total assets less non-interest-bearing liabilities). Segment EBIT margins in 2009 were 11 percent for Automation Equipment, 5 percent for Power and Industrial, and 8 percent for Medical Equipment. Other relevant segment information is presented in Exhibit 2.
+| Exhibit 2.Segment Data for Bick chip Enterprises(E Thousands) |
+| Operating Segments | 2009 | 2008 | 2007 | 2009 | 2008 | 2007 |
+| Automation Equipment | 10，705 | 6，384 | 5，647 | 700 | 743 | 616 |
+| Power and Industrial | 15，805 | 13，195 | 12，100 | 900 | 849 | 634 |
+| Medical Equipment | 22，870 | 22，985 | 22，587 | 908 | 824 | 749 |
+| 49，380 | 42，564 | 40，334 | 2，508 | 2，416 | 1，999 |
+
+
+Abay is also concerned with earnings quality, so he intends to calculate Bickchip's cash-flow-based accruals ratio and the ratio of operating cash flow before interest and taxes to operating income. To do so, he prepares the information in Exhibit 3.
+| Exhibit 3.Earnings Quality Data for Bick chip Enterprises(E Thousands) |
+| 2009 | 2008 | 2007 |
+| Net income | 4，038 | 3，345 | 2，576 |
+| Net cashflow provided by(used in) operating activitya | 9，822 | 5，003 | 3，198 |
+| Net cashflow provided by(used in) investing activity | (10，068) | (4，315) | (5，052) |
+| bNet cashflow provided by(used in) financing activity | (5，792) | 1，540 | (2，241) |
+| Average net operating assets | 43，192 | 45，373 | 40，421 |
+| aincludes cash paid for taxes of： | (1，930) | (1，191) | (1，093) |
+| bincludes cash paid for interest of： | (1，169) | (596) | (441) |
+
+
+ 
+The cash-flow-based accruals ratios from 2007 to 2009 indicate:",improving earnings quality.,deteriorating earnings quality.,no change in earnings quality.,,A,"The cash-flow-based accruals ratio falls from 11.0 percent in 2007 to 5.9 percent in 2008, and then rises to 9.9 percent in 2009. However, the change over the three-year period is a net modest decline, indicating a slight improvement in earnings quality.<br />"
+3,"Cinnamon, Inc. is a diversified manufacturing company headquartered in the United Kingdom. It complies with IFRS. In 2009, Cinnamon held a 19 percent passive equity ownership interest in Cambridge Processing that was classified as available-for-sale. During the year, the value of this investment rose by ￡2 million. In December 2009, Cinnamon announced that it would be increasing its ownership interest to 50 percent effective 1 January 2010 through a cash purchase. Cinnamon and Cambridge have no intercompany transactions. Peter Lubbock, an analyst following both Cinnamon and Cambridge, is curious how the increased stake will affect Cinnamon's consolidated financial statements. He asks Cinnamon's CFO how the company will account for the investment, and is told that the decision has not yet been made. Lubbock decides to use his existing forecasts for both companies' financial statements to compare the outcomes of alternative accounting treatments. Lubbock assembles abbreviated financial statement data for Cinnamon (Exhibit 1) and Cambridge (Exhibit 2) for this purpose.
+| Exhibit 1.Selected Financial Statement Information for Cinnamon， Inc.(E Millions) |
+| Year ending 31 December | 2009 | 2010* |
+| Revenue | 1，400 | 1，575 |
+| Operating income | 126 | 142 |
+| Net income | 62 | 69 |
+| 31 December | 2009 | 2010* |
+| Total assets | 1，170 | 1，317 |
+| Shareholders'equity | 616 | 685 |
+
+
+
+| Exhibit 2.Selected Financial Statement Information for Cambridge Processing |
+| (E Millions) |
+| Year ending 31 December | 2009 | 2010* |
+| Revenue | 1，000 | 1，100 |
+| Operating income | 80 | 88 |
+| Net income | 40 | 44 |
+| Dividends paid | 20 | 22 |
+| 31 December | 2009 | 2010* |
+| Total assets | 800 | 836 |
+| Shareholders'equity | 440 | 462 |
+| *Estimates made prior to announcement of increased stake by Cinnamon. |
+
+
+ 
+At 31 December 2010, assuming control and recognition of goodwill, Cinnamon's reported debt to equity ratio willmost likely be highest if it accounts for its investment in Cambridge using the:",equity method.,full goodwill method.,partial goodwill method.,,C,"The full and partial goodwill method will have the same amount of debt; however, shareholders' equity will be higher under full goodwill (and the debt to equity ratio will be lower). Therefore, the debt to equity will be higher under partial goodwill. If control is assumed, Cinnamon cannot use the equity method.<br />"
+4,"Percy Byron, CFA, is an equity analyst with a UK-based investment firm. One firm Byron follows is NinMount PLC, a UK-based company. On 31 December 2008, NinMount paid ￡320 million to purchase a 50 percent stake in Boswell Company. The excess of the purchase price over the fair value of Boswell's net assets was attributable to previously unrecorded licenses. These licenses were estimated to have an economic life of six years. The fair value of Boswell's assets and liabilities other than licenses was equal to their recorded book values. NinMount and Boswell both use the pound sterling as their reporting currency and prepare their financial statements in accordance with IFRS. Byron is concerned whether the investment should affect his “buy” rating on NinMount common stock. He knows NinMount could choose one of several accounting methods to report the results of its investment, but NinMount has not announced which method it will use. Byron forecasts that both companies' 2009 financial results (excluding any merger accounting adjustments) will be identical to those of 2008. NinMount's and Boswell's condensed income statements for the year ended 31 December 2008, and condensed balance sheets at 31 December 2008, are presented in Exhibits 1 and 2, respectively.
+| Exhibit 1.N in Mount PLC and Boswell Company Income Statements for the Year |
+| Ended 31 December 2008(E Millions) |
+| N in Mount | Boswell |
+| Net sales | 950 | 510 |
+| Cost of goods sold | (495) | (305) |
+| Selling expenses | (50) | (15) |
+| Administrative expenses | (136) | (49) |
+| Depreciation&amortization expense | (102) | (92) |
+| Interest expense | (42) | (32) |
+| Income before taxes | 125 | 17 |
+| Income tax expense | (50) | (7) |
+| Net income | 75 | 10 |
+
+
+
+| Exhibit 2.N in Mount PLC and Boswell Company Balance Sheets at 31 December 2008 |
+| N in Mount | Boswell |
+| Cash | 50 | 20 |
+| Receivables—net | 70 | 45 |
+| Inventory | 130 | 75 |
+| Total current assets | 250 | 140 |
+| Property， plant， &equipment net | 1，570 | 930 |
+| Investment in Boswell | 320 |  |
+| Total assets | 2，140 | 1，070 |
+| Current liabilities | 110 | 90 |
+| Long-term debt | 600 | 400 |
+| Total liabilities | 710 | 490 |
+| Common stock | 850 | 535 |
+| Retained earnings | 580 | 45 |
+
+
+
+| Inventory | 130 | 75 |
+| Total current assets | 250 | 140 |
+| Property， plant， &equipment—net | 1，570 | 930 |
+| Investment in Boswell | 320 |  |
+| Total assets | 2，140 | 1，070 |
+| Current liabilities | 110 | 90 |
+| Long-term debt | 600 | 400 |
+| Total liabilities | 710 | 490 |
+| Common stock | 850 | 535 |
+| Retained earnings | 580 | 45 |
+| Total equity | 1，430 | 580 |
+| Total liabilities and equity | 2，140 | 1，070 |
+| Note：Balance sheets reflect the purchase price paid by N in Mount， but do not yet consider the |
+
+
+ 
+Based on Byron's forecast, NinMount's net profit margin for 2009 most likely will be highest if the results of the acquisition are reported using:",the equity method.,consolidation with full goodwill.,consolidation with full goodwill.,,A,"Net income is the same using any of the methods but under the equity method, net sales are only ￡950; Boswell's sales are not included in the net sales figure. Therefore, net profit margin is highest using the equity method.<br />"

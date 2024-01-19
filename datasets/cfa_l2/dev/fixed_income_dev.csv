@@ -1,0 +1,151 @@
+id,question,A,B,C,D,answer,explanation
+0,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Based on the given Z-spreads for Bonds 1, 2, and 3, which bond has the greatest credit and liquidity risk?",Bond 1,Bond 2,Bond 3,,C,"Although swap spreads p1'ovide a convenient way to measure risk, more accurate measure of credit and liquidity risk is called the zero-spread (Z-spread). It is the constant spread that, added to the implied spot yield curve, makes the discounted cash flows of a bond equal to its current market price.Bonds 1, 2, and 3 are otherwise similar but have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively. Bond 3 has the highest Z-spread implying that this bond has the greatest credit and liquidity risk.<br />"
+1,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibits 1 and 2, the effective duration for the AI bond is closest to:",1.98,2.15,2.73,,B,The AI bond's value if interest rates shift down by 30 bps (PV-) is 100.78:「huixue_img/importSubject/1564573042947002368.jpeg」The AI bond's value if interest rates shift up by 30 bps (PV+) is 99.487:「huixue_img/importSubject/1564573043051859968.jpeg」「huixue_img/importSubject/1564573043135746048.png」<br /><br />
+2,"Liz Tyo is a fund manager for an actively managed global fixed-income fund that buys bonds issued in Countries A，B，and C. She and her assistant are preparing the quarterly markets update. Tyo begins the meeting by distributing the daily rates sheet, which includes the current government spot rates for Countries A, B, and C as shown in Exhibit 1.
+| Exhibit l Today's Government Spot Rates |
+| Maturity | Country A | Country B | Country C |
+| One year | 0.40% | -0.22% | 14.00% |
+| Two years | 0.70 | -0.20 | 12.40 |
+| Three years | 1.00 | -0.12 | 11.80 |
+| Four years | 1.30 | -0.02 | 11.00 |
+| Five years | 1.50 | 0.13 | 10.70 |
+
+
+Tyo asks her assistant how these spot rates were obtained. The assistant replies, “Spot rates are determined through the process of bootstrapping. It entails backward substitution using par yields to solve for zero-coupon rates one by one, in order from latest to earliest maturities.”Tyo then provides a review of the fund's performance during the last year and comments, “The choice of an appropriate benchmark depends on the country's characteristics. For example, although Countries A and B have both an active government bond market and a swap market, Country C's private sector is much bigger than its public sector, and its government bond market lacks liquidity.”Tyo further points out, “The fund's results were mixed; returns did not benefit from taking on additional risk. We are especially monitoring the riskiness of the corporate bond holdings. For example, our largest holdings consist of three four-year corporate bonds (Bonds 1, 2, and 3) with identical maturities, coupon rates, and other contract terms. These bonds have Z-spreads of 0.55%, 1.52%, and 1.76%, respectively:”Tyo continues, “We also look at risk in terms of the swap spread. We considered historical three-year swap spreads for Country B, which reflect that market's credit and liquidity risks, at three different points in time.” Tyo provides the information in Exhibit 2.
+| Exhibit 2 Selected Historical Three-Year Rates for Country B |
+| Period | Govemment Bond Yield(%) | Fixed-for-Floating Libor Swap |
+| (%) |
+| 1 Month ago | -0.10 | 0.16 |
+| 6 Month ago | -0.08 | 0.01 |
+| 12 Month ago | -0.07 | 0.71 |
+
+
+Tyo then suggests that the firm was able to add return by riding the yield curve. The fund plans to continue to use this strategy but only in markets with an attractive yield curve for this strategy.She moves on to present her market views on the respective yield curves for a five-year investment horizon.Country A: “The government yield curve has changed little in terms of its level and shape during the last few years, and 1 expect this trend to continue. We assume that future spot rates reflect the current forward curve for all maturities.”Countrγ B: “Because of recent economic trends, I expect a reversal in the slope of the current yield curve. We assume that future spot rates will be higher than current forward rates for all maturities.”Country C: ""To improve liquidity, Country C's central bank is expected to intervene, leading to a reversal in the slope of the existing yield curve. We assume that future spot rates will be lower than today's forward rates for all maturities.”Tyo's assistant asks, “Assuming investors require liquidity premiums, how can a yield curve slope downward? What does this imply about forward rates?""Tyo answers, “Even if investors require compensation for holding longer-term bonds, the yield curve can slope downward ----- for example, if there is an expectation of severe deflation. Regarding forward rates, it can be helpful to understand yield curve dynamics by calculating implied forward rates. To see what I mean, we can use Exhibit 1 to calculate the forward rate for a two-year Country C loan beginning in three years.”
+Based on Exhibit 1 and Tyo's expectations for the yield curves, Tyo most likely perceives the bonds of which country to be fairly valued?",Country A,Country B,Country C,,A,"Tyo's projected spot curve assumes that future spot rates reflect, or will be equal to, the current forward rates for all respective maturities. This assumption implies that the bonds for Country A are fairly valued because the market is effectively discounting the bond's payments at spot rates that match those projected by Tyo.B and C are incorrect because Tyo's projected spot curves for the two countries do not match the current forward rates for a11respective maturities. In the case of Country B, she expects future spot rates to be higher (than the current forward rates that the market is using to discount the bond's payments). For Country C, she expects future spot rates to be lower (than the current forward rates). Hence, she perceives the Country B bond to be currently overvalued and the Country C bond to be undervalued.<br />"
+3,"Jules Bianchi is a bond analyst for Maneval Investments, lnc. Bianchi gathers data on three corporate bonds, as shown in Exhibit 1.
+| Exibit 1.Selected Bond Data |
+| Issuer | Coupon Rate | Price | Bond Description |
+| Ayrault， lnc.(A I) | 5.25% | 100.200 | C aIlable at par in one year and two |
+| years from today |
+| Blum， lne.(BI) | 5.25% | 101.300 | Option-free |
+| Cresson Enterprises(CE) | 5.25% | par in one year from | 102.100 | Put able at |
+| today |
+| Note：Each bond has a remaining maturity of three years， annual coupon payments， and a |
+| credit rating of BBB. |
+
+
+To assess the interest rate risk of the three bonds, Bianchi constructs two binomial interest rate trees based on a 10% interest rate volatility assumption and a current one-year rate of 1%. Panel A of Exhibit 2 provides an interest rate tree assuming the benchmark yield curve shifts down by 30 bps, and Panel B provides an interest rate tree assuming the benchmark yield curve shifts up by 30 bps. Bianchi determines that the AI bond is currently trading at an option-adjusted spread (OAS) of 13.95 bps relative to the benchmark yield curve.
+| 7.0037% |
+| 4.6947% |
+
+| Panel B Interest Rates Shift Upby30bps |
+| 7.7432% |
+
+| Exhibit 2.Binomial Interest Rate Trees |
+| Panel A Interest Rates Shift Down by30bps |
+| Year 0 | Year 1 | Year 2 |
+
+| 3.7000% |
+| 4.3000% |
+
+
+Armand Gillette, a convertible bond analyst, stops by Bianchi's office to discuss two convertible bonds. One is issued by DeLille Enterprises (DE) and the other is issued by Raffarin Incorporated (RI). Selected data for the two bonds are presented in Exhibits 3 and 4.
+| Exhibit 3 Selected Data for DE Convertible Bond |
+| Issue price | E 1， 000atpar |
+| Conversion period | 13September 20X 5to |
+| 12 |
+| September 20X 8 |
+| Initial conversion price | C 10.00per share |
+| Threshold dividend | e 0.50per share |
+| Change of control conversion price | 68.00per share |
+| Common stock share price on issue date | 8.70 |
+| Share price on17September20X 5 | e9.10 |
+| Convertible bond price on17September20X 5 | C1，123 |
+
+
+
+| Exhibit 4 Selected Data for RI Convertible Bond |
+| Straight bond value | 6978 |
+| Value of embedded issuer call option | 643 |
+| Value of embedded investor put option | 626 |
+| Value of embedded call option on issuer's stock | e147 |
+| Conversion price | 612.50 |
+| Current common stock share price | 611.75 |
+
+
+Gillette makes the following comments to Bianchi:■ “The DE bond does not contain any call or put options but the RI bond contains both an embedded call option and put option. I expect that DeLille Enterprises will soon announce a common stock dividend of €0.70 per share.”■ “My belief is that, over the next year, Raffarin's share price will appreciate toward the conversion price but not exceed it.”
+Based on Exhibit 3, the market conversion premium per share for the DE bond on 17 September 20X5 is closest to:",€0.90.,€2.13.,€2.53.,,B,"The market conversion premium per share is equal to the market conversion price minus the underlying share price. =The market conversion price is calculated as follows:Market conversion price = Convertible bond / Conversion ratio = €1,123 / €1,000/€10 per share = €11.23 per shareThe market conversion premium per share is then calculated as follows:Market conversion premium per share = Market conversion price - Underlying share price = €1123 一 €9.10 = €2.13<br /><br />"
+4,"A one-year zero-coupon bond yields 4.0%. The two- and three-year zero-coupon bonds yield 5.0% and 6.0% respectively.
+A two-year fixed-for-floating MRR swap is 1.00%, and the two-year US Treasury bond is yielding 0.63%. The swap spread is closest to:",37 bps.,100 bps.,163 bps.,,A,The swap spread = 1.00% - 0.63% = 0.37% or 37 bps.<br />
