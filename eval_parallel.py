@@ -26,7 +26,7 @@ def evaluate_model(model_type, model_path, exp_name):
         "--output_dir": output_path,       # 输出目录
         "--cot": "False",                  # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
         "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集
-        "--shots": "0",                    # fewshot的shot数，0表示不使用fewshot
+        "--shots": "4",                    # fewshot的shot数，0表示不使用fewshot
         "--constrained_decoding": "True",  # 受限解码仅支持单选题&&answer-only模式为True，其他情况必须设置为False
         "--temperature": "0.01",           # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
         "--do_test": "False",              # FinExamEval公布了答案，默认do_test为False，选择验证集val计算准确率，如果接入其他测试集并且需要过一遍test，这时候才选择为True
@@ -62,58 +62,23 @@ if __name__ == "__main__":
     model_data = [
         {
             "model_type": "auto",
-            "model_path": LLMS_PATH + "/Yi-6B",
-            "exp_name": "Yi-6B",
+            "model_path": LLMS_PATH + "/chatglm3-6b",
+            "exp_name": "chatglm3-6b",
         },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-6B-instruct",
-        #     "exp_name": "Yi-6B-instruct",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-34B",
-        #     "exp_name": "Yi-34B",
-        # },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/Yi-6B-Chat",
-            "exp_name": "Yi-6B-Chat",
-        },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-6B-Chat-sft-v0",
-        #     "exp_name": "Yi-6B-Chat-sft-v0",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-6B-Chat-sft-v1",
-        #     "exp_name": "Yi-6B-Chat-sft-v1",
-        # # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-34B-Chat",
-        #     "exp_name": "Yi-34B-Chat",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-34B-Chat-sft-v1",
-        #     "exp_name": "Yi-34B-Chat-sft-v1",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-34B-Chat-sft-v2",
-        #     "exp_name": "Yi-34B-Chat-sft-v2",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/chatglm3-6b",
-        #     "exp_name": "chatglm3-6b",
-        # },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
         #     "exp_name": "chatglm3-6b-base",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-6B",
+        #     "exp_name": "Yi-6B",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-6B-Chat",
+        #     "exp_name": "Yi-6B-Chat",
         # },
         # {
         #     "model_type": "auto",
@@ -184,11 +149,6 @@ if __name__ == "__main__":
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "Tongyi-Finance-14B-Chat",
         #     "exp_name": "Tongyi-Finance-14B-Chat",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Qwen-72B-Chat",
-        #     "exp_name": "Qwen-72B-Chat",
         # },
     ]
 

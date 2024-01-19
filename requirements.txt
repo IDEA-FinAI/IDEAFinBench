@@ -6,3 +6,7 @@ tqdm
 openai
 accelerate
 sentencepiece
+tiktoken
+einops
+transformers_stream_generator
+protobuf

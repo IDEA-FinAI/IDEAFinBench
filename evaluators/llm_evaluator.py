@@ -45,17 +45,23 @@ class LLM_Evaluator(Evaluator):
             repetition_penalty=1.3,
             max_new_tokens=100
         )
+        if self.constrained_decoding is True:
+            self.generation_config['output_scores'] = True
+            self.generation_config['return_dict_in_generate'] = True
+            self.generation_config['do_sample'] = False
+            del self.generation_config['top_k']
+            del self.generation_config['top_p']
+            self.generation_config['max_new_tokens'] = 1
         
-        self.sA_id = self.tokenizer.encode("A", add_special_tokens=False)[0]
-        self.sB_id = self.tokenizer.encode("B", add_special_tokens=False)[0]
-        self.sC_id = self.tokenizer.encode("C", add_special_tokens=False)[0]
-        self.sD_id = self.tokenizer.encode("D", add_special_tokens=False)[0]
-        self.A_id = self.tokenizer.encode("：A")[-1]
-        self.B_id = self.tokenizer.encode("：B")[-1]
-        self.C_id = self.tokenizer.encode("：C")[-1]
-        self.D_id = self.tokenizer.encode("：D")[-1]
-
-
+        self.sA_id = self.tokenizer.encode("A", add_special_tokens=False)[-1]
+        self.sB_id = self.tokenizer.encode("B", add_special_tokens=False)[-1]
+        self.sC_id = self.tokenizer.encode("C", add_special_tokens=False)[-1]
+        self.sD_id = self.tokenizer.encode("D", add_special_tokens=False)[-1]
+        self.A_id = self.tokenizer.encode("：A", add_special_tokens=False)[-1]
+        self.B_id = self.tokenizer.encode("：B", add_special_tokens=False)[-1]
+        self.C_id = self.tokenizer.encode("：C", add_special_tokens=False)[-1]
+        self.D_id = self.tokenizer.encode("：D", add_special_tokens=False)[-1]
+        
     def eval_subject(self, 
             subject_name, 
             test_df,
@@ -67,12 +73,6 @@ class LLM_Evaluator(Evaluator):
             language="zh"
         ):
         all_answers = {}
-        if self.constrained_decoding is True:
-            self.generation_config['output_scores'] = True
-            self.generation_config['return_dict_in_generate'] = True
-            self.generation_config['do_sample'] = False
-            self.generation_config['top_k'] = 1
-            self.generation_config['max_new_tokens'] = 1
         correct_num = 0
         if save_result_dir:
             result = []
@@ -97,14 +97,13 @@ class LLM_Evaluator(Evaluator):
             if multiple == False:
                 if self.constrained_decoding is True:
                     logits = generation_output.scores[0][0]
-
                     logits = logits.float().cpu().detach()
                     choices1_logits = logits[[self.sA_id,self.sB_id,self.sC_id,self.sD_id]]
                     choices2_logits = logits[[self.A_id,self.B_id,self.C_id,self.D_id]]
                     choicesAll_logits = (choices1_logits + choices2_logits).numpy()
                     assert not (np.any(np.isinf(choicesAll_logits)) or np.any(np.isnan(choicesAll_logits)))
                     ans = {0: "A", 1: "B", 2: "C", 3: "D"}[np.argmax(choicesAll_logits)]
-                    response = self.tokenizer.decode([logits.argmax(-1).item()])
+                    response = self.tokenizer.decode([logits.argmax(-1).item()], skip_special_tokens=True)
                 else:
                     response = self.tokenizer.decode(generation_output[0, length:], skip_special_tokens=True)
                     ans, direct_extract = self.extract_answer(row, response)
