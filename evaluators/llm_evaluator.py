@@ -22,6 +22,7 @@ class LLM_Evaluator(Evaluator):
         self.temperature = temperature
         self.constrained_decoding = constrained_decoding
         self.cot = cot
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
           
         model_class, tokenizer_class = MODEL_CLASSES[model_type]
         self.tokenizer = tokenizer_class.from_pretrained(
@@ -38,29 +39,29 @@ class LLM_Evaluator(Evaluator):
 
         self.generation_config = dict(
             temperature=temperature,
-            top_k=40,
-            top_p=0.9,
+            top_k=10,
+            top_p=0.8,
             do_sample=True,
             num_beams=1,
-            repetition_penalty=1.3,
+            repetition_penalty=1.0,
             max_new_tokens=100
         )
+        
         if self.constrained_decoding is True:
             self.generation_config['output_scores'] = True
             self.generation_config['return_dict_in_generate'] = True
-            self.generation_config['do_sample'] = False
-            del self.generation_config['top_k']
-            del self.generation_config['top_p']
             self.generation_config['max_new_tokens'] = 1
+            self.generation_config['top_p'] = 1.0
+            self.generation_config['top_k'] = 0
         
-        self.sA_id = self.tokenizer.encode("A", add_special_tokens=False)[-1]
-        self.sB_id = self.tokenizer.encode("B", add_special_tokens=False)[-1]
-        self.sC_id = self.tokenizer.encode("C", add_special_tokens=False)[-1]
-        self.sD_id = self.tokenizer.encode("D", add_special_tokens=False)[-1]
-        self.A_id = self.tokenizer.encode("：A", add_special_tokens=False)[-1]
-        self.B_id = self.tokenizer.encode("：B", add_special_tokens=False)[-1]
-        self.C_id = self.tokenizer.encode("：C", add_special_tokens=False)[-1]
-        self.D_id = self.tokenizer.encode("：D", add_special_tokens=False)[-1]
+        self.sA_id = self.tokenizer.encode("A", add_special_tokens=False)[0]
+        self.sB_id = self.tokenizer.encode("B", add_special_tokens=False)[0]
+        self.sC_id = self.tokenizer.encode("C", add_special_tokens=False)[0]
+        self.sD_id = self.tokenizer.encode("D", add_special_tokens=False)[0]
+        self.A_id = self.tokenizer.encode("：A", add_special_tokens=False)[0]
+        self.B_id = self.tokenizer.encode("：B", add_special_tokens=False)[0]
+        self.C_id = self.tokenizer.encode("：C", add_special_tokens=False)[0]
+        self.D_id = self.tokenizer.encode("：D", add_special_tokens=False)[0]
         
     def eval_subject(self, 
             subject_name, 
@@ -84,11 +85,10 @@ class LLM_Evaluator(Evaluator):
         for row_index, row in tqdm(test_df.iterrows(), total=len(test_df)):
             question = self.format_example(row, include_answer=False, cot=self.cot, language=language)
             instruction = history + question
-
             inputs = self.tokenizer(instruction, return_tensors="pt")
             generation_output = self.model.generate(
-                input_ids = inputs["input_ids"].to("cuda"),
-                attention_mask = inputs['attention_mask'].to("cuda"),
+                input_ids = inputs["input_ids"].to(self.device),
+                attention_mask = inputs['attention_mask'].to(self.device),
                 eos_token_id=self.tokenizer.eos_token_id,
                 pad_token_id=self.tokenizer.pad_token_id,
                 **self.generation_config
@@ -97,16 +97,17 @@ class LLM_Evaluator(Evaluator):
             if multiple == False:
                 if self.constrained_decoding is True:
                     logits = generation_output.scores[0][0]
+
                     logits = logits.float().cpu().detach()
                     choices1_logits = logits[[self.sA_id,self.sB_id,self.sC_id,self.sD_id]]
                     choices2_logits = logits[[self.A_id,self.B_id,self.C_id,self.D_id]]
                     choicesAll_logits = (choices1_logits + choices2_logits).numpy()
                     assert not (np.any(np.isinf(choicesAll_logits)) or np.any(np.isnan(choicesAll_logits)))
                     ans = {0: "A", 1: "B", 2: "C", 3: "D"}[np.argmax(choicesAll_logits)]
-                    response = self.tokenizer.decode([logits.argmax(-1).item()], skip_special_tokens=True)
+                    response = self.tokenizer.decode([logits.argmax(-1).item()])
                 else:
                     response = self.tokenizer.decode(generation_output[0, length:], skip_special_tokens=True)
-                    ans, direct_extract = self.extract_answer(row, response)
+                    ans = self.extract_answer(row, response)
                 if ans == answers[row_index]:
                     correct_num += 1
                     correct = 1

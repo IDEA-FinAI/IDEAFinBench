@@ -60,11 +60,11 @@ if __name__ == "__main__":
     LLMS_PATH = "/data/FinAi_Mapping_Knowledge/LLMs" # LLMs本地模型路径，也可以在下面的model_path直接指定huggingface的模型路径
     # 不需要测试的模型直接注释掉即可
     model_data = [
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/chatglm3-6b",
-            "exp_name": "chatglm3-6b",
-        },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/chatglm3-6b",
+        #     "exp_name": "chatglm3-6b",
+        # },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
@@ -80,11 +80,11 @@ if __name__ == "__main__":
         #     "model_path": LLMS_PATH + "/Yi-6B-Chat",
         #     "exp_name": "Yi-6B-Chat",
         # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
-        #     "exp_name": "Baichuan2-7B-Base",
-        # },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
+            "exp_name": "Baichuan2-7B-Base",
+        },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Baichuan2-13B-Base",

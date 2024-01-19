@@ -143,7 +143,7 @@ class Evaluator:
     def extract_answer(self, line, gen_ans):
         m = re.findall(r'所以答案是(.+?)。', gen_ans, re.M)
         if len(m) > 0 and m[-1] in self.choices:
-            return m[-1], True
+            return m[-1]
         answer_patterns = [
             r'([ABCD])是正确的',
             r'选项([ABCD])正确',
@@ -162,12 +162,12 @@ class Evaluator:
             m = re.search(answer_pattern, gen_ans, re.M)
             if m:
                 answer = m.group(1)
-                return answer, False
+                return answer
         # only containing one choice-character
         m = re.findall(r'[ABCD]', gen_ans, re.M)
         if len(m) >= 1:
             answer = m[0]
-            return answer, False
+            return answer
         # only containing one choice-context
         choices_dict = {}
         pattern = ""
@@ -179,8 +179,8 @@ class Evaluator:
         print("w/ escape:",repr(pattern),gen_ans,(len(m)>=1))
         if len(m) >= 1:
             answer = choices_dict[m[0]]
-            return answer, False
-        return  random.choice('ABCD'), False
+            return answer
+        return  random.choice('ABCD')
 
     def extract_multiple_answer(self, gen_ans):
         letter_dict = {'A': 0, 'B': 0, 'C': 0, 'D': 0}
