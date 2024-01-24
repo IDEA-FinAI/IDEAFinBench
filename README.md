@@ -377,7 +377,7 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 
 ## 运行评测代码
 
-- FinKnowledgeEval提供了可以并行测试多个语言模型的接口。使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测：
+- FinKnowledgeEval提供了可以并行测试多个语言模型的接口，使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测（也可以只进行单个模型评测）：
 
 - 在model_data字典的位置指定需要测试的语言模型的路径与名称，其中LLMS_PATH是本地存放多个LLM权重文件的路径：
 ```python
@@ -411,7 +411,7 @@ model_data = [
 ```
 
 - 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modlescope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径；
-- 
+
 - LLMS_PATH文件夹示例
 - -----LLMs
   - ----chatglm3-6b
@@ -426,9 +426,9 @@ model_data = [
   - ----Yi-6B-Chat
   - ----Llama-2-13b-chat-hf
   - ----chinese-alpaca-2-7b
-  - 
+ 
 - 也支持将"model_path"直接替换为Huggingface模型路径，例如：
-- 
+
 ```python
 model_data = [
     {
@@ -458,6 +458,7 @@ model_data = [
     }
 ]
 ```
+
 - 模型评测的超参数配置
 
 ```python
