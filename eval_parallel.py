@@ -17,7 +17,7 @@ def evaluate_model(model_type, model_path, exp_name):
     output_path = os.path.join(PROJ_HOME, "output_dir", exp_name, exp_date)
     print(f"output_path: {output_path}")
  
-    dataset = "cpa_one"
+    dataset = "cpa_one"                    # 指定数据集名称
     dataset_dir = os.path.join(DATASET_HOME, dataset)
     command_dict = {  
         "--model_type": model_type,        # 需要加载模型的类型，llama或auto
@@ -25,13 +25,13 @@ def evaluate_model(model_type, model_path, exp_name):
         "--data_dir": dataset_dir,         # 测试集目录
         "--output_dir": output_path,       # 输出目录
         "--cot": "False",                  # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
-        "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集
-        "--shots": "4",                    # fewshot的shot数，0表示不使用fewshot
+        "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集需要设置为True，其他情况默认为False
+        "--shots": "4",                    # fewshot的示例个数，0表示不使用fewshot
         "--constrained_decoding": "True",  # 受限解码仅支持单选题&&answer-only模式为True，其他情况必须设置为False
         "--temperature": "0.01",           # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
-        "--do_test": "False",              # FinKnowledgeEval公布了答案，默认do_test为False，选择验证集val计算准确率，如果接入其他测试集并且需要过一遍test，这时候才选择为True
-        "--dynamic_fs": "False",           # FinKnowledgeEval提供了dynamic_fs数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False
-        "--language": "zh",                # 根据语言选择不同的prompt，例如CPA为zh，CFA为en
+        "--do_test": "False",              # FinKnowledgeEval公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True
+        "--dynamic_fs": "False",           # FinKnowledgeEval提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False
+        "--language": "zh",                # 根据中文或英文选择不同的prompt，例如CPA为zh，CFA为en
     }
 
     command = [
