@@ -80,6 +80,8 @@ C is correct. American waterfalls, also known as deal-by-deal waterfalls, pay pe
 
 - **Level 2** 
 
+Level 2的表格解析方式可参考[cfa_preprocessing.md](/assets/cfa2_preprocessing.md)
+
 ```
 id: 0
 question:
