@@ -8,7 +8,7 @@ FinKnowledgeEval旨在评估通用大模型在处理金融相关知识和问题�
 
 通过FinKnowledgeEval，我们希望能够更深入地了解通用大模型在处理复杂和专业化金融知识方面的能力。这不仅有助于推动金融领域的人工智能应用发展，也为未来更广泛的行业应用提供了重要的基础。
 
-# ❤️ 数据集介绍
+# 📝 数据集介绍
 
 ## **CPA-Eval数据集**
   
@@ -173,21 +173,21 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 ## 环境准备
 
  ```python
-    conda create --name finknowledge python=3.11
-    conda activate finknowledge
+conda create --name finknowledge python=3.11
+conda activate finknowledge
  ```
 
 ```python
-    git clone https://github.com/Tsukumizu/FinKnowledgeEval.git
-    cd FinKnowledgeEval
-    pip install -r requirements.txt
+git clone https://github.com/Tsukumizu/FinKnowledgeEval.git
+cd FinKnowledgeEval
+pip install -r requirements.txt
 ```
 
 ## 查看数据集或上传自己的数据集
 
 查看FinKnowledgeEval的官方数据集
 ```python
-    cd datasets
+cd datasets
 ```
 
 支持以[C-Eval](https://huggingface.co/datasets/ceval/ceval-exam)官方格式构建的数据集直接接入到FinKnowledgeEval项目进行评测。
@@ -200,7 +200,8 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 
 - FinKnowledgeEval提供了可以并行测试多个语言模型的接口，使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测（也可以只进行单个模型评测）：
 
-- 在model_data字典的位置指定需要测试的语言模型的路径与名称，其中LLMS_PATH是本地存放多个LLM权重文件的路径：
+- 在`model_data`字典的位置指定需要测试的语言模型的路径与名称，其中`LLMS_PATH`是本地存放多个LLM权重文件的路径：
+
 ```python
 model_data = [
     {
@@ -231,8 +232,6 @@ model_data = [
 ]
 ```
 
-- 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modlescope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径；
-
 - LLMS_PATH文件夹示例
 - -----LLMs
   - ----chatglm3-6b
@@ -247,6 +246,27 @@ model_data = [
   - ----Yi-6B-Chat
   - ----Llama-2-13b-chat-hf
   - ----chinese-alpaca-2-7b
+
+- 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modlescope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径，以下是使用modelscope下载chatglm3-6b并保存到本地文件夹的示例：
+
+首先安装modelscope
+```
+pip install modelscope
+```
+
+以chatglm3-6b为例，下载并保存在本地文件夹：
+
+```python
+from modelscope import AutoTokenizer, AutoModel, snapshot_download
+model_dir = snapshot_download("ZhipuAI/chatglm3-6b", revision = "v1.0.0")
+tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
+model = AutoModel.from_pretrained(model_dir, trust_remote_code=True).half().cuda()
+save_path = "FinKnowledgeEval/LLMs/chatglm3-6b"
+tokenizer.save_pretrained(save_path)
+model.save_pretrained(save_path)
+```
+
+执行完成后即可设置`LLMS_PATH="FinKnowledgeEval/LLMs"`
  
 - 也支持将"model_path"直接替换为Huggingface模型路径，例如：
 
@@ -397,6 +417,10 @@ Avg:
 42.43
 ```
 
+# ❤️ 致谢
 
+本项目参考了下列开源项目的实现，对相关人员表示诚挚的谢意：
 
+- **[hkust-nlp/ceval](https://github.com/hkust-nlp/ceval/)**
 
+- **[SUFE-AIFLM-Lab/FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)**
