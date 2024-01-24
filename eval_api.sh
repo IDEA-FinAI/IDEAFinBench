@@ -1,5 +1,5 @@
 #!/bin/bash
-#测试本地LLM需要自己部署好本地http://0.0.0.0:8000的LLM API
+# 测试本地LLM需要自己部署好本地 http://0.0.0.0:8000 的LLM API
 set -e
 
 PYTHON_SCRIPT="main.py"
