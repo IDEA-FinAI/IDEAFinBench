@@ -72,7 +72,7 @@ class API_Evaluator(Evaluator):
         return prompt
     
     # RAG-fewshot暂不支持cot，cpa_one_rag和cpa_two_rag里的Fewshot目前不包含解析用于cot。
-    def generate_rag_shot_prompt(self, subject, row, multiple=False, language="zh"):
+    def generate_dynamic_few_shot_prompt(self, subject, row, multiple=False, language="zh"):
         if multiple == False:
             prompt=[{"role":"system","content":self.one_ans_instruct_zh.format(subject=subject) if language=="zh" else self.one_ans_instruct_en.format(subject=subject)}]
         else:
@@ -98,7 +98,7 @@ class API_Evaluator(Evaluator):
         save_result_dir=None,
         do_test=False,
         multiple=False,
-        rag=False,
+        dynamic_fs=False,
         language="zh"
     ):
         correct_num = 0
@@ -107,10 +107,10 @@ class API_Evaluator(Evaluator):
             result = []
             score=[]
         prefix_prompt = self.generate_few_shot_prompt(subject=subject, dev_df=dev_df, multiple=multiple, language=language)
-        if rag == True:
-            prefix_prompt = self.generate_rag_few_shot_prompt(subject, row, multiple=multiple)
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(),total=len(test_df)):
+            if dynamic_fs == True:
+                prefix_prompt = self.generate_dynamic_few_shot_prompt(subject, row, multiple=multiple)
             question = self.format_example(row, include_answer=False)
             full_prompt = prefix_prompt + question
             response=None

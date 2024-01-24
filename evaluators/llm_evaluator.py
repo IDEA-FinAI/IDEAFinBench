@@ -66,7 +66,7 @@ class LLM_Evaluator(Evaluator):
             save_result_dir=None,
             do_test=False,
             multiple=False,
-            rag=False,
+            dynamic_fs=False,
             language="zh"
         ):
         all_answers = {}
@@ -75,10 +75,10 @@ class LLM_Evaluator(Evaluator):
             result = []
             score = []
         history = self.generate_few_shot_prompt(subject=subject_name, dev_df=dev_df, cot=self.cot, multiple=multiple, language=language)
-        if rag == True:
-            history = self.generate_rag_few_shot_prompt(subject=subject_name, row=row, multiple=multiple, language=language)
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(), total=len(test_df)):
+            if dynamic_fs == True:
+                history = self.generate_dynamic_few_shot_prompt(subject=subject_name, row=row, multiple=multiple, language=language)
             question = self.format_example(row, include_answer=False, cot=self.cot, language=language)
             instruction = history + question
             inputs = self.tokenizer(instruction, return_tensors="pt")

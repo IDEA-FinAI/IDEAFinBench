@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", type=str)
     parser.add_argument("--do_test", choices=["False","True"], default="False")
     parser.add_argument('--multiple', choices=["False","True"], default="False")
-    parser.add_argument('--rag', choices=["False","True"], default="False")
+    parser.add_argument('--dynamic_fs', choices=["False","True"], default="False")
     parser.add_argument("--language", default="zh", type=str)
     parser.add_argument("--use_api", choices=["False", "True"], default="False")
     parser.add_argument("--openai_key", default="sk-*****************", type=str)
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     args.do_save_csv = args.do_save_csv == "True"
     args.do_test = args.do_test == "True"
     args.multiple = args.multiple == "True"
-    args.rag = args.rag == "True"
+    args.dynamic_fs = args.dynamic_fs == "True"
     args.use_api = args.use_api == "True"
     args.use_openai = args.use_openai == "True"
     

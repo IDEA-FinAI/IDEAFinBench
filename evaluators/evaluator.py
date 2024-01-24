@@ -48,7 +48,7 @@ class Evaluator:
                 save_result_dir=save_result_dir if args.do_save_csv else None,
                 do_test=args.do_test,
                 multiple=args.multiple,
-                rag=args.rag,
+                dynamic_fs=args.dynamic_fs,
                 language=args.language
             )
             print(f"Subject: {subject_name}")
@@ -128,7 +128,7 @@ class Evaluator:
             )
         return prompt
 
-    def generate_rag_few_shot_prompt(self, subject, row, multiple=False, language="zh"):
+    def generate_dynamic_few_shot_prompt(self, subject, row, multiple=False, language="zh"):
         if multiple == False:
             prompt = self.one_ans_instruct_zh.format(subject=subject) if language == "zh" else self.one_ans_instruct_en.format(subject=subject)
             prompt += "\n\n"
