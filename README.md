@@ -142,7 +142,7 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 # 🚀 模型性能
 
 ## **模型整体表现**
-- **完整的benchmark请打开[all_results.md](/assets/all_results.md)**
+- **完整的benchmark请点击[all_results.md](/assets/all_results.md)**
 
 | 模型                   | CPA 单选 | CPA 多选 | CFA Level1 | CFA Level2 |
 |------------------------|--------|--------|------------|------------|
