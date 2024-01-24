@@ -200,7 +200,7 @@ cd datasets
 
 - FinKnowledgeEval提供了可以并行测试多个语言模型的接口，使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测（也可以只进行单个模型评测）：
 
-- 在`model_data`字典的位置指定需要测试的语言模型的路径与名称，其中`LLMS_PATH`是本地存放多个LLM权重文件的路径：
+- 在`model_data`字典里指定需要测试的语言模型的类型（分为auto和llama）、路径与名称，其中`LLMS_PATH`是本地存放多个LLM权重文件的路径：
 
 ```python
 model_data = [
