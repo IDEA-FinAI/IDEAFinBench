@@ -1,8 +1,6 @@
 # 对Dynamic Few-shot的支持
 
-- [Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)
-
-- 本框架支持了这篇工作提出的动态少样本，即在训练集足够大时对每个题目定制地提供少样本示例以增强模型对当前题目的理解；
+- 本框架支持了这篇工作提出的动态少样本，即在训练集足够大时对每个题目定制地提供少样本示例以增强模型对当前题目的理解；[Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)
 
 - 我们使用了Duxiaoman开源的[FinCorpus](https://huggingface.co/datasets/Duxiaoman-DI/FinCorpus/tree/main/data)作为大规模的金融试题训练集，并对题目进行清洗，包括去重、过滤低质量题目、文本结构重构等等，最后得到约20万道金融考试题目；
 
