@@ -37,7 +37,7 @@
 
 ## **调用OCR处理**
 
-- 我们调用了阿里云的[视觉智能表格识别库](https://api.aliyun.com/api/ocr/2019-12-30/RecognizeTable)以识别CFA Level2题干中的表格
+- 我们调用了阿里云的[视觉智能表格识别API](https://api.aliyun.com/api/ocr/2019-12-30/RecognizeTable)以识别CFA Level2题干中的表格
 
 - 判断当前题干的图片能否正常识别并解析为表格，采用markdown保存在题干对应的位置，例如
 
