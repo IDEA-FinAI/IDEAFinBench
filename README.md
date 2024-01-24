@@ -349,15 +349,231 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 
 # 🎈 如何进行模型评估
 
+## 环境准备
 
+ ```python
+    conda create --name finknowledge python=3.11
+    conda activate finknowledge
+ ```
 
+```python
+    git clone https://github.com/Tsukumizu/FinKnowledgeEval.git
+    cd FinKnowledgeEval
+    pip install -r requirements.txt
+```
 
+## 查看数据集或上传自己的数据集
 
+查看FinKnowledgeEval的官方数据集
+```python
+    cd datasets
+```
 
+支持以[C-Eval](https://huggingface.co/datasets/ceval/ceval-exam)官方格式构建的数据集直接接入到FinKnowledgeEval项目进行评测。
 
+每个数据集由训练集dev，验证集val，测试集test组成。其中训练集dev用于构建few-shot示例，且包含explanation字段用于few-shot的思维链；验证集val用于调整超参数；测试集test用于衡量模型的最终性能。
 
+考虑到便利性，FinKnowledgeEval项目选择将评测用试题都放在验证集val并提供答案，便于测试人员直接输出语言模型的评测结果。
 
+## 运行评测代码
 
+- FinKnowledgeEval提供了可以并行测试多个语言模型的接口。使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测：
+
+- 在model_data字典的位置指定需要测试的语言模型的路径与名称，其中LLMS_PATH是本地存放多个LLM权重文件的路径：
+```python
+model_data = [
+    {
+        "model_type": "auto",
+        "model_path": LLMS_PATH + "/chatglm3-6b",
+        "exp_name": "chatglm3-6b",
+    },
+    {
+        "model_type": "auto",
+        "model_path": LLMS_PATH + "/Baichuan2-7B-Chat",
+        "exp_name": "Baichuan2-7B-Chat",
+    },
+    {
+        "model_type": "auto",
+        "model_path": LLMS_PATH + "/Yi-6B-Chat",
+        "exp_name": "Yi-6B-Chat",
+    },
+    {
+        "model_type": "llama",
+        "model_path": LLMS_PATH + "/Llama-2-13b-chat-hf",
+        "exp_name": "Llama-2-13b-chat-hf",
+    },
+    {
+        "model_type": "llama",
+        "model_path": LLMS_PATH + "/chinese-alpaca-2-7b",
+        "exp_name": "chinese-alpaca-2-7b",
+    }
+]
+```
+
+- 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modlescope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径；
+- 
+- LLMS_PATH文件夹示例
+- -----LLMs
+  - ----chatglm3-6b
+    - ----config.json
+    - ----generation_config.json
+    - ----pytorch_model.bin
+    - ----pytorch_model.bin.index.json
+    - ----special_tokens_map.json
+    - ----tokenizer_config.json
+    - ----tokenizer.model
+  - ----Baichuan2-7B-Chat
+  - ----Yi-6B-Chat
+  - ----Llama-2-13b-chat-hf
+  - ----chinese-alpaca-2-7b
+  - 
+- 也支持将"model_path"直接替换为Huggingface模型路径，例如：
+- 
+```python
+model_data = [
+    {
+        "model_type": "auto",
+        "model_path": "THUDM/chatglm3-6b",
+        "exp_name": "chatglm3-6b",
+    },
+    {
+        "model_type": "auto",
+        "model_path": "baichuan-inc/Baichuan2-7B-Chat",
+        "exp_name": "Baichuan2-7B-Chat",
+    },
+    {
+        "model_type": "auto",
+        "model_path": "01-ai/Yi-6B-Chat",
+        "exp_name": "Yi-6B-Chat",
+    },
+    {
+        "model_type": "llama",
+        "model_path": "meta-llama/Llama-2-7b-chat-hf",
+        "exp_name": "Llama-2-7b-chat-hf",
+    },
+    {
+        "model_type": "llama",
+        "model_path": "hfl/chinese-alpaca-2-7b",
+        "exp_name": "chinese-alpaca-2-7b",
+    }
+]
+```
+- 模型评测的超参数配置
+
+```python
+dataset = "cpa_one"
+command_dict = {  
+    "--model_type": model_type,        # 需要加载模型的类型，llama或auto
+    "--model_path": model_path,        # 模型路径
+    "--data_dir": dataset_dir,         # 测试集目录
+    "--output_dir": output_path,       # 输出目录
+    "--cot": "False",                  # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
+    "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集
+    "--shots": "4",                    # fewshot的shot数，0表示不使用fewshot
+    "--constrained_decoding": "True",  # 受限解码仅支持单选题&&answer-only模式为True，其他情况必须设置为False
+    "--temperature": "0.01",           # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
+    "--do_test": "False",              # FinExamEval公布了答案，默认do_test为False，选择验证集val计算准确率，如果接入其他测试集并且需要过一遍test，这时候才选择为True
+    "--rag": "False",                  # FinExamEval提供了rag-fewshot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False
+    "--language": "zh",                # 根据语言选择不同的prompt，例如CPA为zh，CFA为en
+}
+```
+
+- 执行评测的主入口
+
+```python
+    cd FinKnowledgeEval
+    python eval_parallel.py
+```
+
+- 我们同样支持对API的评测，包括ChatGPT以及以OpenAI对话格式部署的本地语言模型:
+
+- API评测的超参数配置
+```python
+USE_API="True"
+MODEL_NAME="gpt-3.5-turbo"        # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要指定，但需要LLM名称用于日志文件命名
+USE_OPENAI="True"                 # 是否使用openai，调用本地LLM的API则为False
+OPENAI_KEY="sk-**************"    # 填入自己的openai key，本地LLM自动忽略
+
+DATA_DIR="cpa_one"
+COT="False"
+SHOTS=4
+TEMPERATURE=0.2
+DO_SAVE_CSV="True"
+DO_TEST="False"
+MULTIPLE="False"
+RAG="False"
+LANGUAGE="zh"
+```
+
+- 执行API评测的主入口（暂不支持多个API同时进行测试）
+```python
+    cd FinKnowledgeEval
+    bash eval_api.sh
+```
+
+- 查看评测日志：模型的评测记录在FinKnowledgeEval/eval_logs下实时更新，输出每个样本的Prompt以及执行结果：
+
+```
+prompt:
+ 以下是关于accounting考试的单项选择题，请选出其中的一个正确答案。
+
+下列各事项中，各公司应按照股份支付会计准则处理的是（ ）。
+A. 大海公司以自身普通股授予其子公司管理人员
+B. 飞鸟公司分配现金股利给其股东
+C. 青山公司租赁房屋给在职员工免费使用
+D. 绿水公司用外购产品分配给在职员工
+答案：A
+
+甲公司通过二级市场回购股份以授予限制性股票的方式对员工进行股权激励。2×22年9月15日，甲公司股东大会通过股权激励方案，确定授予价格，并授予董事会确定具体人员和股份数量，11月28日，董事会确定具体人员和股份数量，并与员工签订认股协议，12月10日，员工向甲公司支付认购款，2×23年1月25日，甲公司办理股权登记手续。甲公司该项股权激励授予日为（ ）。
+A. 2×22年9月15日
+B. 2×22年11月28日
+C. 2×22年12月10日
+D. 2×23年1月25日
+答案：B
+
+大海公司在股份支付协议生效后，如果对其条件和条款进行修改，下列说法中，不正确的是（ ）。
+A. 应当由董事会提议并经股东大会审议批准，或者由股东大会授权董事会决定
+B. 如果修改增加了所授予的权益工具的公允价值，企业相应地应确认取得服务的增加
+C. 如果修改减少了所授予的权益工具的公允价值，企业相应地应确认取得服务的减少
+D. 无论如何修改，企业都应至少确认按照权益工具在授予日公允价值来计量获取的服务
+答案：C
+
+根据《企业会计准则第11号——股份支付》规定，下列表述不正确的是（ ）。
+A. 股份支付是指企业为获取职工或其他方提供的服务而授予权益工具或者承担以权益工具为基础确定的负债的交易
+B. 企业授予职工权益工具，包括期权、认股权证等衍生工具
+C. 无论是权益结算的股份支付，还是现金结算的股份支付，均以权益工具的公允价值为计量基础
+D. 现金结算的股份支付，企业授予职工权益工具，实质上不属于职工薪酬的组成部分
+答案：D
+
+下列各项中，不属于借款费用的是（　）。
+A. 外币借款汇兑差额
+B. 发行股票支付的承销商佣金、手续费
+C. 企业发行债券产生的折价或者溢价的摊销额
+D. 以咨询费名义向银行支付的借款利息
+答案：
+response:      D
+ans:           D
+ground truth:  B
+
+--------------------------------------------------------------------------------
+Accuracy_subject:
+accounting :  40.94
+auditing :  49.85
+economic_law :  44.57
+financial_management :  37.61
+strategy :  55.38
+tax_law :  34.77
+--------------------------------------------------------------------------------
+Accuracy_grouped:
+accounting :  40.94
+auditing :  49.85
+economic_law :  44.57
+financial_management :  37.61
+strategy :  55.38
+tax_law :  34.77
+Avg: 
+42.43
+```
 
 
 
