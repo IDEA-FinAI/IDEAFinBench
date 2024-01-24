@@ -71,9 +71,8 @@ class LLM_Evaluator(Evaluator):
         ):
         all_answers = {}
         correct_num = 0
-        if save_result_dir:
-            result = []
-            score = []
+        result = []
+        score = []
         history = self.generate_few_shot_prompt(subject=subject_name, dev_df=dev_df, cot=self.cot, multiple=multiple, language=language)
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(), total=len(test_df)):
@@ -118,22 +117,20 @@ class LLM_Evaluator(Evaluator):
                 else:
                     correct = 0
             print(f"\n========================begin {str(row_index)}========================")
-            print("prompt:\n", instruction)
+            print("prompt:")
+            print(instruction)
             print("response:     ", response.strip())
             print("ans:          ", ans)
             print("ground truth: ", ground_truth, "\n")
-            if save_result_dir:
-                result.append(response)
-                score.append(correct)
+            result.append(response)
+            score.append(correct)
             print(f"\n========================end {str(row_index)}========================")
             
             all_answers[str(row_index)] = ans
 
         correct_ratio = 100*correct_num/len(answers)
-
-        if save_result_dir:
-            test_df['model_output'] = result
-            test_df['correctness'] = score
-            test_df.to_csv(os.path.join(save_result_dir, f'{subject_name}_test.csv'))
+        test_df['model_output'] = result
+        test_df['correctness'] = score
+        test_df.to_csv(os.path.join(save_result_dir, f'{subject_name}_test.csv'))
 
         return correct_ratio, all_answers

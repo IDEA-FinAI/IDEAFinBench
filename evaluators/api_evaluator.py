@@ -103,9 +103,8 @@ class API_Evaluator(Evaluator):
     ):
         correct_num = 0
         all_answers = {}
-        if save_result_dir:
-            result = []
-            score=[]
+        result = []
+        score=[]
         prefix_prompt = self.generate_few_shot_prompt(subject=subject, dev_df=dev_df, multiple=multiple, language=language)
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(),total=len(test_df)):
@@ -130,7 +129,7 @@ class API_Evaluator(Evaluator):
                     continue
             if response is None:
                 correct=0
-            ans, direct_ans = self.extract_answer(row, response)
+            ans = self.extract_answer(row, response)
             if ans == answers[row_index]:
                 correct_num += 1
                 correct = 1
@@ -144,18 +143,16 @@ class API_Evaluator(Evaluator):
             print("response:     ", response.strip())
             print("ans:          ", ans)
             print("ground truth: ", ground_truth, "\n")
-            if save_result_dir:
-                result.append(response)
-                score.append(correct)
+            result.append(response)
+            score.append(correct)
             print(f"\n========================end {str(row_index)}========================")
 
             all_answers[str(row_index)] = ans
 
         correct_ratio = 100*correct_num/len(answers)
 
-        if save_result_dir:
-            test_df['model_output'] = result
-            test_df['correctness'] = score
-            test_df.to_csv(os.path.join(save_result_dir, f'{subject}_test.csv'))
+        test_df['model_output'] = result
+        test_df['correctness'] = score
+        test_df.to_csv(os.path.join(save_result_dir, f'{subject}_test.csv'))
 
         return correct_ratio, all_answers

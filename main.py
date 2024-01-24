@@ -14,7 +14,6 @@ if __name__ == "__main__":
     parser.add_argument("--shots", "-k", type=int, default=5)
     parser.add_argument("--constrained_decoding", choices=["False","True"], default="True")
     parser.add_argument("--temperature",type=float,default=0.2)
-    parser.add_argument("--do_save_csv", choices=["False","True"], default="False")
     parser.add_argument("--output_dir", type=str)
     parser.add_argument("--do_test", choices=["False","True"], default="False")
     parser.add_argument('--multiple', choices=["False","True"], default="False")
@@ -27,7 +26,6 @@ if __name__ == "__main__":
 
     args.cot = args.cot == "True"
     args.constrained_decoding = args.constrained_decoding == "True"
-    args.do_save_csv = args.do_save_csv == "True"
     args.do_test = args.do_test == "True"
     args.multiple = args.multiple == "True"
     args.dynamic_fs = args.dynamic_fs == "True"

@@ -7,9 +7,9 @@ PYTHON_SCRIPT="main.py"
 export PROJ_HOME=$PWD
 
 USE_API="True"                    # 执行eval_api.sh则默认为True，不需要修改
-USE_OPENAI="True"                 # 是否使用openai，调用本地LLM的API则为False
-MODEL_NAME="gpt-3.5-turbo"        # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要指定，但需要LLM名称用于日志文件命名
-OPENAI_KEY="sk-**************"    # 填入自己的openai key，本地LLM自动忽略
+USE_OPENAI="False"                # 是否使用openai，调用本地LLM的API则为False
+MODEL_NAME="Yi-6B-Chat"        # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要指定，但需要LLM名称用于日志文件命名
+OPENAI_KEY="sk-**************"    # 填入自己的openai key，如果使用本地LLM自动忽略
 
 DATA_DIR="cpa_one"                # 指定数据集名称
 COT="False"                       # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
@@ -19,7 +19,7 @@ TEMPERATURE=0.01                  # 大部分情况下都默认为0.01，模型�
 DO_TEST="False"                   # FinKnowledgeEval公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True 
 DYNAMIC_FS="False"                # FinKnowledgeEval提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False   
 LANGUAGE="zh"                     # 根据中文或英文选择不同的prompt，例如CPA为zh，CFA为en     
-DO_SAVE_CSV="True"
+DO_SAVE_CSV="False"
 
 exp_date=$(date +"%Y%m%d%H%M%S")
 echo "exp_date": $exp_date
@@ -45,7 +45,7 @@ python $PYTHON_SCRIPT \
     --output_dir $output_dir \
     --do_test $DO_TEST \
     --multiple $MULTIPLE \
-    --rag $RAG \
+    --dynamic_fs $DYNAMIC_FS \
     --language $LANGUAGE \
     --use_api $USE_API \
     --openai_key $OPENAI_KEY \

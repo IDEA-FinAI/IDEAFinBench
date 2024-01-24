@@ -23,12 +23,8 @@ class Evaluator:
             subject_mapping = json.load(f)
         subject_list = list(subject_mapping.keys())
         accuracy, summary = {}, {}
-
+        
         run_date=time.strftime('%Y-%m-%d_%H-%M-%S',time.localtime(time.time()))
-        output_dir = args.output_dir
-        save_result_dir=os.path.join(output_dir,f"take1")
-        if not os.path.exists(save_result_dir):
-            os.makedirs(save_result_dir,exist_ok=True)
 
         all_answers = {}
         for index,subject_name in enumerate(subject_list):
@@ -45,7 +41,7 @@ class Evaluator:
                 subject_name, 
                 val_df, 
                 dev_df,
-                save_result_dir=save_result_dir if args.do_save_csv else None,
+                save_result_dir=args.output_dir,
                 do_test=args.do_test,
                 multiple=args.multiple,
                 dynamic_fs=args.dynamic_fs,
@@ -73,7 +69,7 @@ class Evaluator:
             total_correct += info["correct"]
         summary['All'] = {"score": 100 * total_correct / total_num, "num": total_num, "correct": total_correct}
 
-        json.dump(all_answers,open(save_result_dir+'/submission.json','w'),ensure_ascii=False,indent=4)
+        json.dump(all_answers,open(args.output_dir+'/submission.json','w'),ensure_ascii=False,indent=4)
 
         print('-' * 80)
         print("Accuracy_subject:")
@@ -90,7 +86,7 @@ class Evaluator:
         formatted_avg = "{:.2f}".format(summary['All']['score'])
         print(formatted_avg)
         
-        json.dump(summary,open(save_result_dir+'/summary.json','w'),ensure_ascii=False,indent=2)    
+        json.dump(summary,open(args.output_dir+'/summary.json','w'),ensure_ascii=False,indent=2)    
     
     def format_example(self, line, include_answer=True, cot=False, language="zh"):
         example = line['question']

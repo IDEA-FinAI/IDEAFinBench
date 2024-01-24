@@ -14,8 +14,10 @@ DATASET_HOME = os.path.join(PROJ_HOME, "datasets")
 def evaluate_model(model_type, model_path, exp_name):
     exp_date = datetime.now().strftime("%Y%m%d%H%M%S")
     print(f"exp_date: {exp_date}")
-    output_path = os.path.join(PROJ_HOME, "output_dir", exp_name, exp_date)
-    print(f"output_path: {output_path}")
+    output_dir = os.path.join(PROJ_HOME, "output_dir", exp_name, exp_date)
+    print(f"output_dir: {output_dir}")
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
  
     dataset = "cpa_one"                    # 指定数据集名称
     dataset_dir = os.path.join(DATASET_HOME, dataset)
@@ -23,7 +25,7 @@ def evaluate_model(model_type, model_path, exp_name):
         "--model_type": model_type,        # 需要加载模型的类型，llama或auto
         "--model_path": model_path,        # 模型路径
         "--data_dir": dataset_dir,         # 测试集目录
-        "--output_dir": output_path,       # 输出目录
+        "--output_dir": output_dir,        # 输出目录
         "--cot": "False",                  # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
         "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集需要设置为True，其他情况默认为False
         "--shots": "4",                    # fewshot的示例个数，0表示不使用fewshot
@@ -65,26 +67,26 @@ if __name__ == "__main__":
             "model_path": LLMS_PATH + "/chatglm3-6b",
             "exp_name": "chatglm3-6b",
         },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/chatglm3-6b-base",
-            "exp_name": "chatglm3-6b-base",
-        },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/Yi-6B",
-            "exp_name": "Yi-6B",
-        },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/Yi-6B-Chat",
-            "exp_name": "Yi-6B-Chat",
-        },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
-            "exp_name": "Baichuan2-7B-Base",
-        },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
+        #     "exp_name": "chatglm3-6b-base",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-6B",
+        #     "exp_name": "Yi-6B",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-6B-Chat",
+        #     "exp_name": "Yi-6B-Chat",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
+        #     "exp_name": "Baichuan2-7B-Base",
+        # },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Baichuan2-13B-Base",
