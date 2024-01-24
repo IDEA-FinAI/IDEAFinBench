@@ -58,10 +58,6 @@ class LLM_Evaluator(Evaluator):
         self.sB_id = self.tokenizer.encode("B", add_special_tokens=False)[0]
         self.sC_id = self.tokenizer.encode("C", add_special_tokens=False)[0]
         self.sD_id = self.tokenizer.encode("D", add_special_tokens=False)[0]
-        self.A_id = self.tokenizer.encode("：A", add_special_tokens=False)[0]
-        self.B_id = self.tokenizer.encode("：B", add_special_tokens=False)[0]
-        self.C_id = self.tokenizer.encode("：C", add_special_tokens=False)[0]
-        self.D_id = self.tokenizer.encode("：D", add_special_tokens=False)[0]
         
     def eval_subject(self, 
             subject_name, 
@@ -99,9 +95,7 @@ class LLM_Evaluator(Evaluator):
                     logits = generation_output.scores[0][0]
 
                     logits = logits.float().cpu().detach()
-                    choices1_logits = logits[[self.sA_id,self.sB_id,self.sC_id,self.sD_id]]
-                    choices2_logits = logits[[self.A_id,self.B_id,self.C_id,self.D_id]]
-                    choicesAll_logits = (choices1_logits + choices2_logits).numpy()
+                    choicesAll_logits = logits[[self.sA_id,self.sB_id,self.sC_id,self.sD_id]].numpy()
                     assert not (np.any(np.isinf(choicesAll_logits)) or np.any(np.isnan(choicesAll_logits)))
                     ans = {0: "A", 1: "B", 2: "C", 3: "D"}[np.argmax(choicesAll_logits)]
                     response = self.tokenizer.decode([logits.argmax(-1).item()])

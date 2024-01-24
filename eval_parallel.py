@@ -6,7 +6,7 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,5,6"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 PROJ_HOME = os.getcwd()
 DATASET_HOME = os.path.join(PROJ_HOME, "datasets")
@@ -60,41 +60,41 @@ if __name__ == "__main__":
     LLMS_PATH = "/data/FinAi_Mapping_Knowledge/LLMs" # LLMs本地模型路径，也可以在下面的model_path直接指定huggingface的模型路径
     # 不需要测试的模型直接注释掉即可
     model_data = [
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/chatglm3-6b",
-        #     "exp_name": "chatglm3-6b",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
-        #     "exp_name": "chatglm3-6b-base",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-6B",
-        #     "exp_name": "Yi-6B",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Yi-6B-Chat",
-        #     "exp_name": "Yi-6B-Chat",
-        # },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/chatglm3-6b",
+            "exp_name": "chatglm3-6b",
+        },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/chatglm3-6b-base",
+            "exp_name": "chatglm3-6b-base",
+        },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Yi-6B",
+            "exp_name": "Yi-6B",
+        },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Yi-6B-Chat",
+            "exp_name": "Yi-6B-Chat",
+        },
         {
             "model_type": "auto",
             "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
             "exp_name": "Baichuan2-7B-Base",
         },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Baichuan2-13B-Base",
-        #     "exp_name": "Baichuan2-13B-Base",
-        # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Baichuan2-7B-Chat",
-        #     "exp_name": "Baichuan2-7B-Chat",
-        # },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Baichuan2-13B-Base",
+            "exp_name": "Baichuan2-13B-Base",
+        },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Baichuan2-7B-Chat",
+            "exp_name": "Baichuan2-7B-Chat",
+        },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Baichuan2-13B-Chat",
