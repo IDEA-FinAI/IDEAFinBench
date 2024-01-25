@@ -4,7 +4,7 @@
 
 - 我们使用了Duxiaoman开源的[FinCorpus](https://huggingface.co/datasets/Duxiaoman-DI/FinCorpus/tree/main/data)作为大规模的金融试题训练集，并对题目进行清洗，包括去重、过滤低质量题目、文本结构重构等等，最后得到约20万道金融考试题目；
 
-- 我们采用[bge-embedding](https://huggingface.co/BAAI/bge-large-zh-v1.5)编码每一道金融例题的语义信息并得到Embedding，保存到向量数据库中；
+- 我们采用[bge-embedding](https://huggingface.co/BAAI/bge-large-zh-v1.5)语义编码每一道金融例题并得到Embedding，保存到向量数据库中；
 
 - 我们针对FinKnowledgeEval里每一道CPA单选题和CPA多选题进行编码并在数据库进行向量相似检索，得到5道相似的例题作为少样本示例插入到Prompt中；
 
