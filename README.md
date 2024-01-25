@@ -194,7 +194,7 @@ cd datasets
 
 每个数据集由训练集dev，验证集val，测试集test组成。其中训练集dev用于构建few-shot示例，且包含explanation字段用于few-shot的思维链；验证集val用于调整超参数；测试集test用于衡量模型的最终性能。
 
-考虑到便利性，FinKnowledgeEval项目选择将评测用试题都放在验证集val并提供答案，便于测试人员直接输出语言模型的评测结果。
+考虑到使用人员的便利性，FinKnowledgeEval项目选择将评测题目都放在验证集val并提供答案，便于测试人员直接输出语言模型的评测结果。
 
 ## 运行评测代码
 
@@ -346,7 +346,7 @@ DYNAMIC_FS="False"                # FinKnowledgeEval提供了dynamic few-shot数
 LANGUAGE="zh"                     # 根据中文或英文选择不同的prompt，例如CPA为zh，CFA为en     
 ```
 
-- 执行API评测的主入口（暂不支持多个API同时进行测试）
+- 执行API评测的主入口（单次运行暂不支持多个API并行评测，但可以调整参数在多个终端执行eval_api.sh）
 ```python
     cd FinKnowledgeEval
     bash eval_api.sh
