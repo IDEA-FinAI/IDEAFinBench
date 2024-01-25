@@ -65,10 +65,8 @@ ans:           D
 ground truth:  D 
 ```
 
-# 对Dynamic Few-shot + CoT的支持
+- [Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)针对动态的少样本示例还插入了推理步骤，也就是例题的解析，辅助GPT-4采用思维链对当前题目进行推理；
 
-- [Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)针对动态的少样本示例还插入了推理步骤，也就是例题的解析，便于当前题目采用思维链进行推理；
-
-- 根据实验总结，FinKnowledgeEval上大部分14B规模以下的模型启动思维链会适得其反，与[FinEval](https://arxiv.org/abs/2308.09975)的技术报告观察一致；
+- 根据实验总结，FinKnowledgeEval上大部分14B规模以下的开源模型启动思维链会适得其反，与[FinEval](https://arxiv.org/abs/2308.09975)的技术报告观察一致；
 
 - 因此我们的cpa_one_rag和cpa_multi_rag数据集 **暂不考虑** 加入例题的解析作为少样本思维链推理的示例。
