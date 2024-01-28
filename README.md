@@ -247,7 +247,7 @@ model_data = [
   - ----Llama-2-13b-chat-hf
   - ----chinese-alpaca-2-7b
 
-- 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modlescope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径，以下是使用modelscope下载chatglm3-6b并保存到本地文件夹的示例：
+- 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modelscope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径，以下是使用Modelscope下载chatglm3-6b并保存到本地文件夹的示例：
 
 首先安装modelscope
 ```
