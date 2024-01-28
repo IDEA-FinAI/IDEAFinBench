@@ -439,6 +439,10 @@ Avg:
 42.43
 ```
 
+## **Benchmark Leakage自动化检测脚本**
+- 我们提供了一种能自动化检测LLM在基准测试集上是否存在数据泄露，即测试集被混合到了LLM的预训练/微调阶段进行学习并过拟合的程度的脚本
+- 参考[benchmark_leakage.md](assets/benchmark_leakage.md)
+
 # ❤️ 致谢
 
 本项目参考了下列开源项目的实现，对相关人员表示诚挚的谢意：
