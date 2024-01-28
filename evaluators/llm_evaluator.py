@@ -43,7 +43,7 @@ class LLM_Evaluator(Evaluator):
             top_p=0.8,
             do_sample=True,
             num_beams=1,
-            repetition_penalty=1.0,
+            repetition_penalty=1.05,
             max_new_tokens=100
         )
         
