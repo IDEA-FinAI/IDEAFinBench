@@ -1,8 +1,8 @@
-# 用于检测LLM在测试集上数据泄露程度的Memorization Testing脚本
+# 用于检测LLM在测试集上数据泄露程度的记忆测试脚本
 
 ## 实验复现单测
 - 本脚本参考了文献 [Causal Reasoning and Large Language Models: Opening a New Frontier for Causality](https://arxiv.org/abs/2305.00050) 的思路；
-- 测试LLM是否记住了特定的基准测试集；
+- 通过Memorization Testing判断LLM是否记住了特定的基准测试集；
 - 原始方法是对于测试集给定的行的前半部分作为前缀，要求LLM补全其余部分，并评估LLM生成的部分与GroundTruth（给定行的后半部分）是否相似；
 
 ```
