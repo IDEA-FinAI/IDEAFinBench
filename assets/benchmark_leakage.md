@@ -123,8 +123,8 @@ D. 符合资本化条件以外的借款费用应当在发生时根据其发生�
 答案：B,C,D
 ```
 
-我们在不同LLM上进行实验得到选项混合对Benchmark Leakage的缓解程度（目前仅对**Base LLM**进行测试，暂不考虑对齐后的LLM）：
-| 模型                   | CPA 单选 | CPA 多选 | CFA Level1 | CFA Level2 |
+我们在不同LLM上进行实验得到LLM对Benchmark的记忆程度和选项混合对Benchmark Leakage的缓解程度（目前仅对**Base LLM**进行测试，暂不考虑对齐后的LLM）：
+| 模型                   | CPA 单选 记忆程度 | CPA 多选 记忆程度 | CPA 单选 缓解程度 | CPA 多选 缓解程度 |
 |------------------------|--------|--------|------------|------------|
 | chatglm3-6b-base       |        |        |            |            |
 | Baichuan2-7B-Base      |        |        |            |            |
