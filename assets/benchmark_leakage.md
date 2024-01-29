@@ -1,6 +1,7 @@
 # 用于检测LLM在测试集上数据泄露程度的记忆测试脚本
 
 ## 实验复现单测
+
 - 本脚本参考了文献 [Causal Reasoning and Large Language Models: Opening a New Frontier for Causality](https://arxiv.org/abs/2305.00050) 的思路；
 - 通过Memorization Testing判断LLM是否记住了特定的基准测试集；
 - 原始方法是对于测试集给定的行的前半部分作为前缀，要求LLM补全其余部分，并评估LLM生成的部分与GroundTruth（给定行的后半部分）是否相似；
@@ -35,6 +36,7 @@ GroundTruth：
 ```
 
 ## Leakage自动化检测脚本
+
 - 本脚本简化了原有流程，并提供了一种自动化Leakage Testing的方法；
 - 我们选择保留测试集的一道选择题的题干+部分选项+待补全选项的前半部分，要求LLM进行 **Next Token Prediction**；
 - 判断LLM预测的下一个Token是否是待补全选项的后半部分的开头，如果是则进行统计，作为存在潜在泄露情况的判断，例如对某LLM的实验示例为；
@@ -56,6 +58,7 @@ Next Token Prediction：
 ```
 
 - 本脚本保留了四种前缀，分别截断A, B, C, D四个选项的一半并保留前缀，具体实现如下：
+
 ```python
 tuple_list = [
     [row['question'] + "\nA. " + row['A'][:len(row['A']) // 2], row['A'][len(row['A']) // 2:]],
@@ -66,6 +69,7 @@ tuple_list = [
 ```
 
 - 即前缀和后缀（GroundTruth）示例分别为：
+
 ```
 前缀1：
 下列各项中，属于消费税纳税义务人的是___。
@@ -102,7 +106,7 @@ D. 零售超豪华小
 
 ## 降低LLM在评测集准上过拟合的方法
 
-- **FinKnowledgeEval** 混合了基准测试集的选项顺序，并替换对应答案；
+- **FinKBenchmark** 混合了基准测试集的选项顺序，并替换对应答案；
 - 经过Leakage自动化脚本的检测，能在一定程度上缓解潜在的Benchmark Leakage程度，从而对不同的LLM进行更加公平的比较；
 
 ```
@@ -124,12 +128,11 @@ D. 符合资本化条件以外的借款费用应当在发生时根据其发生�
 ```
 
 - 我们在不同LLM上进行实验得到LLM对Benchmark的记忆程度（范围0-4）；
-- 实验了选项混合对Benchmark Leakage的缓解程度（目前仅对**Base LLM**进行测试，暂不考虑对齐后的LLM）：
-| 模型                   | CPA 单选 记忆程度 | CPA 多选 记忆程度 | CPA 单选 缓解程度 | CPA 多选 缓解程度 |
-|------------------------|--------|--------|------------|------------|
-| chatglm3-6b-base       |        |        |            |            |
-| Baichuan2-7B-Base      |        |        |            |            |
-| Baichuan2-13B-Base     |        |        |            |            |
-| Qwen-7B                |        |        |            |            |
-| Qwen-14B               |        |        |            |            |
-| Yi-6B                  |        |        |            |            |
+- 实验了选项混合对Benchmark Leakage的缓解程度（目前仅对**Base LLM**进行测试，暂不考虑对齐后的LLM）：| 模型               | CPA 单选 记忆程度 | CPA 多选 记忆程度 | CPA 单选 缓解程度 | CPA 多选 缓解程度 |
+  | ------------------ | ----------------- | ----------------- | ----------------- | ----------------- |
+  | chatglm3-6b-base   |                   |                   |                   |                   |
+  | Baichuan2-7B-Base  |                   |                   |                   |                   |
+  | Baichuan2-13B-Base |                   |                   |                   |                   |
+  | Qwen-7B            |                   |                   |                   |                   |
+  | Qwen-14B           |                   |                   |                   |                   |
+  | Yi-6B              |                   |                   |                   |                   |
