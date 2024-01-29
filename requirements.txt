@@ -1,4 +1,4 @@
-transformers
+transformers==4.34.0
 torch
 pandas
 numpy
@@ -8,5 +8,5 @@ accelerate
 sentencepiece
 tiktoken
 einops
-transformers_stream_generator
+transformers_stream_generator==0.0.4
 protobuf
