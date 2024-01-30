@@ -1,6 +1,6 @@
 # 对Dynamic Few-shot的支持
 
-- 本框架支持了[Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)提出的动态少样本，即在训练集足够大时对每个题目定制地提供少样本示例以增强模型对当前题目的理解；
+- 本框架支持了[Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452)提出的动态少样本，即在训练集足够大时对每个题目定制地提供少样本示例以注入相关背景知识到上下文；
 - 我们使用了Duxiaoman开源的[FinCorpus](https://huggingface.co/datasets/Duxiaoman-DI/FinCorpus/tree/main/data)作为大规模的金融试题训练集，并对题目进行清洗，包括去重、过滤低质量题目、文本结构重构等等，最后得到约20万道金融考试题目；
 - 我们采用[bge-embedding](https://huggingface.co/BAAI/bge-large-zh-v1.5)语义编码每一道金融例题并得到Embedding，保存到向量数据库中；
 - 我们针对FinKBenchmark里每一道CPA单选题和CPA多选题进行编码并在数据库进行向量相似检索，得到5道相似的例题作为少样本示例插入到Prompt中；
