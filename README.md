@@ -249,12 +249,12 @@ model_data = [
 
 - 考虑到直接从Huggingface下载模型网速较慢，建议研究人员使用[Modelscope](https://modelscope.cn/my/overview)下载模型并保存在本地文件夹，指定LLMS_PATH为该文件夹路径，以下是使用Modelscope下载chatglm3-6b并保存到本地文件夹的示例：
 
-首先安装modelscope
+- 首先安装modelscope
 ```
 pip install modelscope
 ```
 
-以chatglm3-6b为例，下载并保存在本地文件夹：
+- 以chatglm3-6b为例，下载并保存在本地文件夹：
 
 ```python
 from modelscope import AutoTokenizer, AutoModel, snapshot_download
@@ -266,7 +266,7 @@ tokenizer.save_pretrained(save_path)
 model.save_pretrained(save_path)
 ```
 
-执行完成后即可设置`LLMS_PATH="FinKBenchmark/LLMs"`
+- 执行完成后即可设置`LLMS_PATH="FinKBenchmark/LLMs"`
  
 - 也支持将"model_path"直接替换为Huggingface模型路径，例如：
 
@@ -356,7 +356,7 @@ LANGUAGE="zh"                     # 根据中文或英文选择不同的prompt�
 
 ```
 prompt:
- 以下是关于accounting考试的单项选择题，请选出其中的一个正确答案。
+以下是关于accounting考试的单项选择题，请选出其中的一个正确答案。
 
 下列各事项中，各公司应按照股份支付会计准则处理的是（ ）。
 A. 大海公司以自身普通股授予其子公司管理人员
@@ -438,6 +438,10 @@ tax_law :  34.77
 Avg: 
 42.43
 ```
+
+## **Dynamic Few-shot 动态少样本示例**
+- 我们的框架支持了对动态少样本示例效果进行评测的支持
+- 具体实现细节参考[dynamic_fewshot.md](assets/dynamic_fewshot.md)
 
 ## **Benchmark Leakage自动化检测脚本**
 - 我们提供了一种能自动化检测LLM在基准测试集上是否存在数据泄露，即测试集被混合到了LLM的预训练/微调阶段，并存在过拟合可能的脚本
