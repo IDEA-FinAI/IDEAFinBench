@@ -148,11 +148,11 @@ if __name__ == "__main__":
         #     "model_path": LLMS_PATH + "/chinese-alpaca-2-13b",
         #     "exp_name": "chinese-alpaca-2-13b",
         # },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/Tongyi-Finance-14B-Chat",
-            "exp_name": "Tongyi-Finance-14B-Chat",
-        },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Tongyi-Finance-14B-Chat",
+        #     "exp_name": "Tongyi-Finance-14B-Chat",
+        # },
     ]
 
     output_base_dir = os.path.join(PROJ_HOME, "output_dir")
