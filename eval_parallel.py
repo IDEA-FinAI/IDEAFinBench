@@ -29,7 +29,7 @@ def evaluate_model(model_type, model_path, exp_name):
         "--output_dir": output_dir,        # 输出目录
         "--cot": "False",                  # 是否使用cot，大部分13B以下模型基本不具备cot能力，反而会对做题造成干扰，准确率严重下降，建议为False
         "--multiple": "False",             # 当前测试集是否为多选题，例如使用cpa_multi测试集需要设置为True，其他情况默认为False
-        "--shots": "4",                    # fewshot的示例个数，0表示不使用fewshot
+        "--shots": "5",                    # fewshot的示例个数，0表示不使用fewshot
         "--constrained_decoding": "True",  # 受限解码仅支持单选题&&answer-only模式为True，其他情况必须设置为False
         "--temperature": "0.01",           # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
         "--do_test": "False",              # FinKBenchmark公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True
@@ -46,7 +46,7 @@ def evaluate_model(model_type, model_path, exp_name):
     if not os.path.exists(f"eval_logs/{dataset}"):
         os.mkdir(f"eval_logs/{dataset}")
  
-    log_name = f"cot_{command_dict['--cot']}_shots_{command_dict['--shots']}_dynamic_fs_{command_dict['--dynamic_fs']}"
+    log_name = f"cot_{command_dict['--cot']}_shot_{command_dict['--shots']}"
     log_dir = os.path.join(PROJ_HOME, f"eval_logs/{dataset}", log_name)
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
@@ -68,11 +68,11 @@ if __name__ == "__main__":
         #     "model_path": LLMS_PATH + "/chatglm3-6b",
         #     "exp_name": "chatglm3-6b",
         # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
-        #     "exp_name": "chatglm3-6b-base",
-        # },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/chatglm3-6b-base",
+            "exp_name": "chatglm3-6b-base",
+        },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Yi-6B",
