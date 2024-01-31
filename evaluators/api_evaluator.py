@@ -36,23 +36,28 @@ class API_Evaluator(Evaluator):
             print(e)
             return None
     
-    def format_example(self,line,include_answer=True, language="zh"):
+    def format_example(self, line, include_answer, language):
         example=line['question']
         for choice in self.choices:
-            example+=f'\n{choice}. {line[f"{choice}"]}'
+            example += f'\n{choice}. {line[f"{choice}"]}'
 
-        example+='\n答案：'
+        example += '\n答案：' if language == "zh" else '\nAnswer: '
         if include_answer:
             return [
-                {"role":"user", "content": example if self.cot==False else example+"\n让我们一步一步思考，\n"},
+                {"role":"user", "content": example if not self.cot else example+"\n让我们一步一步思考，\n"},
                 {"role":"assistant","content":line["answer"] if not self.cot else line["explanation"]+f"\n所以答案是{line['answer']}。"}
+            ] if language=="zh" else [
+                {"role":"user", "content": example if not self.cot else example+"\nLet's think step by step,\n"},
+                {"role":"assistant","content":line["answer"] if not self.cot else line["explanation"]+f"\nSo the answer is {line['answer']}."}
             ]
         else:
             return [
-                {"role": "user", "content": example if self.cot==False else example+"\n让我们一步一步思考，\n"}
+                {"role": "user", "content": example if not self.cot else example+"\n让我们一步一步思考，\n"}
+            ] if language=="zh" else [
+                {"role": "user", "content": example if not self.cot else example+"\nLet's think step by step,\n"}
             ]
                 
-    def generate_few_shot_prompt(self, subject, dev_df, multiple="False", language="zh"):
+    def generate_few_shot_prompt(self, subject, dev_df, multiple, language):
         if multiple==False:
             prompt=[{
                     "role":"system",
@@ -67,11 +72,12 @@ class API_Evaluator(Evaluator):
         if self.k==-1:
             k=dev_df.shape[0]
         for i in range(k):
-            tmp=self.format_example(dev_df.iloc[i,:],include_answer=True)
+            tmp=self.format_example(dev_df.iloc[i,:],include_answer=True, language=language)
             prompt+=tmp
         return prompt
     
-    # RAG-fewshot暂不支持cot，cpa_one_rag和cpa_two_rag里的Fewshot目前不包含解析用于cot。
+    # RAG-fewshot暂不支持cot，cpa_one_rag和cpa_multi_rag里的Fewshot目前不包含解析用于cot。
+    # 暂时仅支持cpa_one_rag和cpa_multi_rag这两份数据集
     def generate_dynamic_few_shot_prompt(self, subject, row, multiple=False, language="zh"):
         if multiple == False:
             prompt=[{"role":"system","content":self.one_ans_instruct_zh.format(subject=subject) if language=="zh" else self.one_ans_instruct_en.format(subject=subject)}]
@@ -94,12 +100,12 @@ class API_Evaluator(Evaluator):
         self, 
         subject, 
         test_df, 
-        dev_df=None, 
-        save_result_dir=None,
-        do_test=False,
-        multiple=False,
-        dynamic_fs=False,
-        language="zh"
+        dev_df, 
+        save_result_dir,
+        do_test,
+        multiple,
+        dynamic_fs,
+        language
     ):
         correct_num = 0
         all_answers = {}
@@ -109,8 +115,8 @@ class API_Evaluator(Evaluator):
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(),total=len(test_df)):
             if dynamic_fs == True:
-                prefix_prompt = self.generate_dynamic_few_shot_prompt(subject, row, multiple=multiple)
-            question = self.format_example(row, include_answer=False)
+                prefix_prompt = self.generate_dynamic_few_shot_prompt(subject, row, multiple=multiple, language=language)
+            question = self.format_example(row, include_answer=False, language=language)
             full_prompt = prefix_prompt + question
             response=None
             timeout_counter=0
@@ -129,13 +135,22 @@ class API_Evaluator(Evaluator):
                     continue
             if response is None:
                 correct=0
-            ans = self.extract_answer(row, response)
-            if ans == answers[row_index]:
-                correct_num += 1
-                correct = 1
+            if multiple == False:
+                ans = self.extract_answer(row, response)
+                if ans == answers[row_index]:
+                    correct_num += 1
+                    correct = 1
+                else:
+                    correct = 0
+                ground_truth = answers[row_index]
             else:
-                correct = 0
-            ground_truth = answers[row_index]
+                ans = self.extract_multiple_answer(response)
+                ground_truth = {char: int(char in answers[row_index]) for char in 'ABCD'}
+                if ans == ground_truth:
+                    correct_num += 1
+                    correct = 1
+                else:
+                    correct = 0
             print(f"\n========================begin {str(row_index)}========================")
             print("prompt:")
             for item in full_prompt:

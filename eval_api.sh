@@ -7,7 +7,7 @@ PYTHON_SCRIPT="main.py"
 export PROJ_HOME=$PWD
 
 USE_OPENAI="False"                # 是否使用openai，调用本地LLM的API则为False
-MODEL_NAME="Yi-6B-Chat"          # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要严格指定，但需要本地LLM名称用于日志文件命名
+MODEL_NAME="Yi-6B-Chat"           # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要严格指定，但需要本地LLM名称用于日志文件命名
 OPENAI_KEY="sk-**************"    # 填入自己的openai key，如果USE_OPENAI="False"并使用本地LLM，该字段会自动忽略
 
 DATA_DIR="cpa_one"                # 指定数据集名称
@@ -31,6 +31,9 @@ log_name="cot_${COT}_shot_${SHOTS}"
 log_dir=$PROJ_HOME/eval_logs/$DATA_DIR/$log_name
 mkdir -p $log_dir
 log_file_path=$log_dir/${MODEL_NAME}_${exp_date}.log
+
+# 添加output文件夹创建
+mkdir -p $output_dir
 
 # 执行 Python 脚本并重定向输出到日志文件
 python $PYTHON_SCRIPT \
