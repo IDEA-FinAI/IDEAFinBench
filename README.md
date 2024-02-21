@@ -1,12 +1,12 @@
-# FinKBenchmark: 金融知识评估基准
+# IDEAFinBench: 金融知识评估基准
 
 # ✨ 简介
 
-近年来，通用大模型（LLMs）在人工智能领域取得了显著进展，尤其是各类自然语言任务的处理。然而，关于模型对金融知识的掌握以及应用于逻辑推理的能力的评测依旧欠缺。为了补充这一空白，我们提出了一种新的评估基准：**FinKBenchmark**。
+近年来，通用大模型（LLMs）在人工智能领域取得了显著进展，尤其是各类自然语言任务的处理。然而，关于模型对金融知识的掌握以及应用于逻辑推理的能力的评测依旧欠缺。为了补充这一空白，我们提出了一种新的评估基准：**IDEAFinBench**。
 
-FinKBenchmark旨在评估通用大模型在处理金融相关知识和问题时的能力。此基准专注于金融专业知识，包括但不限于会计、审计、投资、经济学、税法等方面。FinKBenchmark包括两个主要测试集，分别针对 **CPA（注册会计师）** 和 **CFA（特许金融分析师）** 考试，旨在考察通用大模型在金融领域的知识储备水平和逻辑推理能力。
+IDEAFinBench旨在评估通用大模型在处理金融相关知识和问题时的能力。此基准专注于金融专业知识，包括但不限于会计、审计、投资、经济学、税法等方面。IDEAFinBench包括两个主要测试集，分别针对 **CPA（注册会计师）** 和 **CFA（特许金融分析师）** 考试，旨在考察通用大模型在金融领域的知识储备水平和逻辑推理能力。
 
-通过FinKBenchmark，我们希望能够更深入地了解通用大模型在处理复杂和专业化金融知识方面的能力。这不仅有助于推动金融领域的人工智能应用发展，也为未来更广泛的行业应用提供了重要的基础。
+通过IDEAFinBench，我们希望能够更深入地了解通用大模型在处理复杂和专业化金融知识方面的能力。这不仅有助于推动金融领域的人工智能应用发展，也为未来更广泛的行业应用提供了重要的基础。
 
 # 📝 数据集介绍
 
@@ -178,27 +178,27 @@ conda activate finknowledge
  ```
 
 ```python
-git clone https://github.com/Tsukumizu/FinKBenchmark.git
-cd FinKBenchmark
+git clone https://github.com/Tsukumizu/IDEAFinBench.git
+cd IDEAFinBench
 pip install -r requirements.txt
 ```
 
 ## 查看数据集或上传自己的数据集
 
-查看FinKBenchmark的官方数据集
+查看IDEAFinBench的官方数据集
 ```python
 cd datasets
 ```
 
-支持以[C-Eval](https://huggingface.co/datasets/ceval/ceval-exam)官方格式构建的数据集直接接入到FinKBenchmark项目进行评测。
+支持以[C-Eval](https://huggingface.co/datasets/ceval/ceval-exam)官方格式构建的数据集直接接入到IDEAFinBench项目进行评测。
 
 每个数据集由训练集dev，验证集val，测试集test组成。其中训练集dev用于构建few-shot示例，且包含explanation字段用于few-shot的思维链；验证集val用于调整超参数；测试集test用于衡量模型的最终性能。
 
-考虑到使用人员的便利性，FinKBenchmark项目选择将评测题目都放在验证集val并提供答案，便于测试人员直接输出语言模型的评测结果。
+考虑到使用人员的便利性，IDEAFinBench项目选择将评测题目都放在验证集val并提供答案，便于测试人员直接输出语言模型的评测结果。
 
 ## 运行评测代码
 
-- FinKBenchmark提供了可以并行测试多个语言模型的接口，使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测（也可以只进行单个模型评测）：
+- IDEAFinBench提供了可以并行测试多个语言模型的接口，使用人员只需要同时指定多个模型路径及加载方式即可同时进行评测（也可以只进行单个模型评测）：
 
 - 在`model_data`字典里指定需要测试的语言模型的类型（分为auto和llama）、路径与名称，其中`LLMS_PATH`是本地存放多个LLM权重文件的路径：
 
@@ -261,12 +261,12 @@ from modelscope import AutoTokenizer, AutoModel, snapshot_download
 model_dir = snapshot_download("ZhipuAI/chatglm3-6b", revision = "v1.0.0")
 tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
 model = AutoModel.from_pretrained(model_dir, trust_remote_code=True).half().cuda()
-save_path = "FinKBenchmark/LLMs/chatglm3-6b"
+save_path = "IDEAFinBench/LLMs/chatglm3-6b"
 tokenizer.save_pretrained(save_path)
 model.save_pretrained(save_path)
 ```
 
-- 执行完成后即可设置`LLMS_PATH="FinKBenchmark/LLMs"`
+- 执行完成后即可设置`LLMS_PATH="IDEAFinBench/LLMs"`
  
 - 也支持将"model_path"直接替换为Huggingface模型路径，例如：
 
@@ -314,8 +314,8 @@ command_dict = {
     "--shots": "4",                    # fewshot的示例个数，0表示不使用fewshot
     "--constrained_decoding": "True",  # 受限解码仅支持单选题&&answer-only模式为True，其他情况必须设置为False
     "--temperature": "0.01",           # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
-    "--do_test": "False",              # FinKBenchmark公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True
-    "--dynamic_fs": "False",           # FinKBenchmark提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False
+    "--do_test": "False",              # IDEAFinBench公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True
+    "--dynamic_fs": "False",           # IDEAFinBench提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False
     "--language": "zh",                # 根据中文或英文选择不同的prompt，例如CPA为zh，CFA为en
 }
 ```
@@ -323,7 +323,7 @@ command_dict = {
 - 执行评测的主入口
 
 ```python
-    cd FinKBenchmark
+    cd IDEAFinBench
     python eval_parallel.py
 ```
 
@@ -341,18 +341,18 @@ COT="False"                       # 是否使用cot，大部分13B以下模型�
 MULTIPLE="False"                  # 当前测试集是否为多选题，例如使用cpa_multi测试集需要设置为True，其他情况默认为False
 SHOTS=4                           # fewshot的示例个数，0表示不使用fewshot
 TEMPERATURE=0.01                  # 大部分情况下都默认为0.01，模型会倾向于直接输出答案，如果使用cot则需要调高温度
-DO_TEST="False"                   # FinKBenchmark公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True 
-DYNAMIC_FS="False"                # FinKBenchmark提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False   
+DO_TEST="False"                   # IDEAFinBench公布了答案，默认do_test为False，可以直接选择验证集val评测模型准确率，如果使用人员接入其他测试集并且需要过一遍test，这时候才选择为True 
+DYNAMIC_FS="False"                # IDEAFinBench提供了dynamic few-shot数据集示例，检索相似例题作为当前题目的fewshot，使用cpa_one_rag或cpa_multi_rag测试集就需要启用，常规测试集默认为False   
 LANGUAGE="zh"                     # 根据中文或英文选择不同的prompt，例如CPA为zh，CFA为en     
 ```
 
 - 执行API评测的主入口（单次运行暂不支持多个API并行评测，但可以调整参数在多个终端执行eval_api.sh）
 ```python
-    cd FinKBenchmark
+    cd IDEAFinBench
     bash eval_api.sh
 ```
 ## **评测日志**
-- 模型的评测记录在 `FinKBenchmark/eval_logs` 下实时更新，输出每个样本的Prompt以及执行结果：
+- 模型的评测记录在 `IDEAFinBench/eval_logs` 下实时更新，输出每个样本的Prompt以及执行结果：
 
 ```
 prompt:
