@@ -145,27 +145,27 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 - **完整的benchmark请点击[all_results.md](/assets/all_results.md)**
 
 | 模型                   | CPA 单选 | CPA 多选 | CFA Level1 | CFA Level2 |
-|------------------------|--------|--------|------------|------------|
-| chatgpt-3.5            |        |        |            |            |
-| GPT4                   |        |        |            |            |
-| Llama-2-7b-chat        |        |        |            |            |
-| Llama-2-13b-chat       |        |        |            |            |
-| chinese-alpaca-2-7b    |        |        |            |            |
-| chinese-alpaca-2-13b   |        |        |            |            |
-| chatglm3-6b-base       |        |        |            |            |
-| chatglm3-6b            |        |        |            |            |
-| Baichuan2-7B-Base      |        |        |            |            |
-| Baichuan2-7B-Chat      |        |        |            |            |
-| Baichuan2-13B-Base     |        |        |            |            |
-| Baichuan2-13B-Chat     |        |        |            |            |
-| DISC-Finllm            |        |        |            |            |
-| Qwen-7B                |        |        |            |            |
-| Qwen-7B-Chat           |        |        |            |            |
-| Qwen-14B               |        |        |            |            |
-| Qwen-14B-Chat          |        |        |            |            |
-| Tongyi-Finance-14B-Chat|        |        |            |            |
-| Yi-6B                  |        |        |            |            |
-| Yi-6B-Chat             |        |        |            |            |
+|-------------------------|--------|--------|--------|--------|
+| chatgpt-3.5             | 42.64  | 26.88  | 58.11  | 38.25  |
+| GPT4                    | 62.38  | 45.27  | 74.09  | 54.82  |
+| Llama-2-7b-chat         | 29.77  | 4.20   | 45.82  | 28.46  |
+| Llama-2-13b-chat        | 29.92  | 9.37   | 50.00  | 36.30  |
+| chinese-alpaca-2-7b     | 33.03  | 7.88   | 40.66  | 23.34  |
+| chinese-alpaca-2-13b    | 36.00  | 10.51  | 46.64  | 31.63  |
+| chatglm3-6b-base        | 49.79  | 14.89  | 58.28  | 37.65  |
+| chatglm3-6b             | 41.80  | 20.84  | 42.62  | 32.98  |
+| Baichuan2-7B-Base       | 42.50  | 9.72   | 50.90  | 29.37  |
+| Baichuan2-7B-Chat       | 41.80  | 13.57  | 42.95  | 31.17  |
+| Baichuan2-13B-Base      | 45.90  | 20.32  | 56.56  | 42.77  |
+| Baichuan2-13B-Chat      | 45.40  | 14.45  | 51.31  | 39.31  |
+| DISC-Finllm             | 38.68  | 9.98   | 43.77  | 30.12  |
+| Qwen-7B                 | 49.65  | 19.96  | 56.56  | 39.46  |
+| Qwen-7B-Chat            | 47.17  | 24.78  | 52.70  | 40.81  |
+| Qwen-14B                | 59.48  | 18.04  | 63.61  | 47.44  |
+| Qwen-14B-Chat           | 58.20  | 36.43  | 59.26  | 46.99  |
+| Tongyi-Finance-14B-Chat | 49.08  | 24.52  | 57.95  |        |
+| Yi-6B                   | 64.43  | 26.27  | 60.49  | 26.20  |
+| Yi-6B-Chat              | 63.22  | 29.25  | 53.36  | 28.46  |
 
 
 # 🎈 如何进行模型评估
