@@ -132,10 +132,9 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 |Baichuan2               | 7B 13B     | Weights | -                 |
 |Baichuan2-Chat          | 7B 13B     | Weights | Baichuan2         |
 |Qwen                    | 7B 14B     | Weights | -                 |
-|Qwen-7B-Chat            | 14B        | Weights | Qwen-7B           |
-|Qwen-14B-Chat           | 14B        | Weights | Qwen-14B          |
+|Qwen-Chat               | 7B 14B     | Weights | Qwen              |
 |Yi                      | 6B         | Weights | -                 |
-|Yi-6B-Chat              | 6B         | Weights | Yi-6B             |
+|Yi-Chat                 | 6B         | Weights | Yi                |
 |Tongyi-Finance-14B-Chat | 14B        | Weights | Qwen-14B          |
 |DISC-FinLLM             | 13B        | Weights | Baichuan-13B-Chat |
 
