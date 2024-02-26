@@ -7,7 +7,7 @@ PYTHON_SCRIPT="main.py"
 export PROJ_HOME=$PWD
 
 USE_OPENAI="False"                # 是否使用openai，调用本地LLM的API则为False
-MODEL_NAME="Yi-6B-Chat"           # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM不需要严格指定，但需要本地LLM名称用于日志文件命名
+MODEL_NAME="Yi-6B-Chat"           # 模型名称，openai需指定gpt-3.5-turbo,gpt-4等，本地LLM由于已经部署为API所以不需要严格指定名称，但需要名称用于日志文件命名
 OPENAI_KEY="sk-**************"    # 填入自己的openai key，如果USE_OPENAI="False"并使用本地LLM，该字段会自动忽略
 
 DATA_DIR="cpa_one"                # 指定数据集名称

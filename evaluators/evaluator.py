@@ -12,7 +12,7 @@ class Evaluator:
         self.one_ans_instruct_zh = "以下是关于{subject}考试的单项选择题，请选出其中的一个正确答案。"
         self.multi_ans_instruct_zh = "以下是关于{subject}考试的多项选择题，请选出其中的多个正确答案。"
         self.one_ans_instruct_en = "The following is a question about {subject} with only one answer, please select the correct choice."
-        self.multi_ans_instruct_en = "The following is a question about {subject} with multiple answers, please select all the correct choices."
+        self.multi_ans_instruct_en = "The following is a question about {subject} with multiple answers, please select all correct choices."
 
     def eval_subject(self):
         pass
