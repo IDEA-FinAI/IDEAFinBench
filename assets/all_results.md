@@ -1,5 +1,7 @@
 # 🚀 模型性能
 
+对于指令微调后的模型，我们使用zero-shot setting进行测试；对于基座模型，我们使用few-shot setting进行设置，参考[C-Eval](https://github.com/hkust-nlp/ceval/blob/main/resources/tutorial.md)的实验思路。
+
 ## **CPA-Eval**
 
 ### **单项选择题**
