@@ -172,8 +172,8 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 ## 环境准备
 
  ```python
-conda create --name finknowledge python=3.11
-conda activate finknowledge
+conda create --name finbench python=3.11
+conda activate finbench
  ```
 
 ```python
