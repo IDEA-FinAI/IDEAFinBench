@@ -121,22 +121,23 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 
 # 📇 模型列表
 
-| Model                  | Size       | Access  | Base Model        |
-| ---------------------- | ---------- | ------- | ----------------- |
-|ChatGPT                 | -          | API     | -                 |
-|GPT-4                   | -          | API     | -                 |
-|LLaMA-2-chat            | 7B 13B     | Weights | LLaMA-2           |
-|chinese-alpaca-2        | 7B 13B     | Weights | LLaMA-2           |
-|ChatGLM3-Base           | 6B         | Weights | -                 |
-|ChatGML3-6B             | 6B         | Weights | ChatGLM3-6B-Base  |
-|Baichuan2               | 7B 13B     | Weights | -                 |
-|Baichuan2-Chat          | 7B 13B     | Weights | Baichuan2         |
-|Qwen                    | 7B 14B     | Weights | -                 |
-|Qwen-Chat               | 7B 14B     | Weights | Qwen              |
-|Yi                      | 6B         | Weights | -                 |
-|Yi-Chat                 | 6B         | Weights | Yi                |
-|Tongyi-Finance-14B-Chat | 14B        | Weights | Qwen-14B          |
-|DISC-FinLLM             | 13B        | Weights | Baichuan-13B-Chat |
+| Model                  | Size       | Access  | Base Model         |
+| ---------------------- | ---------- | ------- | ------------------ |
+|ChatGPT                 | -          | API     | -                  |
+|GPT-4                   | -          | API     | -                  |
+|LLaMA-2-chat            | 7B 13B     | Weights | LLaMA-2            |
+|chinese-alpaca-2        | 7B 13B     | Weights | LLaMA-2            |
+|ChatGLM3-Base           | 6B         | Weights | -                  |
+|ChatGML3-6B             | 6B         | Weights | ChatGLM3-6B-Base   |
+|Baichuan2               | 7B 13B     | Weights | -                  |
+|Baichuan2-Chat          | 7B 13B     | Weights | Baichuan2          |
+|Qwen                    | 7B 14B     | Weights | -                  |
+|Qwen-Chat               | 7B 14B     | Weights | Qwen               |
+|Yi                      | 6B         | Weights | -                  |
+|Yi-Chat                 | 6B         | Weights | Yi                 |
+|Tongyi-Finance-14B      | 14B        | Weights | Qwen-14B           |
+|Tongyi-Finance-14B-Chat | 14B        | Weights | Tongyi-Finance-14B |
+|DISC-FinLLM             | 13B        | Weights | Baichuan-13B-Chat  |
 
 # 🚀 模型性能
 
@@ -162,7 +163,8 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 | Qwen-7B-Chat            | 47.17  | 24.78  | 52.70  | 40.81  |
 | Qwen-14B                | 59.48  | 18.04  | 63.61  | 47.44  |
 | Qwen-14B-Chat           | 58.20  | 36.43  | 59.26  | 46.99  |
-| Tongyi-Finance-14B-Chat | 49.08  | 24.52  | 57.95  |        |
+| Tongyi-Finance-14B      |   |   |   |        |
+| Tongyi-Finance-14B-Chat |   |   |   |        |
 | Yi-6B                   | **64.43**  | 26.27  | 60.49  | 26.20  |
 | Yi-6B-Chat              | 63.22  | 29.25  | 53.36  | 28.46  |
 
