@@ -163,8 +163,8 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 | Qwen-7B-Chat            | 47.17  | 24.78  | 52.70  | 40.81  |
 | Qwen-14B                | 59.48  | 18.04  | 63.61  | 47.44  |
 | Qwen-14B-Chat           | 58.20  | 36.43  | 59.26  | 46.99  |
-| Tongyi-Finance-14B      |   |   |   |        |
-| Tongyi-Finance-14B-Chat |   |   |   |        |
+| Tongyi-Finance-14B      | 51.34  | 28.37  | 63.44  | 45.78  |
+| Tongyi-Finance-14B-Chat | 49.50  | 15.50  | 58.28  | 41.72  |
 | Yi-6B                   | **64.43**  | 26.27  | 60.49  | 26.20  |
 | Yi-6B-Chat              | 63.22  | 29.25  | 53.36  | 28.46  |
 
