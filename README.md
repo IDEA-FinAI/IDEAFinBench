@@ -147,7 +147,7 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 | 模型                   | CPA 单选 | CPA 多选 | CFA Level1 | CFA Level2 |
 |-------------------------|--------|--------|--------|--------|
 | chatgpt-3.5             | 42.64  | 26.88  | 66.48  | 42.17  |
-| GPT4                    | 62.38  | **45.27**  | **84.26**  | **60.84**  |
+| GPT4                    | 62.38  | 45.27  | **84.26**  | **60.84**  |
 | Llama-2-7b-chat         | 29.77  | 4.20   | 45.82  | 28.46  |
 | Llama-2-13b-chat        | 29.92  | 9.37   | 50.00  | 36.30  |
 | chinese-alpaca-2-7b     | 33.03  | 7.88   | 40.66  | 23.34  |
@@ -165,8 +165,8 @@ REITs are tax-advantaged entities whereas REOC securities are not typically tax-
 | Qwen-14B-Chat           | 58.20  | 36.43  | 59.26  | 46.99  |
 | Tongyi-Finance-14B      | 51.34  | 28.37  | 63.44  | 45.78  |
 | Tongyi-Finance-14B-Chat | 49.50  | 15.50  | 58.28  | 41.72  |
-| Yi-6B                   | **64.43**  | 26.27  | 60.49  | 26.20  |
-| Yi-6B-Chat              | 63.22  | 29.25  | 53.36  | 28.46  |
+| Yi-6B                   | **64.43**  | 40.63  | 60.49  | 26.20  |
+| Yi-6B-Chat              | 63.22  | **47.20**  | 53.36  | 28.46  |
 
 
 # 🎈 如何进行模型评估
