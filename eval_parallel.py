@@ -7,7 +7,7 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 PROJ_HOME = os.getcwd()
 DATASET_HOME = os.path.join(PROJ_HOME, "datasets")
@@ -68,11 +68,11 @@ if __name__ == "__main__":
         #     "model_path": LLMS_PATH + "/chatglm3-6b",
         #     "exp_name": "chatglm3-6b",
         # },
-        {
-            "model_type": "auto",
-            "model_path": LLMS_PATH + "/chatglm3-6b-base",
-            "exp_name": "chatglm3-6b-base",
-        },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/chatglm3-6b-base",
+        #     "exp_name": "chatglm3-6b-base",
+        # },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Yi-6B",
@@ -85,18 +85,28 @@ if __name__ == "__main__":
         # },
         # {
         #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-34B",
+        #     "exp_name": "Yi-34B",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": LLMS_PATH + "/Yi-34B-Chat",
+        #     "exp_name": "Yi-34B-Chat",
+        # },
+        # {
+        #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Baichuan2-7B-Base",
         #     "exp_name": "Baichuan2-7B-Base",
         # },
         # {
         #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Baichuan2-13B-Base",
-        #     "exp_name": "Baichuan2-13B-Base",
+        #     "model_path": LLMS_PATH + "/Baichuan2-7B-Chat",
+        #     "exp_name": "Baichuan2-7B-Chat",
         # },
         # {
         #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Baichuan2-7B-Chat",
-        #     "exp_name": "Baichuan2-7B-Chat",
+        #     "model_path": LLMS_PATH + "/Baichuan2-13B-Base",
+        #     "exp_name": "Baichuan2-13B-Base",
         # },
         # {
         #     "model_type": "auto",
@@ -118,11 +128,11 @@ if __name__ == "__main__":
         #     "model_path": LLMS_PATH + "/Qwen-14B",
         #     "exp_name": "Qwen-14B",
         # },
-        # {
-        #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Qwen-7B-Chat",
-        #     "exp_name": "Qwen-7B-Chat",
-        # },
+        {
+            "model_type": "auto",
+            "model_path": LLMS_PATH + "/Qwen-7B-Chat",
+            "exp_name": "Qwen-7B-Chat",
+        },
         # {
         #     "model_type": "auto",
         #     "model_path": LLMS_PATH + "/Qwen-14B-Chat",
@@ -150,7 +160,12 @@ if __name__ == "__main__":
         # },
         # {
         #     "model_type": "auto",
-        #     "model_path": LLMS_PATH + "/Tongyi-Finance-14B-Chat",
+        #     "model_path": "TongyiFinance/Tongyi-Finance-14B",
+        #     "exp_name": "Tongyi-Finance-14B",
+        # },
+        # {
+        #     "model_type": "auto",
+        #     "model_path": "TongyiFinance/Tongyi-Finance-14B-Chat",
         #     "exp_name": "Tongyi-Finance-14B-Chat",
         # },
     ]

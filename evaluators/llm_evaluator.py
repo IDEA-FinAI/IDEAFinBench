@@ -8,6 +8,7 @@ from transformers import (
     LlamaTokenizer,
     LlamaForCausalLM,
 )
+from modelscope import snapshot_download
 from evaluators.evaluator import Evaluator
 MODEL_CLASSES = {
     "llama": (LlamaForCausalLM, LlamaTokenizer),
@@ -25,6 +26,8 @@ class LLM_Evaluator(Evaluator):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
           
         model_class, tokenizer_class = MODEL_CLASSES[model_type]
+        if "Tongyi-Finance" in self.model_path:
+            self.model_path = snapshot_download(self.model_path)
         self.tokenizer = tokenizer_class.from_pretrained(
             self.model_path, 
             use_fast=False,
@@ -43,8 +46,8 @@ class LLM_Evaluator(Evaluator):
             top_p=0.8,
             do_sample=True,
             num_beams=1,
-            repetition_penalty=1.05,
-            max_new_tokens=100
+            repetition_penalty=1.1,
+            max_new_tokens=10
         )
         
         if self.constrained_decoding is True:
@@ -73,7 +76,8 @@ class LLM_Evaluator(Evaluator):
         correct_num = 0
         result = []
         score = []
-        history = self.generate_few_shot_prompt(subject=subject_name, dev_df=dev_df, cot=self.cot, multiple=multiple, language=language)
+        if dynamic_fs == False:
+            history = self.generate_few_shot_prompt(subject=subject_name, dev_df=dev_df, cot=self.cot, multiple=multiple, language=language)
         answers = ['NA'] * len(test_df) if do_test is True else list(test_df['answer'])
         for row_index, row in tqdm(test_df.iterrows(), total=len(test_df)):
             if dynamic_fs == True:
