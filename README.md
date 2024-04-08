@@ -453,10 +453,6 @@ Avg:
 - 我们的框架支持了对动态少样本示例效果进行评测的支持
 - 具体实现细节参考[dynamic_fewshot.md](assets/dynamic_fewshot.md)
 
-## **Benchmark Leakage自动化检测脚本**
-- 我们提供了一种能自动化检测LLM在基准测试集上是否存在数据泄露，即测试集被混合到了LLM的预训练/微调阶段，并存在过拟合可能的脚本
-- 具体实现细节参考[benchmark_leakage.md](assets/benchmark_leakage.md)
-
 # ❤️ 致谢
 
 本项目参考了下列开源项目的实现，对相关人员表示诚挚的谢意：
